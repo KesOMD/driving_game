@@ -13,8 +13,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		this.parent(x, y, settings);
 
 		//set the default horizontal & vertical speed (accel vector)
-		this.setVelocity(6, 15);
-		console.log('player max vel = ' + this.maxVel);
+		this.setVelocity(6, 12);
+		//console.log('player max vel = ' + this.maxVel);
 		
 		//console.log('car gravity = ' + this.gravity)
 		//set the display to follow our position on the vertical axis
@@ -81,13 +81,9 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			this.isMoving = true;
 			this.isForward = true;
 			this.isReverse = false;
-			//this.vel.y = -this.maxVel.y * me.timer.tick;
+			this.vel.y = -this.maxVel.y * me.timer.tick;
 			//console.log('pressed up');
-			if (this.vel.y < this.maxVel.y)
-			{
-				this.vel.y--;
-			}
-			console.log('current forward velocity = ' + this.vel.y);
+			//console.log('current forward velocity = ' + this.vel.y);
 		}
 		else if (me.input.isKeyPressed('reverse'))
 		{
@@ -110,6 +106,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		//check collision
 		var res = me.game.collide(this);
+		var t;
 
 		if (res)
 		{
@@ -117,12 +114,17 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			//when collide with an obstacle
 			if (res.obj.type == me.game.ENEMY_OBJECT)
 			{
-				//
+				//console.log('collide with obstacle');
+				console.log(this.renderable);
+				//t = new me.Tween(this.pos).to({x:this.pos.x + 50}, 1000);
+				t = new me.Tween(this.renderable).to({angle:Number.prototype.degToRad(359)}, 1000).onComplete(function(){console.log('animation complete')});
+				t.easing(me.Tween.Easing.Bounce.EaseOut);
+				t.start();
 			}
 			//when collide with token
 			else if(res.obj.type == me.game.COLLECTABLE_OBJECT)
 			{
-				console.log('collected token')
+				console.log('collected token');
 			}
 		}
 
@@ -151,5 +153,31 @@ game.TokenEntity = me.CollectableEntity.extend({
 		this.collidable = false;
 		//remove it from the canvas
 		me.game.remove(this);
+	}
+})
+
+//collision obstacle entity
+game.EnemyEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "obtemp";
+		settings.spritewidth = 32;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		this.collidable = false;
+		
 	}
 })

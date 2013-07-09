@@ -11,6 +11,8 @@ game.resources = [
 	{name: "cartemp", type: "image", src: "data/img/sprite/cartemp.png"},
 	//spinning coin spritesheet
 	{name: "spinning_coin_gold", type: "image", src: "data/img/sprite/spinning_coin_gold.png"},
+	//obstacle spritesheet
+	{name: "obtemp", type: "image", src: "data/img/sprite/obtemp.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},

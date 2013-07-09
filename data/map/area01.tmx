@@ -30,6 +30,9 @@
    </properties>
   </object>
  </objectgroup>
+ <objectgroup name="EnemyEntities" width="41" height="200">
+  <object name="EnemyEntity" x="640" y="4608" width="32" height="32"/>
+ </objectgroup>
  <objectgroup name="Entities" width="41" height="200">
   <object name="mainPlayer" x="608" y="6144" width="96" height="192">
    <properties>
