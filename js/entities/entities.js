@@ -117,7 +117,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				//console.log('collide with obstacle');
 				console.log(this.renderable);
 				//t = new me.Tween(this.pos).to({x:this.pos.x + 50}, 1000);
-				t = new me.Tween(this.renderable).to({angle:Number.prototype.degToRad(359)}, 1000).onComplete(function(){console.log('animation complete')});
+				t = new me.Tween(this.renderable).to({angle:Number.prototype.degToRad(359)}, 1000).onComplete(function(){console.log('spin complete')});
 				t.easing(me.Tween.Easing.Bounce.EaseOut);
 				t.start();
 			}
