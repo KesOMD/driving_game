@@ -20,6 +20,12 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		//set the display to follow our position on the vertical axis
 		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL)
 		me.game.viewport.setDeadzone(0, 0);
+
+		myAngle = 1;
+		isMoving = false;
+		isForward = false;
+		isReverse = false;
+		hitObstacle = false;
 	},
 
 	/*
@@ -29,44 +35,47 @@ game.PlayerEntity = me.ObjectEntity.extend({
 	*/
 	update: function()
 	{
-		var myAngle = 1;
-		var isMoving = false;
-		var isForward = false;
-		var isReverse = false;
+		//user controls
 		if (me.input.isKeyPressed('left'))
 		{
-			if (this.isMoving)
+			if (isMoving)
 			{
-				//update the enity velocity
-				this.vel.x -= this.accel.x * me.timer.tick;
-				if (this.isForward)
+				if (!hitObstacle)
 				{
-					//rotate left
-					this.renderable.angle = -myAngle.degToRad();
-				}
-				else if(this.isReverse)
-				{
-					//rotate right
-					this.renderable.angle = myAngle.degToRad();
+					//update the enity velocity
+					this.vel.x -= this.accel.x * me.timer.tick;
+					if (isForward)
+					{
+						//rotate left
+						this.renderable.angle = -myAngle.degToRad();
+					}
+					else if(isReverse)
+					{
+						//rotate right
+						this.renderable.angle = myAngle.degToRad();
+					}
 				}
 			}
 			//console.log('pressed left');
 		}
 		else if (me.input.isKeyPressed('right'))
 		{
-			if (this.isMoving)
+			if (isMoving)
 			{
-				//update the entity velocity
-				this.vel.x += this.accel.x * me.timer.tick;
-				if (this.isForward)
+				if (!hitObstacle)
 				{
-					//rotate right
-					this.renderable.angle = myAngle.degToRad();
-				}
-				else if (this.isReverse)
-				{
-					//rotate left
-					this.renderable.angle = -myAngle.degToRad();
+					//update the entity velocity
+					this.vel.x += this.accel.x * me.timer.tick;
+					if (isForward)
+					{
+						//rotate right
+						this.renderable.angle = myAngle.degToRad();
+					}
+					else if (isReverse)
+					{
+						//rotate left
+						this.renderable.angle = -myAngle.degToRad();
+					}
 				}
 			}
 			//console.log('pressed right');
@@ -74,39 +83,59 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		else
 		{
 			this.vel.x = 0;
-			this.renderable.angle = 0;
+			//console.log('hit obstacle is ' + hitObstacle)
+			if (!hitObstacle)
+			{
+				this.renderable.angle = 0;
+			} 
+			else
+			{
+				//console.log('there is no angle reset')
+			}
+			
 		}
 		if (me.input.isKeyPressed('accelerate'))
 		{
-			this.isMoving = true;
-			this.isForward = true;
-			this.isReverse = false;
-			this.vel.y = -this.maxVel.y * me.timer.tick;
+			
+			if (!hitObstacle)
+			{
+				isMoving = true;
+				isForward = true;
+				isReverse = false;
+				this.vel.y = -this.maxVel.y * me.timer.tick;
+			}
 			//console.log('pressed up');
 			//console.log('current forward velocity = ' + this.vel.y);
 		}
 		else if (me.input.isKeyPressed('reverse'))
 		{
-			this.isMoving = true;
-			this.isForward = false;
-			this.isReverse = true;
-			this.vel.y = this.maxVel.y * me.timer.tick;
+			
+			if (!hitObstacle)
+			{
+				isMoving = true;
+				isForward = false;
+				isReverse = true;
+				this.vel.y = this.maxVel.y * me.timer.tick;
+			}
 			//console.log('pressed down');
 		}
 		else
 		{
-			this.isMoving = false;
-			this.isForward = false;
-			this.isReverse = false;
+			isMoving = false;
+			isForward = false;
+			isReverse = false;
 			this.vel.y = 0;
 		}
 
 		//check & update player movement
 		this.updateMovement();
 
+		//console.log('current x position = ' + this.pos.x);
+
 		//check collision
 		var res = me.game.collide(this);
 		var t;
+		var t2;
 
 		if (res)
 		{
@@ -114,11 +143,44 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			//when collide with an obstacle
 			if (res.obj.type == me.game.ENEMY_OBJECT)
 			{
+				//disable the object
+				res.obj.collidable = false;
 				//console.log('collide with obstacle');
-				console.log(this.renderable);
-				t = new me.Tween(this.renderable).to({angle:Number.prototype.degToRad(359)}, 1000).onComplete(function(){console.log('spin complete')});
-				t.easing(me.Tween.Easing.Bounce.EaseOut);
+				hitObstacle = true;
+				isMoving = false;
+				isForward = false;
+				isReverse = false;
+				this.vel.y = 0;
+				this.vel.x = 0;
+				//console.log(res.obj.collidable);
+				t = new me.Tween(this.renderable).to({angle:Number.prototype.degToRad(360)}, 1000)
+				.onComplete(function()
+					{
+						hitObstacle = false;
+						res.obj.collidable = true;
+						console.log(res.obj.collidable);
+					});
+				t.easing(me.Tween.Easing.Back.EaseOut);
 				t.start();
+
+				var directionValue;
+				if (this.pos.x < 608)
+				{
+					directionValue = 100;
+				}
+				else if (this.pos.x > 608)
+				{
+					directionValue = -100;
+				}
+				else
+				{
+					var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+					directionValue = plusOrMinus * 100;
+				}
+
+				t2 = new me.Tween(this.pos).to({y:this.pos.y - 250, x:this.pos.x + directionValue}, 1000);
+				t2.easing(me.Tween.Easing.Back.EaseOut);
+				t2.start();
 			}
 			//when collide with token
 			else if(res.obj.type == me.game.COLLECTABLE_OBJECT)
@@ -176,7 +238,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
 		//commands to execute when collected
 
 		//make sure it can't be collected again
-		this.collidable = false;
+		//this.collidable = false;
 		
 	}
 })
