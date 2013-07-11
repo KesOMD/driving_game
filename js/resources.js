@@ -13,6 +13,9 @@ game.resources = [
 	{name: "spinning_coin_gold", type: "image", src: "data/img/sprite/spinning_coin_gold.png"},
 	//obstacle spritesheet
 	{name: "obtemp", type: "image", src: "data/img/sprite/obtemp.png"},
+	//the parallax elements
+	{name: "area01_bkg0", type: "image", src: "data/img/area01_bkg0.png"},
+	{name: "area01_bkg1", type:"image", src: "data/img/area01_bkg1.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
