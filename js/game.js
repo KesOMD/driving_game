@@ -36,9 +36,13 @@ var game = {
         //global gravity setting
         me.sys.gravity = 0;
         me.debug.renderHitBox = true;
-        //me.state.set(me.state.MENU, new game.TitleScreen());
+        //set the title Screen Object
+        me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object
         me.state.set(me.state.PLAY, new game.PlayScreen());
+
+        //set a global fading transition for the screen
+        me.state.transition("fade", "#000000", 250);
 
         //add our player entity in the entity pool
         me.entityPool.add("mainPlayer", game.PlayerEntity);
@@ -50,7 +54,6 @@ var game = {
         me.input.bindKey(me.input.KEY.UP, "accelerate");
         me.input.bindKey(me.input.KEY.DOWN, "reverse");
         // Start the game.
-        me.state.change(me.state.PLAY);
-
+        me.state.change(me.state.MENU);
     }
 };

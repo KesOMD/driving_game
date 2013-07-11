@@ -16,6 +16,10 @@ game.resources = [
 	//the parallax elements
 	{name: "area01_bkg0", type: "image", src: "data/img/area01_bkg0.png"},
 	{name: "area01_bkg1", type:"image", src: "data/img/area01_bkg1.png"},
+	//game font
+	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
+	//title screen image
+	{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
