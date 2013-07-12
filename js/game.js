@@ -8,7 +8,6 @@ var game = {
             alert("Your browser does not support HTML5 canvas.");
             return;
         }
-		
 		// add "#debug" to the URL to enable the debug Panel
 		if (document.location.hash === "#debug") {
 			window.onReady(function () {

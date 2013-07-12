@@ -26,6 +26,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		isForward = false;
 		isReverse = false;
 		hitObstacle = false;
+		divTarget = null;
+		intFunc = null;
 	},
 
 	/*
@@ -158,7 +160,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 					{
 						hitObstacle = false;
 						res.obj.collidable = true;
-						console.log(res.obj.collidable);
 					});
 				t.easing(me.Tween.Easing.Back.EaseOut);
 				t.start();
@@ -202,6 +203,9 @@ game.TokenEntity = me.CollectableEntity.extend({
 		this.parent(x, y, settings);
 		this.collidable = true;
 		this.type = me.game.COLLECTABLE_OBJECT;
+		this.tokenSettings = settings;
+		//console.log(settings);
+		i = 1;
 	},
 
 	//this function is called by the engine, when
@@ -209,11 +213,40 @@ game.TokenEntity = me.CollectableEntity.extend({
 	onCollision: function()
 	{
 		//commands to execute when collected
-
 		//make sure it can't be collected again
 		this.collidable = false;
+		
+		if (this.tokenSettings.id == 1)
+		{
+			divTarget = document.getElementById("pop" + this.tokenSettings.id);
+			//divTarget.style.opacity = 0;
+
+			console.log('popup div is ' + divTarget);
+			this.fade(divTarget, 50);
+		}
+		//console.log(this.tokenSettings);
 		//remove it from the canvas
 		me.game.remove(this);
+	},
+
+	//fading function
+	fade: function(el, speed)
+	{
+		intFunc = setInterval(this.animBox, speed);
+	},
+
+	animBox: function()
+	{
+		//console.log("divTarget opacity = " + divTarget.style.opacity);
+		i++;
+		if (divTarget.style.opacity == 1)
+		{
+			clearInterval(intFunc);
+		}
+		else
+		{
+			divTarget.style.opacity = i/10;
+		}
 	}
 })
 

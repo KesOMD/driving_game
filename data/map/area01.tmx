@@ -31,12 +31,14 @@
  <objectgroup name="Tokens" width="41" height="200">
   <object name="TokenEntity" x="800" y="2272" width="32" height="32">
    <properties>
+    <property name="id" value="02"/>
     <property name="image" value="spinning_coin_gold"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object name="TokenEntity" x="512" y="3904" width="32" height="32">
    <properties>
+    <property name="id" value="01"/>
     <property name="image" value="spinning_coin_gold"/>
     <property name="spritewidth" value="32"/>
    </properties>
