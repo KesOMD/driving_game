@@ -28,6 +28,11 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		hitObstacle = false;
 		divTarget = null;
 		intFunc = null;
+		amountToMove = 10;
+
+		document.getElementById("pop1").style.top = '-300px';
+		document.getElementById("pop2").style.top = '-300px';
+		console.log(document.getElementById("screen").style.height);
 	},
 
 	/*
@@ -94,11 +99,9 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			{
 				//console.log('there is no angle reset')
 			}
-			
 		}
 		if (me.input.isKeyPressed('accelerate'))
 		{
-			
 			if (!hitObstacle)
 			{
 				isMoving = true;
@@ -106,18 +109,26 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = false;
 				this.vel.y = -this.maxVel.y * me.timer.tick;
 			}
+			if (divTarget)
+			{
+				var currentPosition = parseInt(divTarget.style.top);
+				divTarget.style.top = currentPosition + amountToMove + "px";
+			}
 			//console.log('pressed up');
-			//console.log('current forward velocity = ' + this.vel.y);
 		}
 		else if (me.input.isKeyPressed('reverse'))
 		{
-			
 			if (!hitObstacle)
 			{
 				isMoving = true;
 				isForward = false;
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
+			}
+			if (divTarget)
+			{
+				var currentPosition = parseInt(divTarget.style.top);
+				divTarget.style.top = currentPosition - amountToMove + "px";
 			}
 			//console.log('pressed down');
 		}
@@ -216,15 +227,9 @@ game.TokenEntity = me.CollectableEntity.extend({
 		//make sure it can't be collected again
 		this.collidable = false;
 		
-		if (this.tokenSettings.id == 1)
-		{
-			divTarget = document.getElementById("pop" + this.tokenSettings.id);
-			//divTarget.style.opacity = 0;
+		divTarget = document.getElementById("pop" + this.tokenSettings.id);
 
-			console.log('popup div is ' + divTarget);
-			this.fade(divTarget, 50);
-		}
-		//console.log(this.tokenSettings);
+		console.log('popup div is ' + divTarget + " and top = " + divTarget.style.top);
 		//remove it from the canvas
 		me.game.remove(this);
 	},

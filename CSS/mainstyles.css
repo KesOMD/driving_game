@@ -1,9 +1,16 @@
+
+#screen
+{
+	text-align: center;
+}
+
 .popup
 {
 	position: absolute;
-	left: 50px;
-	top: 50px;
+	left: 150px;
+	top: -300px;
 	padding: 0px 20px 10px 10px;
+	width: 250px;
 	background: rgba(255, 0, 0, 1);
 	border: thin solid rgba(0, 255, 0, 1);
 	color: #eeeeee;
@@ -14,5 +21,5 @@
 	-moz-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
 	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
 	z-index: 1;
-	opacity: 0;
+	opacity: 1;
 }
