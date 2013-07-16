@@ -14,9 +14,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		//set the default horizontal & vertical speed (accel vector)
 		this.setVelocity(6, 12);
-		//console.log('player max vel = ' + this.maxVel);
 		
-		//console.log('car gravity = ' + this.gravity)
 		//set the display to follow our position on the vertical axis
 		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL)
 		me.game.viewport.setDeadzone(0, 0);
@@ -32,7 +30,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		document.getElementById("pop1").style.top = '-300px';
 		document.getElementById("pop2").style.top = '-300px';
-		console.log(document.getElementById("screen").style.height);
+		//console.log(document.getElementById("screen").style.height);
 	},
 
 	/*
@@ -232,26 +230,6 @@ game.TokenEntity = me.CollectableEntity.extend({
 		console.log('popup div is ' + divTarget + " and top = " + divTarget.style.top);
 		//remove it from the canvas
 		me.game.remove(this);
-	},
-
-	//fading function
-	fade: function(el, speed)
-	{
-		intFunc = setInterval(this.animBox, speed);
-	},
-
-	animBox: function()
-	{
-		//console.log("divTarget opacity = " + divTarget.style.opacity);
-		i++;
-		if (divTarget.style.opacity == 1)
-		{
-			clearInterval(intFunc);
-		}
-		else
-		{
-			divTarget.style.opacity = i/10;
-		}
 	}
 })
 

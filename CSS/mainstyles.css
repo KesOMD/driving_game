@@ -1,13 +1,42 @@
+body
+{
+	overflow: hidden;
+}
+
+canvas
+{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#popupContainer
+{
+	position: relative;
+	width: 1312px;
+	height: 680px;
+	overflow: hidden;
+	top: 0px;
+	z-index: 2;
+	border: thin solid rgba(0, 255, 0, 1);
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 #screen
 {
-	text-align: center;
+	position: relative;
+	top: -680px;
+	z-index: 1;
 }
 
 .popup
 {
 	position: absolute;
-	left: 150px;
+	left: 25px;
 	top: -300px;
 	padding: 0px 20px 10px 10px;
 	width: 250px;
@@ -20,6 +49,5 @@
 	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
 	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
-	z-index: 1;
 	opacity: 1;
 }
