@@ -47,6 +47,7 @@ var game = {
         me.entityPool.add("mainPlayer", game.PlayerEntity);
         me.entityPool.add("TokenEntity", game.TokenEntity);
         me.entityPool.add("EnemyEntity", game.EnemyEntity);
+        me.entityPool.add("TransitionEntity", game.TransitionEntity);
         //enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT, "left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");

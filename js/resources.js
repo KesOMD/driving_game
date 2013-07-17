@@ -9,10 +9,13 @@ game.resources = [
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//main car sprite
 	{name: "cartemp", type: "image", src: "data/img/sprite/cartemp.png"},
+	{name: "cartemp2", type: "image", src: "data/img/sprite/cartemp2.png"},
 	//spinning coin spritesheet
 	{name: "spinning_coin_gold", type: "image", src: "data/img/sprite/spinning_coin_gold.png"},
 	//obstacle spritesheet
 	{name: "obtemp", type: "image", src: "data/img/sprite/obtemp.png"},
+	//transition object
+	{name: "trans", type: "image", src: "data/img/sprite/trans.jpg"},
 	//the parallax elements
 	{name: "area01_bkg0", type: "image", src: "data/img/area01_bkg0.png"},
 	{name: "area01_bkg1", type:"image", src: "data/img/area01_bkg1.png"},

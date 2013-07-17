@@ -9,12 +9,15 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 	init: function(x, y, settings)
 	{
+
+		settings.image = "cartemp2";
+		settings.spritewidth = 96;
+		settings.spriteheight = 192;
 		//call the constructor
 		this.parent(x, y, settings);
 
 		//set the default horizontal & vertical speed (accel vector)
 		this.setVelocity(6, 12);
-		
 		//set the display to follow our position on the vertical axis
 		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL)
 		me.game.viewport.setDeadzone(0, 0);
@@ -30,7 +33,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		document.getElementById("pop1").style.top = '-300px';
 		document.getElementById("pop2").style.top = '-300px';
-		//console.log(document.getElementById("screen").style.height);
+		//console.log(this.pos.x)
 	},
 
 	/*
@@ -195,11 +198,18 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			//when collide with token
 			else if(res.obj.type == me.game.COLLECTABLE_OBJECT)
 			{
-				console.log('collected token');
+				//console.log('collected token');
+			}
+			//level transition
+			else if(res.obj.type == me.game.ACTION_OBJECT)
+			{
+				//update sprite				
+				this.parent();
+				return true;
 			}
 		}
 
-		return false;
+		//return false;
 	}
 })
 
@@ -214,7 +224,6 @@ game.TokenEntity = me.CollectableEntity.extend({
 		this.type = me.game.COLLECTABLE_OBJECT;
 		this.tokenSettings = settings;
 		//console.log(settings);
-		i = 1;
 	},
 
 	//this function is called by the engine, when
@@ -256,5 +265,23 @@ game.EnemyEntity = me.ObjectEntity.extend({
 		//make sure it can't be collected again
 		//this.collidable = false;
 		
+	}
+})
+
+game.TransitionEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+		this.collidable = true;
+		this.type = me.game.ACTION_OBJECT;
+		this.TransitionSettings = settings;
+	},
+
+	onCollision: function()
+	{
+		//
+		//console.log('transition id = ' + this.TransitionSettings.id);
+		this.collidable = false;
 	}
 })
