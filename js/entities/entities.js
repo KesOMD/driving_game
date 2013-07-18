@@ -10,7 +10,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 	init: function(x, y, settings)
 	{
 
-		settings.image = "cartemp2";
+		settings.image = "cartemp";
 		settings.spritewidth = 96;
 		settings.spriteheight = 192;
 		//call the constructor
@@ -203,7 +203,12 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			//level transition
 			else if(res.obj.type == me.game.ACTION_OBJECT)
 			{
-				//update sprite				
+				//update sprite
+				if(res.obj.TransitionSettings.id == 1)
+				{
+					//console.log(res.obj.type + "id = " + res.obj.TransitionSettings.id);
+					this.renderable.image = me.loader.getImage("cartemp1");	
+				}
 				this.parent();
 				return true;
 			}
