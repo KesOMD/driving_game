@@ -9,19 +9,17 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 	init: function(x, y, settings)
 	{
-
 		settings.image = "cartemp";
 		settings.spritewidth = 96;
 		settings.spriteheight = 192;
+		
 		//call the constructor
 		this.parent(x, y, settings);
-
+		
 		//set the default horizontal & vertical speed (accel vector)
 		this.setVelocity(6, 12);
-		//set the display to follow our position on the vertical axis
-		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL)
-		me.game.viewport.setDeadzone(0, 0);
-
+		
+		//console.log(this);
 		myAngle = 1;
 		isMoving = false;
 		isForward = false;
@@ -31,11 +29,22 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		intFunc = null;
 		amountToMove = 10;
 
+		var ref = this;
+
 		document.getElementById("pop1").style.top = '-300px';
 		document.getElementById("pop2").style.top = '-300px';
-		//console.log(this.pos.x)
+		//console.log(this);
+		//this.fixView();
+		setTimeout(function() { ref.fixView(ref) }, 1000);
 	},
 
+	//fix the viewport to the player entity
+	fixView: function(target)
+	{
+		//set the display to follow our position on the vertical axis
+		me.game.viewport.follow(target.pos, me.game.viewport.AXIS.VERTICAL);
+		me.game.viewport.setDeadzone(0, 0);
+	},
 	/*
 
 	update the player position
@@ -253,8 +262,8 @@ game.EnemyEntity = me.ObjectEntity.extend({
 	init: function(x, y, settings)
 	{
 		//define this here instead of in Tiled
-		settings.image = "obtemp";
-		settings.spritewidth = 32;
+		settings.image = "invader";
+		settings.spritewidth = 96;
 		//call the parent constructor
 		this.parent(x, y, settings);
 		//make it collidable
@@ -270,6 +279,19 @@ game.EnemyEntity = me.ObjectEntity.extend({
 		//make sure it can't be collected again
 		//this.collidable = false;
 		
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
 	}
 })
 

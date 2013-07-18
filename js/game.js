@@ -28,13 +28,11 @@ var game = {
         me.state.change(me.state.LOADING);
     },
 
-
-
     // Run on game resources loaded.
     "loaded" : function () {
         //global gravity setting
         me.sys.gravity = 0;
-        me.debug.renderHitBox = true;
+        //me.debug.renderHitBox = true;
         //set the title Screen Object
         me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object

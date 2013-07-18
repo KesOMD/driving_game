@@ -13,8 +13,10 @@ game.resources = [
 	{name: "cartemp2", type: "image", src: "data/img/sprite/cartemp2.png"},
 	//spinning coin spritesheet
 	{name: "spinning_coin_gold", type: "image", src: "data/img/sprite/spinning_coin_gold.png"},
+	{name: "orb_sprite", type: "image", src: "data/img/sprite/orb_sprite.png"},
 	//obstacle spritesheet
 	{name: "obtemp", type: "image", src: "data/img/sprite/obtemp.png"},
+	{name: "invader", type: "image", src: "data/img/sprite/invader_sprite.png"},
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.jpg"},
 	//the parallax elements
