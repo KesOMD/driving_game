@@ -46,11 +46,7 @@ var game = {
         me.entityPool.add("TokenEntity", game.TokenEntity);
         me.entityPool.add("EnemyEntity", game.EnemyEntity);
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
-        //enable the keyboard
-        me.input.bindKey(me.input.KEY.LEFT, "left");
-        me.input.bindKey(me.input.KEY.RIGHT, "right");
-        me.input.bindKey(me.input.KEY.UP, "accelerate");
-        me.input.bindKey(me.input.KEY.DOWN, "reverse");
+        
         // Start the game.
         me.state.change(me.state.MENU);
     }

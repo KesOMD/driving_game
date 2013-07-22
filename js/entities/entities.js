@@ -215,7 +215,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				//update sprite
 				if(res.obj.TransitionSettings.id == 1)
 				{
-					//console.log(res.obj.type + "id = " + res.obj.TransitionSettings.id);
+					//console.log(res.obj.type + " id = " + res.obj.TransitionSettings.id);
 					this.renderable.image = me.loader.getImage("cartemp1");	
 				}
 				this.parent();
