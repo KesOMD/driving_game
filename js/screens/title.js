@@ -11,12 +11,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		this.title = null;
 
 		this.font = null;
-		this.scrollerfont = null;
-		this.scrollertween = null;
-
-		this.scroller = "YOU SHOULD BE PLAYING THIS GAME IT IS AWESOME         ";
-		this.scrollerpos = 1300;
-
+		
 		keys = [];
 		konami = 'UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A';
 	},
@@ -30,19 +25,7 @@ game.TitleScreen = me.ScreenObject.extend({
 			
 			//font to display for menu items
 			this.font = new me.BitmapFont("32x32_font", 32);
-
-			//set the scroller
-			this.scrollerfont = new me.BitmapFont("32x32_font", 32);
 		}
-
-		//reset to default position
-		this.scrollerpos = 1312;
-
-		//scroller tween
-		
-		this.scrollertween = new me.Tween(this).to({
-			scrollerpos: -1500
-		}, 20000).onComplete(this.scrollover.bind(this)).start();
 		
 		//enable some keyboard keys
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
@@ -52,14 +35,6 @@ game.TitleScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.DOWN, "down", true);
         me.input.bindKey(me.input.KEY.B, "b", true);
         me.input.bindKey(me.input.KEY.A, "a", true);
-    },
-
-    scrollover: function()
-    {
-    	this.scrollerpos = 1312;
-    	this.scrollertween.to({
-    		scrollerpos: -1500
-    	}, 20000).onComplete(this.scrollover.bind(this)).start();
     },
 	
 	//update function
@@ -95,8 +70,6 @@ game.TitleScreen = me.ScreenObject.extend({
 			keys.push("A");
 			this.checkKonami();
 		}
-
-		
 		return true;
 	},
 
@@ -115,20 +88,18 @@ game.TitleScreen = me.ScreenObject.extend({
 		context.drawImage(this.title, 336, 0);
 
 		this.font.draw(context, "PRESS ENTER TO PLAY", 356, 240);
-		this.scrollerfont.draw(context, this.scroller, this.scrollerpos, 440);
 		//console.log(this.scrollerpos);
 	},
 	
 	/**	
 	 *  action to perform when leaving this screen (state change)
 	 */
-	onDestroyEvent: function() {
+	onDestroyEvent: function()
+	{
 		me.input.unbindKey(me.input.KEY.ENTER);
 		me.input.unbindKey(me.input.KEY.LEFT);
         me.input.unbindKey(me.input.KEY.RIGHT);
         me.input.unbindKey(me.input.KEY.UP);
         me.input.unbindKey(me.input.KEY.DOWN);
-
-		this.scrollertween.stop();
 	}
 });

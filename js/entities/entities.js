@@ -119,11 +119,13 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = false;
 				this.vel.y = -this.maxVel.y * me.timer.tick;
 			}
+			/*
 			if (divTarget)
 			{
 				var currentPosition = parseInt(divTarget.style.top);
 				divTarget.style.top = currentPosition + amountToMove + "px";
 			}
+			*/
 			//console.log('pressed up');
 		}
 		else if (me.input.isKeyPressed('reverse'))
@@ -135,11 +137,13 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
 			}
+			/*
 			if (divTarget)
 			{
 				var currentPosition = parseInt(divTarget.style.top);
 				divTarget.style.top = currentPosition - amountToMove + "px";
 			}
+			*/
 			//console.log('pressed down');
 		}
 		else
@@ -250,9 +254,29 @@ game.TokenEntity = me.CollectableEntity.extend({
 		
 		divTarget = document.getElementById("pop" + this.tokenSettings.id);
 
-		console.log('popup div is ' + divTarget + " and top = " + divTarget.style.top);
+		console.log('popup div is ' + divTarget);
+		console.log(divTarget.style);
+		position = {y: -300};
+		var t3;
+		var t4;
+
+		t3 = new me.Tween(position).to({y:120}, 1000)
+		.easing(me.Tween.Easing.Cubic.EaseOut)
+		.onUpdate( function() { updateAnim(divTarget) });
+
+		t4 = new me.Tween(position).to({y:850}, 2000)
+		.delay(2000)
+		.easing(me.Tween.Easing.Cubic.EaseIn)
+		.onUpdate( function() { updateAnim(divTarget) });
+
+		t3.chain(t4);
+		t3.start();
 		//remove it from the canvas
 		me.game.remove(this);
+		function updateAnim(target)
+		{
+			target.style.top = position.y + "px";
+		}
 	}
 })
 

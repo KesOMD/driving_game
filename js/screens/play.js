@@ -7,7 +7,7 @@ game.PlayScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.LEFT, "left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");
         me.input.bindKey(me.input.KEY.UP, "accelerate");
-        me.input.bindKey(me.input.KEY.DOWN, "reverse");
+        //me.input.bindKey(me.input.KEY.DOWN, "reverse");
 		//load a level	
 	    me.levelDirector.loadLevel("area01"); // TODO
 	    //console.log("viewport position " + me.game.viewport.pos.y);
@@ -26,6 +26,6 @@ game.PlayScreen = me.ScreenObject.extend({
 		me.input.unbindKey(me.input.KEY.LEFT);
         me.input.unbindKey(me.input.KEY.RIGHT);
         me.input.unbindKey(me.input.KEY.UP);
-        me.input.unbindKey(me.input.KEY.DOWN);
+        //me.input.unbindKey(me.input.KEY.DOWN);
 	}
 });
