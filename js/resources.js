@@ -5,12 +5,16 @@ game.resources = [
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
 	//our level tileset
-	{name: "sewer_tileset", type: "image", src: "data/img/sewer_tileset.png"},
+	{name: "section1", type: "image", src: "data/img/leveltiles/section1.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//main car sprite
-	{name: "cartemp", type: "image", src: "data/img/sprite/cartemp.png"},
-	{name: "cartemp1", type: "image", src: "data/img/sprite/cartemp1.png"},
-	{name: "cartemp2", type: "image", src: "data/img/sprite/cartemp2.png"},
+	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
+	{name: "car2", type: "image", src: "data/img/sprite/2.png"},
+	{name: "car3", type: "image", src: "data/img/sprite/3.png"},
+	{name: "car4", type: "image", src: "data/img/sprite/4.png"},
+	{name: "car5", type: "image", src: "data/img/sprite/5.png"},
+	{name: "car6", type: "image", src: "data/img/sprite/6.png"},
+	{name: "car7", type: "image", src: "data/img/sprite/7.png"},
 	//spinning coin spritesheet
 	{name: "spinning_coin_gold", type: "image", src: "data/img/sprite/spinning_coin_gold.png"},
 	{name: "orb_sprite", type: "image", src: "data/img/sprite/orb_sprite.png"},
@@ -36,7 +40,8 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
- 	 {name: "area01", type: "tmx", src: "data/map/area01.tmx"}
+ 	 {name: "area01", type: "tmx", src: "data/map/area01.tmx"},
+ 	 {name: "main_game_level", type: "tmx", src: "data/map/main_game_level.tmx"}
 
 	/* Background music. 
 	 * @example

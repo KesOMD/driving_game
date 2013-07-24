@@ -9,7 +9,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 	init: function(x, y, settings)
 	{
-		settings.image = "cartemp";
+		settings.image = "car1";
 		settings.spritewidth = 96;
 		settings.spriteheight = 192;
 		
@@ -17,10 +17,10 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		this.parent(x, y, settings);
 		
 		//set the default horizontal & vertical speed (accel vector)
-		this.setVelocity(6, 12);
+		this.setVelocity(12, 12);
 		
 		//console.log(this);
-		myAngle = 1;
+		myAngle = 2;
 		isMoving = false;
 		isForward = false;
 		isReverse = false;
@@ -29,12 +29,10 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		intFunc = null;
 		amountToMove = 10;
 
-		var ref = this;
+		ref = this;
 
 		document.getElementById("pop1").style.top = '-300px';
 		document.getElementById("pop2").style.top = '-300px';
-		//console.log(this);
-		//this.fixView();
 		setTimeout(function() { ref.fixView(ref) }, 1000);
 	},
 
@@ -105,10 +103,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			{
 				this.renderable.angle = 0;
 			} 
-			else
-			{
-				//console.log('there is no angle reset')
-			}
 		}
 		if (me.input.isKeyPressed('accelerate'))
 		{
@@ -119,13 +113,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = false;
 				this.vel.y = -this.maxVel.y * me.timer.tick;
 			}
-			/*
-			if (divTarget)
-			{
-				var currentPosition = parseInt(divTarget.style.top);
-				divTarget.style.top = currentPosition + amountToMove + "px";
-			}
-			*/
 			//console.log('pressed up');
 		}
 		else if (me.input.isKeyPressed('reverse'))
@@ -137,13 +124,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
 			}
-			/*
-			if (divTarget)
-			{
-				var currentPosition = parseInt(divTarget.style.top);
-				divTarget.style.top = currentPosition - amountToMove + "px";
-			}
-			*/
 			//console.log('pressed down');
 		}
 		else
@@ -172,6 +152,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			{
 				//disable the object
 				res.obj.collidable = false;
+				ref.collidable = false;
 				//console.log('collide with obstacle');
 				hitObstacle = true;
 				isMoving = false;
@@ -185,6 +166,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
 					{
 						hitObstacle = false;
 						res.obj.collidable = true;
+						ref.collidable = true;
+						console.log(ref.collidable);
 					});
 				t.easing(me.Tween.Easing.Back.EaseOut);
 				t.start();
@@ -204,7 +187,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 					directionValue = plusOrMinus * 100;
 				}
 
-				t2 = new me.Tween(this.pos).to({y:this.pos.y - 250, x:this.pos.x + directionValue}, 1000);
+				t2 = new me.Tween(this.pos).to({y:this.pos.y - 400, x:this.pos.x + directionValue}, 1000);
 				t2.easing(me.Tween.Easing.Back.EaseOut);
 				t2.start();
 			}
@@ -220,7 +203,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				if(res.obj.TransitionSettings.id == 1)
 				{
 					//console.log(res.obj.type + " id = " + res.obj.TransitionSettings.id);
-					this.renderable.image = me.loader.getImage("cartemp1");	
+					this.renderable.image = me.loader.getImage("car2");	
 				}
 				this.parent();
 				return true;
@@ -302,7 +285,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
 
 		//make sure it can't be collected again
 		//this.collidable = false;
-		
+		console.log("collided")
 	},
 
 	update: function()
