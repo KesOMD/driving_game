@@ -27,7 +27,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		hitObstacle = false;
 		divTarget = null;
 		intFunc = null;
-		amountToMove = 10;
 
 		ref = this;
 
@@ -117,6 +116,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		}
 		else if (me.input.isKeyPressed('reverse'))
 		{
+			/*
 			if (!hitObstacle)
 			{
 				isMoving = true;
@@ -124,6 +124,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
 			}
+			*/
 			//console.log('pressed down');
 		}
 		else
@@ -244,7 +245,7 @@ game.TokenEntity = me.CollectableEntity.extend({
 		var t4;
 
 		t3 = new me.Tween(position).to({y:120}, 1000)
-		.easing(me.Tween.Easing.Cubic.EaseOut)
+		.easing(me.Tween.Easing.Cubic.EaseIn)
 		.onUpdate( function() { updateAnim(divTarget) });
 
 		t4 = new me.Tween(position).to({y:850}, 2000)
@@ -285,7 +286,6 @@ game.EnemyEntity = me.ObjectEntity.extend({
 
 		//make sure it can't be collected again
 		//this.collidable = false;
-		console.log("collided")
 	},
 
 	update: function()
