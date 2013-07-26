@@ -19,7 +19,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		//set the default horizontal & vertical speed (accel vector)
 		this.setVelocity(12, 12);
 		
-		//console.log(this);
 		myAngle = 2;
 		isMoving = false;
 		isForward = false;
@@ -97,7 +96,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		else
 		{
 			this.vel.x = 0;
-			//console.log('hit obstacle is ' + hitObstacle)
+			
 			if (!hitObstacle)
 			{
 				this.renderable.angle = 0;
@@ -138,8 +137,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		//check & update player movement
 		this.updateMovement();
 
-		//console.log('current x position = ' + this.pos.x);
-
 		//check collision
 		var res = me.game.collide(this);
 		var t;
@@ -147,21 +144,20 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		if (res)
 		{
-			//console.log('collide = ' + res);
 			//when collide with an obstacle
 			if (res.obj.type == me.game.ENEMY_OBJECT)
 			{
 				//disable the object
 				res.obj.collidable = false;
 				ref.collidable = false;
-				//console.log('collide with obstacle');
+				
 				hitObstacle = true;
 				isMoving = false;
 				isForward = false;
 				isReverse = false;
 				this.vel.y = 0;
 				this.vel.x = 0;
-				//console.log(res.obj.collidable);
+				
 				t = new me.Tween(this.renderable).to({angle:Number.prototype.degToRad(360)}, 1000)
 				.onComplete(function()
 					{
@@ -210,8 +206,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				return true;
 			}
 		}
-
-		//return false;
 	}
 })
 
@@ -225,7 +219,6 @@ game.TokenEntity = me.CollectableEntity.extend({
 		this.collidable = true;
 		this.type = me.game.COLLECTABLE_OBJECT;
 		this.tokenSettings = settings;
-		//console.log(settings);
 	},
 
 	//this function is called by the engine, when
@@ -239,7 +232,7 @@ game.TokenEntity = me.CollectableEntity.extend({
 		divTarget = document.getElementById("pop" + this.tokenSettings.id);
 
 		console.log('popup div is ' + divTarget);
-		console.log(divTarget.style);
+		
 		position = {y: -300};
 		var t3;
 		var t4;
@@ -315,7 +308,6 @@ game.TransitionEntity = me.ObjectEntity.extend({
 	onCollision: function()
 	{
 		//
-		//console.log('transition id = ' + this.TransitionSettings.id);
 		this.collidable = false;
 	}
 })
