@@ -29,8 +29,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		ref = this;
 
-		document.getElementById("pop1").style.top = '-300px';
-		document.getElementById("pop2").style.top = '-300px';
+		document.getElementById("pop1").style.top = '-400px';
+		//document.getElementById("pop2").style.top = '-400px';
 		setTimeout(function() { ref.fixView(ref) }, 1000);
 	},
 
