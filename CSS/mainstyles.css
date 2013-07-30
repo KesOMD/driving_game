@@ -12,6 +12,18 @@ canvas
 	display: block;
 }
 
+@font-face
+{
+	font-family: GothamBlack;
+	src: url(../data/font/Gotham-black.ttf);
+}
+
+@font-face
+{
+	font-family: GothamBook;
+	src: url(../data/font/Gotham-Book.otf);
+}
+
 #popupContainer
 {
 	position: relative;
@@ -57,9 +69,6 @@ canvas
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	padding: 5px;
-	color: #000;
-	font-family: Droid Sans, Arial, Helvetica, sans-serif;
-	font-size: 12px;
 	cursor: default;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
@@ -82,5 +91,31 @@ canvas
 	width: 181px;
 	height: 256px;
 	margin-top: 28px;
-	background: url(../data/img/license/pgr-pack.png);
+	display: inline-block;
+}
+
+.game-info
+{
+	float: right;
+	width: 278px;
+	margin-left: 181px;
+	margin-top: -266px;
+}
+
+.game-info h3
+{
+	color: #2b76da;
+	font-size: 15px;
+	font-family: GothamBlack, Helvetica, Arial, sans-serif;
+	margin-top: 8px;
+	letter-spacing: 1px;
+}
+
+.game-info p
+{
+	color: #23132d;
+	font-size: 14px;
+	font-family: GothamBook, Helvetica, Arial, sans-serif;
+	margin: 0;
+	letter-spacing: -1px;
 }
