@@ -233,16 +233,16 @@ game.TokenEntity = me.CollectableEntity.extend({
 
 		console.log('popup div is ' + divTarget);
 		
-		position = {y: -300};
+		position = {y: -400};
 		var t3;
 		var t4;
 
 		t3 = new me.Tween(position).to({y:120}, 1000)
-		.easing(me.Tween.Easing.Cubic.EaseIn)
+		.easing(me.Tween.Easing.Cubic.EaseOut)
 		.onUpdate( function() { updateAnim(divTarget) });
 
 		t4 = new me.Tween(position).to({y:850}, 2000)
-		.delay(2000)
+		.delay(4000)
 		.easing(me.Tween.Easing.Cubic.EaseIn)
 		.onUpdate( function() { updateAnim(divTarget) });
 

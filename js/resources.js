@@ -6,6 +6,7 @@ game.resources = [
 	 */
 	//our level tileset
 	{name: "section1", type: "image", src: "data/img/leveltiles/section1.png"},
+	{name: "bridge1", type: "image", src: "data/img/leveltiles/bridge1.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//main car sprite
 	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
