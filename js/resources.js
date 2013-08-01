@@ -7,6 +7,7 @@ game.resources = [
 	//our level tileset
 	{name: "section1", type: "image", src: "data/img/leveltiles/section1.png"},
 	{name: "bridge1", type: "image", src: "data/img/leveltiles/bridge1.png"},
+	{name: "section2", type: "image", src: "data/img/leveltiles/section2.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//main car sprite
 	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
@@ -16,11 +17,9 @@ game.resources = [
 	{name: "car5", type: "image", src: "data/img/sprite/5.png"},
 	{name: "car6", type: "image", src: "data/img/sprite/6.png"},
 	{name: "car7", type: "image", src: "data/img/sprite/7.png"},
-	//spinning coin spritesheet
-	{name: "spinning_coin_gold", type: "image", src: "data/img/sprite/spinning_coin_gold.png"},
+	//collect orb spritesheet
 	{name: "orb_sprite", type: "image", src: "data/img/sprite/orb_sprite.png"},
 	//obstacle spritesheet
-	{name: "obtemp", type: "image", src: "data/img/sprite/obtemp.png"},
 	{name: "invader", type: "image", src: "data/img/sprite/invader_sprite.png"},
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.jpg"},
@@ -41,7 +40,6 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
- 	 {name: "area01", type: "tmx", src: "data/map/area01.tmx"},
  	 {name: "main_game_level", type: "tmx", src: "data/map/main_game_level.tmx"}
 
 	/* Background music. 
