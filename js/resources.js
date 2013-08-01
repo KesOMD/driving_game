@@ -4,12 +4,14 @@ game.resources = [
 	 * @example
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
-	//our level tileset
+	//our level tilesets
 	{name: "section1", type: "image", src: "data/img/leveltiles/section1.png"},
 	{name: "bridge1", type: "image", src: "data/img/leveltiles/bridge1.png"},
 	{name: "section2", type: "image", src: "data/img/leveltiles/section2.png"},
+	{name: "bridge2", type: "image", src: "data/img/leveltiles/bridge2.png"},
+	{name: "section3", type: "image", src: "data/img/leveltiles/section3.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
-	//main car sprite
+	//main car sprites
 	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
 	{name: "car2", type: "image", src: "data/img/sprite/2.png"},
 	{name: "car3", type: "image", src: "data/img/sprite/3.png"},
@@ -19,8 +21,10 @@ game.resources = [
 	{name: "car7", type: "image", src: "data/img/sprite/7.png"},
 	//collect orb spritesheet
 	{name: "orb_sprite", type: "image", src: "data/img/sprite/orb_sprite.png"},
-	//obstacle spritesheet
+	//obstacle spritesheets
 	{name: "invader", type: "image", src: "data/img/sprite/invader_sprite.png"},
+	{name: "cow", type: "image", src: "data/img/sprite/cow.png"},
+	{name: "carspun-right", type: "image", src: "data/img/sprite/carspun-right.png"},
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.jpg"},
 	//the parallax elements

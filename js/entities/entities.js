@@ -17,7 +17,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		this.parent(x, y, settings);
 		
 		//set the default horizontal & vertical speed (accel vector)
-		this.setVelocity(12, 12);
+		this.setVelocity(18, 12);
 		
 		myAngle = 2;
 		isMoving = false;
@@ -29,7 +29,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
 		ref = this;
 
-		document.getElementById("pop1").style.top = '-400px';
+		//document.getElementById("pop1").style.top = '-400px';
 		//document.getElementById("pop2").style.top = '-400px';
 		setTimeout(function() { ref.fixView(ref) }, 1000);
 	},
@@ -164,7 +164,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 						hitObstacle = false;
 						res.obj.collidable = true;
 						ref.collidable = true;
-						console.log(ref.collidable);
 					});
 				t.easing(me.Tween.Easing.Back.EaseOut);
 				t.start();
@@ -202,6 +201,10 @@ game.PlayerEntity = me.ObjectEntity.extend({
 					//console.log(res.obj.type + " id = " + res.obj.TransitionSettings.id);
 					this.renderable.image = me.loader.getImage("car2");	
 				}
+				else if(res.obj.TransitionSettings.id == 2)
+				{
+					this.renderable.image = me.loader.getImage("car3");
+				}
 				this.parent();
 				return true;
 			}
@@ -231,7 +234,7 @@ game.TokenEntity = me.CollectableEntity.extend({
 		
 		divTarget = document.getElementById("pop" + this.tokenSettings.id);
 
-		console.log('popup div is ' + divTarget);
+		//console.log('popup div is ' + divTarget);
 		
 		position = {y: -400};
 		var t3;
@@ -265,6 +268,43 @@ game.EnemyEntity = me.ObjectEntity.extend({
 		//define this here instead of in Tiled
 		settings.image = "invader";
 		settings.spritewidth = 96;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
+game.CowEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "cow";
+		settings.spritewidth = 192;
 		//call the parent constructor
 		this.parent(x, y, settings);
 		//make it collidable
