@@ -205,6 +205,22 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				{
 					this.renderable.image = me.loader.getImage("car3");
 				}
+				else if(res.obj.TransitionSettings.id == 3)
+				{
+					this.renderable.image = me.loader.getImage("car4");
+				}
+				else if(res.obj.TransitionSettings.id == 4)
+				{
+					this.renderable.image = me.loader.getImage("car5");
+				}
+				else if(res.obj.TransitionSettings.id == 5)
+				{
+					this.renderable.image = me.loader.getImage("car6");
+				}
+				else if(res.obj.TransitionSettings.id == 6)
+				{
+					this.renderable.image = me.loader.getImage("car7");
+				}
 				this.parent();
 				return true;
 			}
@@ -305,6 +321,80 @@ game.CowEntity = me.ObjectEntity.extend({
 		//define this here instead of in Tiled
 		settings.image = "cow";
 		settings.spritewidth = 192;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
+game.CarspunrightEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "carspun-right";
+		settings.spritewidth = 96;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
+game.WaterEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "water";
+		settings.spritewidth = 94;
 		//call the parent constructor
 		this.parent(x, y, settings);
 		//make it collidable

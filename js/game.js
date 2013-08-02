@@ -46,6 +46,8 @@ var game = {
         me.entityPool.add("TokenEntity", game.TokenEntity);
         me.entityPool.add("EnemyEntity", game.EnemyEntity);
         me.entityPool.add("CowEntity", game.CowEntity);
+        me.entityPool.add("CarspunrightEntity", game.CarspunrightEntity);
+        me.entityPool.add("WaterEntity", game.WaterEntity);
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
         
         // Start the game.

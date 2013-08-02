@@ -10,6 +10,8 @@ game.resources = [
 	{name: "section2", type: "image", src: "data/img/leveltiles/section2.png"},
 	{name: "bridge2", type: "image", src: "data/img/leveltiles/bridge2.png"},
 	{name: "section3", type: "image", src: "data/img/leveltiles/section3.png"},
+	{name: "bridge3", type: "image", src: "data/img/leveltiles/bridge3.png"},
+	{name: "section4", type: "image", src: "data/img/leveltiles/section4.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//main car sprites
 	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
@@ -25,6 +27,7 @@ game.resources = [
 	{name: "invader", type: "image", src: "data/img/sprite/invader_sprite.png"},
 	{name: "cow", type: "image", src: "data/img/sprite/cow.png"},
 	{name: "carspun-right", type: "image", src: "data/img/sprite/carspun-right.png"},
+	{name: "water", type: "image", src: "data/img/sprite/water.png"},
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.jpg"},
 	//the parallax elements
