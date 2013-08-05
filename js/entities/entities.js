@@ -115,7 +115,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		}
 		else if (me.input.isKeyPressed('reverse'))
 		{
-			/*
+			//for debug purposes remove later
 			if (!hitObstacle)
 			{
 				isMoving = true;
@@ -123,7 +123,6 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
 			}
-			*/
 			//console.log('pressed down');
 		}
 		else
