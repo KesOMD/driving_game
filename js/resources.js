@@ -12,6 +12,8 @@ game.resources = [
 	{name: "section3", type: "image", src: "data/img/leveltiles/section3.png"},
 	{name: "bridge3", type: "image", src: "data/img/leveltiles/bridge3.png"},
 	{name: "section4", type: "image", src: "data/img/leveltiles/section4.png"},
+	{name: "bridge4", type: "image", src: "data/img/leveltiles/bridge4.png"},
+	{name: "section5", type: "image", src: "data/img/leveltiles/section5.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//main car sprites
 	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
