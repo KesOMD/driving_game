@@ -43,13 +43,23 @@ var game = {
 
         //add our player entity in the entity pool
         me.entityPool.add("mainPlayer", game.PlayerEntity);
+        //collectable entity
         me.entityPool.add("TokenEntity", game.TokenEntity);
+        //enemy/obstacle entities
         me.entityPool.add("EnemyEntity", game.EnemyEntity);
         me.entityPool.add("CowEntity", game.CowEntity);
         me.entityPool.add("CarspunrightEntity", game.CarspunrightEntity);
         me.entityPool.add("WaterEntity", game.WaterEntity);
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
         
+        //palm tree entities
+        me.entityPool.add("PalmTreeGreenLeft", game.PalmTreeGreenLeft);
+        me.entityPool.add("PalmTreeGreenRight", game.PalmTreeGreenRight);
+        me.entityPool.add("PalmTreePurpleLeft", game.PalmTreePurpleLeft);
+        me.entityPool.add("PalmTreePurpleRight", game.PalmTreePurpleRight);
+        me.entityPool.add("PalmTreeYellowLeft", game.PalmTreeYellowLeft);
+        me.entityPool.add("PalmTreeYellowRight", game.PalmTreeYellowRight);
+
         // Start the game.
         me.state.change(me.state.MENU);
     }

@@ -440,3 +440,51 @@ game.TransitionEntity = me.ObjectEntity.extend({
 		this.collidable = false;
 	}
 })
+
+game.PalmTreeGreenLeft = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+	}
+})
+
+game.PalmTreeGreenRight = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+	}
+})
+
+game.PalmTreePurpleLeft = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+	}
+})
+
+game.PalmTreePurpleRight = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+	}
+})
+
+game.PalmTreeYellowLeft = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+	}
+})
+
+game.PalmTreeYellowRight = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		this.parent(x, y, settings);
+	}
+})
