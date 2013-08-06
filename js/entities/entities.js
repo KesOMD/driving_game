@@ -461,6 +461,43 @@ game.BananaEntity = me.ObjectEntity.extend({
 	}
 })
 
+game.FerrariEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "ferrari";
+		settings.spritewidth = 196;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
 game.TransitionEntity = me.ObjectEntity.extend({
 
 	init: function(x, y, settings)

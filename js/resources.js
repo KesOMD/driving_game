@@ -14,6 +14,8 @@ game.resources = [
 	{name: "section4", type: "image", src: "data/img/leveltiles/section4.png"},
 	{name: "bridge4", type: "image", src: "data/img/leveltiles/bridge4.png"},
 	{name: "section5", type: "image", src: "data/img/leveltiles/section5.png"},
+	{name: "bridge5", type: "image", src: "data/img/leveltiles/bridge5.png"},
+	{name: "section6", type: "image", src: "data/img/leveltiles/section6.jpg"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//Palm Trees
 	{name: "palm_trees", type: "image", src: "data/img/leveltiles/palm_trees.png"},
