@@ -80,6 +80,10 @@ game.TitleScreen = me.ScreenObject.extend({
 		{
 			console.log("konami code entered");
 		}
+		else
+		{
+			console.log("code not entered");
+		}
 	},
 
 	//draw function

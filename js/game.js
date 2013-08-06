@@ -37,6 +37,11 @@ var game = {
         me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object
         me.state.set(me.state.PLAY, new game.PlayScreen());
+        //set the Bonus stage
+        
+        //set the Game Over screen
+
+        //set the End Credits screen
 
         //set a global fading transition for the screen
         me.state.transition("fade", "#000000", 250);
@@ -50,8 +55,10 @@ var game = {
         me.entityPool.add("CowEntity", game.CowEntity);
         me.entityPool.add("CarspunrightEntity", game.CarspunrightEntity);
         me.entityPool.add("WaterEntity", game.WaterEntity);
+        me.entityPool.add("BananaEntity", game.BananaEntity);
+        //transition
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
-
+        
         // Start the game.
         me.state.change(me.state.MENU);
     }
