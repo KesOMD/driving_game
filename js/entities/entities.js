@@ -424,6 +424,43 @@ game.WaterEntity = me.ObjectEntity.extend({
 	}
 })
 
+game.BananaEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "banana";
+		settings.spritewidth = 94;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
 game.TransitionEntity = me.ObjectEntity.extend({
 
 	init: function(x, y, settings)
@@ -438,53 +475,5 @@ game.TransitionEntity = me.ObjectEntity.extend({
 	{
 		//
 		this.collidable = false;
-	}
-})
-
-game.PalmTreeGreenLeft = me.ObjectEntity.extend({
-
-	init: function(x, y, settings)
-	{
-		this.parent(x, y, settings);
-	}
-})
-
-game.PalmTreeGreenRight = me.ObjectEntity.extend({
-
-	init: function(x, y, settings)
-	{
-		this.parent(x, y, settings);
-	}
-})
-
-game.PalmTreePurpleLeft = me.ObjectEntity.extend({
-
-	init: function(x, y, settings)
-	{
-		this.parent(x, y, settings);
-	}
-})
-
-game.PalmTreePurpleRight = me.ObjectEntity.extend({
-
-	init: function(x, y, settings)
-	{
-		this.parent(x, y, settings);
-	}
-})
-
-game.PalmTreeYellowLeft = me.ObjectEntity.extend({
-
-	init: function(x, y, settings)
-	{
-		this.parent(x, y, settings);
-	}
-})
-
-game.PalmTreeYellowRight = me.ObjectEntity.extend({
-
-	init: function(x, y, settings)
-	{
-		this.parent(x, y, settings);
 	}
 })

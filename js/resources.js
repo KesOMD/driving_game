@@ -15,6 +15,8 @@ game.resources = [
 	{name: "bridge4", type: "image", src: "data/img/leveltiles/bridge4.png"},
 	{name: "section5", type: "image", src: "data/img/leveltiles/section5.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
+	//Palm Trees
+	{name: "palm_trees", type: "image", src: "data/img/leveltiles/palm_trees.png"},
 	//main car sprites
 	{name: "car1", type: "image", src: "data/img/sprite/1.png"},
 	{name: "car2", type: "image", src: "data/img/sprite/2.png"},
@@ -25,13 +27,6 @@ game.resources = [
 	{name: "car7", type: "image", src: "data/img/sprite/7.png"},
 	//collect orb spritesheet
 	{name: "orb_sprite", type: "image", src: "data/img/sprite/orb_sprite.png"},
-	//Palm Trees
-	{name: "palm_tree_green_left", type: "image", src: "data/img/sprite/palm_tree_green_left.png"},
-	{name: "palm_tree_green_right", type: "image", src: "data/img/sprite/palm_tree_green_right.png"},
-	{name: "palm_tree_purple_left", type: "image", src: "data/img/sprite/palm_tree_purple_left.png"},
-	{name: "palm_tree_purple_right", type: "image", src: "data/img/sprite/palm_tree_purple_right.png"},
-	{name: "palm_tree_yellow_left", type: "image", src: "data/img/sprite/palm_tree_yellow_left.png"},
-	{name: "palm_tree_yellow_right", type: "image", src: "data/img/sprite/palm_tree_yellow_right.png"},
 	//obstacle spritesheets
 	{name: "invader", type: "image", src: "data/img/sprite/invader_sprite.png"},
 	{name: "cow", type: "image", src: "data/img/sprite/cow.png"},
