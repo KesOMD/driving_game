@@ -16,6 +16,7 @@ game.resources = [
 	{name: "section5", type: "image", src: "data/img/leveltiles/section5.png"},
 	{name: "bridge5", type: "image", src: "data/img/leveltiles/bridge5.png"},
 	{name: "section6", type: "image", src: "data/img/leveltiles/section6.jpg"},
+	{name: "bridge6", type: "image", src: "data/img/leveltiles/bridge6.png"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//{name: "sewer_tileset", type: "image", src: "data/img/sewer_tileset.png"},
 	//Palm Trees

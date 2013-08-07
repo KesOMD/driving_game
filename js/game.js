@@ -56,6 +56,7 @@ var game = {
         me.entityPool.add("CarspunrightEntity", game.CarspunrightEntity);
         me.entityPool.add("WaterEntity", game.WaterEntity);
         me.entityPool.add("BananaEntity", game.BananaEntity);
+        me.entityPool.add("FerrariEntity", game.FerrariEntity);
         //transition
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
         

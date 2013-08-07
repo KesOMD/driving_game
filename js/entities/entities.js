@@ -487,6 +487,8 @@ game.FerrariEntity = me.ObjectEntity.extend({
 		settings.spritewidth = 196;
 		//call the parent constructor
 		this.parent(x, y, settings);
+		//tighten the collision box around the sprite
+		this.updateColRect(-1, 0, 13, 120);
 		//make it collidable
 		this.collidable = true;
 		//make it an enemy object
