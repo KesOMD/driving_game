@@ -30,7 +30,11 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		ref = this;
 		//document.getElementById("pop1").style.top = '-400px';
 		//document.getElementById("pop2").style.top = '-400px';
-		setTimeout(function() { ref.fixView(ref) }, 1000);
+		//setTimeout(function() { ref.fixView(ref) }, 1000);
+
+		//set the display to follow our position on the vertical axis
+		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL);
+		me.game.viewport.setDeadzone(0, 0);
 		console.log("PlayerEntity initialised");
 	},
 
@@ -272,6 +276,19 @@ game.TokenEntity = me.CollectableEntity.extend({
 		{
 			target.style.top = position.y + "px";
 		}
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
 	}
 })
 
@@ -512,5 +529,18 @@ game.TransitionEntity = me.ObjectEntity.extend({
 	{
 		//
 		this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
 	}
 })

@@ -10,8 +10,7 @@ game.PlayScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.UP, "accelerate");
         me.input.bindKey(me.input.KEY.DOWN, "reverse");
 		//load a level
-		me.game.onLevelLoaded = this.loadFinished.bind(this);
-		console.log("Play screen call loadLevel");
+		//me.game.onLevelLoaded = this.loadFinished.bind(this);
 	    me.levelDirector.loadLevel("main_game_level");
 	    //me.levelDirector.loadLevel("area01");
 	},
