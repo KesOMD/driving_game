@@ -28,10 +28,10 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		intFunc = null;
 
 		ref = this;
-
 		//document.getElementById("pop1").style.top = '-400px';
 		//document.getElementById("pop2").style.top = '-400px';
 		setTimeout(function() { ref.fixView(ref) }, 1000);
+		console.log("PlayerEntity initialised");
 	},
 
 	//fix the viewport to the player entity

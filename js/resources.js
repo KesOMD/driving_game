@@ -17,6 +17,7 @@ game.resources = [
 	{name: "bridge5", type: "image", src: "data/img/leveltiles/bridge5.png"},
 	{name: "section6", type: "image", src: "data/img/leveltiles/section6.jpg"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
+	//{name: "sewer_tileset", type: "image", src: "data/img/sewer_tileset.png"},
 	//Palm Trees
 	{name: "palm_trees", type: "image", src: "data/img/leveltiles/palm_trees.png"},
 	//main car sprites
@@ -56,7 +57,8 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
- 	 {name: "main_game_level", type: "tmx", src: "data/map/main_game_level.tmx"}
+ 	{name: "main_game_level", type: "tmx", src: "data/map/main_game_level.tmx"},
+ 	//{name: "area01", type: "tmx", src: "data/map/area01.tmx"}
 
 	/* Background music. 
 	 * @example
