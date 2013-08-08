@@ -51,6 +51,7 @@ game.resources = [
 	//title screen image
 	//{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
+	{name: "press_enter", type: "image", src: "data/img/press_enter.gif"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},

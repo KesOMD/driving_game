@@ -10,7 +10,9 @@ game.TitleScreen = me.ScreenObject.extend({
 		//title screen image
 		this.title = null;
 
-		this.font = null;
+		//this.font = null;
+
+		this.enterPrompt = null;
 		
 		keys = [];
 		konami = 'UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A';
@@ -22,9 +24,9 @@ game.TitleScreen = me.ScreenObject.extend({
 		{
 			//init not yet completed
 			this.title = me.loader.getImage("title_screen");
-			
+			this.enterPrompt = me.loader.getImage("press_enter");
 			//font to display for menu items
-			this.font = new me.BitmapFont("32x32_font", 32);
+			//this.font = new me.BitmapFont("32x32_font", 32);
 		}
 		
 		//enable some keyboard keys
@@ -91,7 +93,8 @@ game.TitleScreen = me.ScreenObject.extend({
 	{
 		context.drawImage(this.title, 0, 0);
 
-		this.font.draw(context, "PRESS ENTER TO PLAY", 356, 240);
+		context.drawImage(this.enterPrompt, 326, 200);
+		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 240);
 		//console.log(this.scrollerpos);
 	},
 	
