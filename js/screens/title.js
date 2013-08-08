@@ -21,7 +21,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		if (this.title == null)
 		{
 			//init not yet completed
-			this.title = me.loader.getImage("start_screen_temp");
+			this.title = me.loader.getImage("title_screen");
 			
 			//font to display for menu items
 			this.font = new me.BitmapFont("32x32_font", 32);
@@ -89,7 +89,7 @@ game.TitleScreen = me.ScreenObject.extend({
 	//draw function
 	draw: function(context)
 	{
-		context.drawImage(this.title, 336, 0);
+		context.drawImage(this.title, 0, 0);
 
 		this.font.draw(context, "PRESS ENTER TO PLAY", 356, 240);
 		//console.log(this.scrollerpos);

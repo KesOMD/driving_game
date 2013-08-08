@@ -517,6 +517,45 @@ game.FerrariEntity = me.ObjectEntity.extend({
 	}
 })
 
+game.OilEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "oil";
+		settings.spritewidth = 256;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//tighten the collision box around the sprite
+		this.updateColRect(0, 96, 152, 73);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
 game.TransitionEntity = me.ObjectEntity.extend({
 
 	init: function(x, y, settings)

@@ -17,6 +17,8 @@ game.resources = [
 	{name: "bridge5", type: "image", src: "data/img/leveltiles/bridge5.png"},
 	{name: "section6", type: "image", src: "data/img/leveltiles/section6.jpg"},
 	{name: "bridge6", type: "image", src: "data/img/leveltiles/bridge6.png"},
+	{name: "section7", type: "image", src: "data/img/leveltiles/section7.jpg"},
+	{name: "finish_line", type: "image", src: "data/img/leveltiles/finish_line.jpg"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
 	//{name: "sewer_tileset", type: "image", src: "data/img/sewer_tileset.png"},
 	//Palm Trees
@@ -47,7 +49,8 @@ game.resources = [
 	//game font
 	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
 	//title screen image
-	{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
+	//{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
+	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
