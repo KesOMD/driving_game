@@ -70,7 +70,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		else if (me.input.isKeyPressed('a'))
 		{
 			keys.push("A");
-			this.checkKonami();
+			
 		}
 		return true;
 	},
@@ -93,9 +93,9 @@ game.TitleScreen = me.ScreenObject.extend({
 	{
 		context.drawImage(this.title, 0, 0);
 
-		context.drawImage(this.enterPrompt, 326, 200);
-		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 240);
-		//console.log(this.scrollerpos);
+		context.drawImage(this.enterPrompt, 326, 475);
+		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 500);
+		this.checkKonami();
 	},
 	
 	/**	

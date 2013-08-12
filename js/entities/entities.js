@@ -144,6 +144,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		var res = me.game.collide(this);
 		var t;
 		var t2;
+		var t3;
 
 		if (res)
 		{
@@ -223,6 +224,22 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				else if(res.obj.TransitionSettings.id == 6)
 				{
 					this.renderable.image = me.loader.getImage("car7");
+				}
+				else if (res.obj.TransitionSettings.id == 7)
+				{
+					me.game.viewport.reset(0, /*this.pos.y*/1240);
+					hitObstacle = true;
+					isMoving = false;
+					isForward = false;
+					isReverse = false;
+
+					t3 = new me.Tween(this.pos).to({y:this.pos.y - 600}, 1000)
+					.onComplete(function()
+					{
+						me.state.change(me.state.GAMEOVER);
+					});
+					t3.easing(me.Tween.Easing.Linear.EaseNone);
+					t3.start();
 				}
 				this.parent();
 				return true;

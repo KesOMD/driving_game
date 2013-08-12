@@ -42,7 +42,7 @@ game.resources = [
 	{name: "ferrari", type: "image", src: "data/img/sprite/ferrari.png"},
 	{name: "oil", type: "image", src: "data/img/sprite/oil.png"},
 	//transition object
-	{name: "trans", type: "image", src: "data/img/sprite/trans.jpg"},
+	{name: "trans", type: "image", src: "data/img/sprite/trans.png"},
 	//the parallax elements
 	{name: "area01_bkg0", type: "image", src: "data/img/area01_bkg0.png"},
 	{name: "area01_bkg1", type:"image", src: "data/img/area01_bkg1.png"},
@@ -52,11 +52,13 @@ game.resources = [
 	//{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
 	{name: "press_enter", type: "image", src: "data/img/press_enter.gif"},
+	//end screen image
+	{name: "end_temp", type: "image", src: "data/img/end_temp.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
 	 */
-		
+	
 	/* Maps. 
 	 * @example
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},

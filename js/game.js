@@ -40,10 +40,10 @@ var game = {
         me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object
         me.state.set(me.state.PLAY, new game.PlayScreen());
+        //set the Game Over screen
+        me.state.set(me.state.GAMEOVER, new game.EndScreen());
         //set the Bonus stage
         
-        //set the Game Over screen
-
         //set the End Credits screen
 
         //set a global fading transition for the screen
