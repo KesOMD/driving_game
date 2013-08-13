@@ -49,10 +49,10 @@ canvas
 {
 	position: absolute;
 	left: -5px;
-	top: -400px;
+	top: 100px;
 	padding: 0px 20px 10px 10px;
-	width: 460px;
-	height: 368px;
+	width: 492px;
+	height: 358px;
 	background: -moz-linear-gradient(top, rgba(255,255,254,0.9) 0%, rgba(242,240,196,0.9) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,254,0.9)), color-stop(100%,rgba(242,240,196,0.9))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, rgba(255,255,254,0.9) 0%,rgba(242,240,196,0.9) 100%); /* Chrome10+,Safari5.1+ */

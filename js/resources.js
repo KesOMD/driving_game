@@ -48,6 +48,8 @@ game.resources = [
 	{name: "area01_bkg1", type:"image", src: "data/img/area01_bkg1.png"},
 	//game font
 	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
+	//instructions image
+	{name: "instructions", type:"image", src: "data/img/instructions.jpg"},
 	//title screen image
 	//{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
