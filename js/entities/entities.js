@@ -540,11 +540,88 @@ game.OilEntity = me.ObjectEntity.extend({
 	{
 		//define this here instead of in Tiled
 		settings.image = "oil";
-		settings.spritewidth = 256;
+		settings.spritewidth = 96;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
+game.NukeLeftEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "nukeLeft";
+		settings.spritewidth = 160;
+		//call the parent constructor
+		this.parent(x, y, settings);
+		//tighten the collision box around the sprite 
+		//x, width, y, height
+		this.updateColRect(45, 96, 213, 73);
+		//make it collidable
+		this.collidable = true;
+		//make it an enemy object
+		this.type = me.game.ENEMY_OBJECT;
+	},
+
+	onCollision: function()
+	{
+		//commands to execute when collected
+
+		//make sure it can't be collected again
+		//this.collidable = false;
+	},
+
+	update: function()
+	{
+		if(!this.inViewport)
+		{
+			return false;
+		}
+		else
+		{
+			this.parent();
+			return true;
+		}
+	}
+})
+
+game.NukeRightEntity = me.ObjectEntity.extend({
+
+	init: function(x, y, settings)
+	{
+		//define this here instead of in Tiled
+		settings.image = "nukeRight";
+		settings.spritewidth = 224;
 		//call the parent constructor
 		this.parent(x, y, settings);
 		//tighten the collision box around the sprite
-		this.updateColRect(0, 96, 152, 73);
+		this.updateColRect(0, 96, 165, 73);
 		//make it collidable
 		this.collidable = true;
 		//make it an enemy object

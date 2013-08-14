@@ -35,7 +35,7 @@ var game = {
         me.sys.fps = 60;
         me.sys.preRender = false;
 
-        //me.debug.renderHitBox = true;
+        me.debug.renderHitBox = true;
         //set the title Screen Object
         me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object
@@ -61,6 +61,8 @@ var game = {
         me.entityPool.add("BananaEntity", game.BananaEntity);
         me.entityPool.add("FerrariEntity", game.FerrariEntity);
         me.entityPool.add("OilEntity", game.OilEntity);
+        me.entityPool.add("NukeLeftEntity", game.NukeLeftEntity);
+        me.entityPool.add("NukeRightEntity", game.NukeRightEntity);
         //transition
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
         

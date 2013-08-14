@@ -37,10 +37,12 @@ game.resources = [
 	{name: "invader", type: "image", src: "data/img/sprite/invader_sprite.png"},
 	{name: "cow", type: "image", src: "data/img/sprite/cow.png"},
 	{name: "carspun-right", type: "image", src: "data/img/sprite/carspun-right.png"},
+	{name: "oil", type: "image", src: "data/img/sprite/oil.png"},
 	{name: "water", type: "image", src: "data/img/sprite/water.png"},
 	{name: "banana", type: "image", src: "data/img/sprite/banana.png"},
 	{name: "ferrari", type: "image", src: "data/img/sprite/ferrari.png"},
-	{name: "oil", type: "image", src: "data/img/sprite/oil.png"},
+	{name: "nukeLeft", type: "image", src: "data/img/sprite/nuclear_left.png"},
+	{name: "nukeRight", type: "image", src: "data/img/sprite/nuclear_right.png"},
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.png"},
 	//the parallax elements
