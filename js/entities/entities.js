@@ -224,6 +224,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				else if(res.obj.TransitionSettings.id == 6)
 				{
 					this.renderable.image = me.loader.getImage("car7");
+					console.log(this.renderable);
 				}
 				else if (res.obj.TransitionSettings.id == 7)
 				{
@@ -241,10 +242,19 @@ game.PlayerEntity = me.ObjectEntity.extend({
 					t3.easing(me.Tween.Easing.Linear.EaseNone);
 					t3.start();
 				}
-				this.parent();
-				return true;
+				
 			}
 		}
+
+		//
+		if (this.vel.y!=0) {
+            // update object animation
+            this.parent();
+            return true;
+        }
+        // else inform the engine we did not perform
+        // any update (e.g. position, animation)
+        return false;
 	}
 })
 
