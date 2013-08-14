@@ -37,12 +37,46 @@ canvas
 	margin-right: auto;
 }
 
+.screen-container
+{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.border-top-left
+{
+	float: left;
+	background: url(../data/img/border/top-left.png);
+	width: 108px;
+	height: 86px;
+	margin: 0;
+}
+.border-top-section
+{
+	display: inline-block;
+	background:url(../data/img/border/top.png);
+	background-repeat:repeat-x;
+	height: 86px;
+	margin: 0;
+}
 
 #screen
 {
 	position: relative;
-	top: -680px;
+	width: 1312px;
 	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline;
+}
+
+.border-top-right
+{
+	float: right;
+	background: url(../data/img/border/top-right.png);
 }
 
 .popup
