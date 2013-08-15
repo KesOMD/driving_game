@@ -84,7 +84,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		}
 		else
 		{
-			console.log("code not entered");
+			//console.log("code not entered");
 		}
 	},
 

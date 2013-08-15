@@ -305,13 +305,23 @@
 					}
 				}
 			});
+			var maxWidth = 1312;
+			var maxHeight = 680;
+			var ratio = 0;
+
 			function matchHeight()
 		    {
+		    	var viewportWidth = $(window).width();
+		    	var viewportHeight = $(window).height();
 		        var newHeight = $('#screen').children().height();
+		        $('#screen').children().width(viewportWidth * 0.75);
+		        $('#screen').children().height(viewportHeight* 0.75);
+
 		        $('#popupContainer').height(newHeight);
+		        $('.bottom-border').css("top", newHeight);
 		    }
-		    jQuery.event.add(window, "load", matchHeight);
-		    jQuery.event.add(window, "resize", matchHeight);
+		    //jQuery.event.add(window, "load", matchHeight);
+		    //jQuery.event.add(window, "resize", matchHeight);
 		</script>
 	</body>
 </html>
