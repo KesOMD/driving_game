@@ -8,6 +8,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="stylesheet" type="text/css" href="CSS/mainstyles.css" media="all"></link>
         <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
         <style type="text/css">
 			a:hover {
 				background-position: 0 -34px;
@@ -253,10 +254,9 @@
 
 			<!-- Canvas placeholder -->
 			<div class='screen-container'>
-				<div class='border-top-left'></div>
-				<div class='border-top-section'></div>
 				<div id="screen"></div>
 			</div>
+			<div class='bottom-border'></div>
 		<!-- melonJS Library -->
 		<script type="text/javascript" src="lib/melonJS-0.9.7-min.js"></script>
         
@@ -272,13 +272,12 @@
         <script type="text/javascript" src="js/screens/title.js"></script>
         <script type="text/javascript" src="js/screens/play.js"></script>
         <script type="text/javascript" src="js/screens/end.js"></script>
-
         <!-- Bootstrap & Mobile optimization tricks -->
         
 		<script type="text/javascript">
-			window.onReady(function onReady() {
+			window.onReady(function onReady()
+			{
 				game.onload();
-				/*
 				// Mobile browser hacks
 				if (me.sys.isMobile && !navigator.isCocoonJS) {
 					// Prevent the webview from moving on a swipe
@@ -305,8 +304,14 @@
 						);
 					}
 				}
-				*/
 			});
+			function matchHeight()
+		    {
+		        var newHeight = $('#screen').children().height();
+		        $('#popupContainer').height(newHeight);
+		    }
+		    jQuery.event.add(window, "load", matchHeight);
+		    jQuery.event.add(window, "resize", matchHeight);
 		</script>
 	</body>
 </html>

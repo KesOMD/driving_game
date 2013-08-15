@@ -4,7 +4,7 @@ var game = {
     // Run on page load.
     "onload" : function () {
         // Initialize the video.
-        if (!me.video.init("screen", 1312, 680, true, 0)) {
+        if (!me.video.init("screen", 1312, 680, true, 'auto', true)) {
             alert("Your browser does not support HTML5 canvas.");
             return;
         }
@@ -70,3 +70,5 @@ var game = {
         me.state.change(me.state.MENU);
     }
 };
+//store the amount of orbs collected
+window.orbs = 0;

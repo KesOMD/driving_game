@@ -1,6 +1,10 @@
 body
 {
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background: url(../data/img/bg.png);
+	background-repeat: repeat;
 }
 
 canvas
@@ -44,23 +48,14 @@ canvas
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 100;
 }
 
-.border-top-left
+.bottom-border
 {
-	float: left;
-	background: url(../data/img/border/top-left.png);
-	width: 108px;
 	height: 86px;
-	margin: 0;
-}
-.border-top-section
-{
-	display: inline-block;
-	background:url(../data/img/border/top.png);
-	background-repeat:repeat-x;
-	height: 86px;
-	margin: 0;
+	background: url(../data/img/border/bottom.png) repeat-x;
+	background-size: contain;
 }
 
 #screen
@@ -71,12 +66,6 @@ canvas
 	margin-left: auto;
 	margin-right: auto;
 	display: inline;
-}
-
-.border-top-right
-{
-	float: right;
-	background: url(../data/img/border/top-right.png);
 }
 
 .popup
