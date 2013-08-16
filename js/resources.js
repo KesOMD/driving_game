@@ -20,7 +20,6 @@ game.resources = [
 	{name: "section7", type: "image", src: "data/img/leveltiles/section7.jpg"},
 	{name: "finish_line", type: "image", src: "data/img/leveltiles/finish_line.jpg"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
-	//{name: "sewer_tileset", type: "image", src: "data/img/sewer_tileset.png"},
 	//Palm Trees
 	{name: "palm_trees", type: "image", src: "data/img/leveltiles/palm_trees.png"},
 	//main car sprites
@@ -31,6 +30,8 @@ game.resources = [
 	{name: "car5", type: "image", src: "data/img/sprite/5.png"},
 	{name: "car6", type: "image", src: "data/img/sprite/6.png"},
 	{name: "car7", type: "image", src: "data/img/sprite/7.png"},
+	//kart sprite
+	{name: "kart", type: "image", src: "data/img/sprite/kart.png"},
 	//collect orb spritesheet
 	{name: "orb_sprite", type: "image", src: "data/img/sprite/orb_sprite.png"},
 	//obstacle spritesheets
@@ -46,14 +47,13 @@ game.resources = [
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.png"},
 	//the parallax elements
-	{name: "area01_bkg0", type: "image", src: "data/img/area01_bkg0.png"},
-	{name: "area01_bkg1", type:"image", src: "data/img/area01_bkg1.png"},
+	{name: "stars_back", type: "image", src: "data/img/stars_back.jpg"},
+	{name: "stars_overlay", type:"image", src: "data/img/stars_overlay.png"},
 	//game font
 	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
 	//instructions image
 	{name: "instructions", type:"image", src: "data/img/instructions.jpg"},
 	//title screen image
-	//{name: "start_screen_temp", type:"image", src: "data/img/start_screen_temp.jpg"},
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
 	{name: "press_enter", type: "image", src: "data/img/press_enter.gif"},
 	//end screen image
@@ -69,9 +69,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
  	{name: "main_game_level", type: "tmx", src: "data/map/main_game_level.tmx"},
- 	//{name: "main_game_level_1", type: "tmx", src: "data/map/main_game_level_1.tmx"},
- 	//{name: "main_game_level_2", type: "tmx", src: "data/map/main_game_level_2.tmx"}
- 	//{name: "area01", type: "tmx", src: "data/map/area01.tmx"}
+ 	{name: "bonus_level", type: "tmx", src: "data/map/bonus_level.tmx"}
 
 	/* Background music. 
 	 * @example

@@ -319,27 +319,36 @@
 		        var position = $('#screen').children().offset();
 		        var pLeft = position.left;
 		        var cWidth = $('#screen').children().width();
+
 		        console.log(pLeft);
 		        console.log($('#screen').children().position().left);
 
 		        $('#screen').children().width(viewportWidth * scaleFactor);
 		        $('#screen').children().height( Math.round( (viewportWidth * scaleFactor) / 1.93) );
-		        $('#popupContainer').height(Math.round( (viewportWidth * scaleFactor) / 1.93));
+
+		        $('#popupContainer').css({
+		        	position: "absolute",
+		        	width: (viewportWidth * scaleFactor) + "px",
+		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
+		        	left: Math.round(pLeft) + "px"
+		        }).show();
 		        
-		        $('.bottom-border').width(Math.round(viewportWidth * scaleFactor));
-		        $('.bottom-border').css("top", Math.round( (viewportWidth * scaleFactor) / 1.93));
 		        $('.bottom-border').css({
 		        	position: "absolute",
+		        	width: Math.round(viewportWidth * scaleFactor),
+		        	top: Math.round( (viewportWidth * scaleFactor) / 1.93),
 		        	left: Math.round(pLeft) + "px"
 		        }).show();
 				
 		        $('.bottom-border-left').css({
 		        	position: "absolute",
+		        	top: Math.round( (viewportWidth * scaleFactor) / 1.93),
 		        	left: Math.round(pLeft - 108) + "px"
 		        }).show();
 
 		        $('.bottom-border-right').css({
 		        	position: "absolute",
+		        	top: Math.round( (viewportWidth * scaleFactor) / 1.93),
 		        	left: Math.round(pLeft + cWidth) + "px"
 		        }).show();
 
@@ -353,12 +362,11 @@
 		        	position: "absolute",
 		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
 		        	left: Math.round(pLeft + cWidth) + "px"
-		        })
+		        }).show();
 		    }
 		    $(window).resize(matchHeight);
 		    jQuery.event.add(window, "load", matchHeight);
 		    jQuery.event.add(window, "resize", matchHeight);
-			
 		</script>
 	</body>
 </html>
