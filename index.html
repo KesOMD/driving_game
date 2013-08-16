@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="CSS/mainstyles.css" media="all"></link>
         <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
         <script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <style type="text/css">
 			a:hover {
 				background-position: 0 -34px;
@@ -279,6 +280,7 @@
 			{
 				game.onload();
 				// Mobile browser hacks
+				matchHeight();
 				if (me.sys.isMobile && !navigator.isCocoonJS) {
 					// Prevent the webview from moving on a swipe
 					window.document.addEventListener("touchmove", function (e) {
@@ -305,23 +307,32 @@
 					}
 				}
 			});
-			var maxWidth = 1312;
-			var maxHeight = 680;
-			var ratio = 0;
-
+		
+			
 			function matchHeight()
 		    {
 		    	var viewportWidth = $(window).width();
 		    	var viewportHeight = $(window).height();
-		        var newHeight = $('#screen').children().height();
-		        $('#screen').children().width(viewportWidth * 0.75);
-		        $('#screen').children().height(viewportHeight* 0.75);
+		    	var scaleFactor = 0.9;
+		        var cTarget = $('#screen').children();
+		        var position = $('#screen').children().offset();
+		        var pLeft = position.left;
 
-		        $('#popupContainer').height(newHeight);
-		        $('.bottom-border').css("top", newHeight);
+		        $('#screen').children().width(viewportWidth * scaleFactor);
+		        $('#screen').children().height( Math.round( (viewportWidth * scaleFactor) / 1.93) );
+		        $('#popupContainer').height(Math.round( (viewportWidth * scaleFactor) / 1.93));
+
+		        $('.bottom-border').width(viewportWidth * scaleFactor);
+		        $('.bottom-border').css("top", Math.round( (viewportWidth * scaleFactor) / 1.93));
+		        $('.bottom-border').css({
+		        	position: "absolute",
+		        	left: pLeft + "px"
+		        }).show();
+		        console.log( pLeft );
 		    }
-		    //jQuery.event.add(window, "load", matchHeight);
-		    //jQuery.event.add(window, "resize", matchHeight);
+		    jQuery.event.add(window, "load", matchHeight);
+		    jQuery.event.add(window, "resize", matchHeight);
+			
 		</script>
 	</body>
 </html>
