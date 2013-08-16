@@ -58,6 +58,34 @@ canvas
 	background-size: contain;
 }
 
+.bottom-border-left
+{
+	width: 108px;
+	height: 86px;
+	background: url(../data/img/border/bottom-left.png) no-repeat;
+}
+
+.bottom-border-right
+{
+	width: 108px;
+	height: 86px;
+	background: url(../data/img/border/bottom-right.png) no-repeat;
+}
+
+.left-border
+{
+	top: 0px;
+	width: 108px;
+	background: url(../data/img/border/left.png) repeat-y;
+}
+
+.right-border
+{
+	top: 0px;
+	width: 108px;
+	background: url(../data/img/border/right.png) repeat-y;
+}
+
 #screen
 {
 	position: relative;

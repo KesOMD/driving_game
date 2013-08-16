@@ -254,9 +254,13 @@
 
 			<!-- Canvas placeholder -->
 			<div class='screen-container'>
+				<div class='left-border'></div>
 				<div id="screen"></div>
+				<div class='right-border'></div>
 			</div>
+			<div class='bottom-border-left'></div>
 			<div class='bottom-border'></div>
+			<div class='bottom-border-right'></div>
 		<!-- melonJS Library -->
 		<script type="text/javascript" src="lib/melonJS-0.9.7-min.js"></script>
         
@@ -311,24 +315,47 @@
 			function matchHeight()
 		    {
 		    	var viewportWidth = $(window).width();
-		    	var viewportHeight = $(window).height();
 		    	var scaleFactor = 0.9;
-		        var cTarget = $('#screen').children();
 		        var position = $('#screen').children().offset();
 		        var pLeft = position.left;
+		        var cWidth = $('#screen').children().width();
+		        console.log(pLeft);
+		        console.log($('#screen').children().position().left);
 
 		        $('#screen').children().width(viewportWidth * scaleFactor);
 		        $('#screen').children().height( Math.round( (viewportWidth * scaleFactor) / 1.93) );
 		        $('#popupContainer').height(Math.round( (viewportWidth * scaleFactor) / 1.93));
-
-		        $('.bottom-border').width(viewportWidth * scaleFactor);
+		        
+		        $('.bottom-border').width(Math.round(viewportWidth * scaleFactor));
 		        $('.bottom-border').css("top", Math.round( (viewportWidth * scaleFactor) / 1.93));
 		        $('.bottom-border').css({
 		        	position: "absolute",
-		        	left: pLeft + "px"
+		        	left: Math.round(pLeft) + "px"
 		        }).show();
-		        console.log( pLeft );
+				
+		        $('.bottom-border-left').css({
+		        	position: "absolute",
+		        	left: Math.round(pLeft - 108) + "px"
+		        }).show();
+
+		        $('.bottom-border-right').css({
+		        	position: "absolute",
+		        	left: Math.round(pLeft + cWidth) + "px"
+		        }).show();
+
+		        $('.left-border').css({
+		        	position: "absolute",
+		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
+		        	left: Math.round(pLeft - 108) + "px"
+		        }).show();
+
+		        $('.right-border').css({
+		        	position: "absolute",
+		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
+		        	left: Math.round(pLeft + cWidth) + "px"
+		        })
 		    }
+		    $(window).resize(matchHeight);
 		    jQuery.event.add(window, "load", matchHeight);
 		    jQuery.event.add(window, "resize", matchHeight);
 			
