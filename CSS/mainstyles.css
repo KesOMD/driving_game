@@ -134,15 +134,6 @@ canvas
 	background: url(../data/img/license/title.png); 
 }
 
-.pack-shot
-{
-	float: left;
-	width: 181px;
-	height: 256px;
-	margin-top: 28px;
-	display: inline-block;
-}
-
 .game-info
 {
 	width: 270px;
@@ -183,4 +174,83 @@ a
 a:hover;
 {
 	background-position: 0 -34px !important;
+}
+
+@media screen and (min-width:0px) and (max-width:1024px) {
+  /* CSS code for small screens */
+	.popup
+  	{
+  		left: 0px;
+  		width: 328px;
+  		height: 238px;
+	}
+
+	.left-side
+	{
+		width: 148px;
+		height: 238px;
+		background-size: 100% 100%;
+	}
+
+	.right-side
+	{
+		width: 180px;
+		height: 238px;
+	}
+
+	.title-image
+	{
+		width: 155px;
+		height: 13px;
+		margin-top: 10px;
+		margin-left: 6px;
+		background-size: 100% 100%;
+	}
+
+	.game-info
+	{
+		width: 180px;
+		margin-left: 6px;
+		margin-top: 8px;
+		
+	}
+
+	.game-info h3
+	{
+		font-size: 60%;
+		margin-top: 2px;
+		margin-bottom: 0px;
+		letter-spacing: 1px;
+	}
+
+	.game-info p
+	{
+		font-size: 60%;
+		margin-top: 0;
+		margin-right: 30px;
+		line-height: 110%;
+		letter-spacing: 0px;
+	}
+
+	a
+	{
+		height: 23px;
+		width: 163px;
+		background-size: 100% 200%;
+	}
+
+	a:hover;
+	{
+		background-position: 0 -23px !important;
+	}
+}
+
+
+.pack-shot
+{
+	float: left;
+	width: 181px;
+	height: 256px;
+	margin-top: 28px;
+	display: inline-block;
 }

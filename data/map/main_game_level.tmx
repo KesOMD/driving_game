@@ -167,7 +167,7 @@
   <object name="EnemyEntity" x="576" y="88864" width="96" height="64"/>
   <object name="EnemyEntity" x="480" y="87648" width="96" height="64"/>
   <object name="EnemyEntity" x="544" y="86112" width="96" height="64"/>
-  <object name="EnemyEntity" x="608" y="83168" width="96" height="64"/>
+  <object name="EnemyEntity" x="608" y="83264" width="96" height="64"/>
   <object name="EnemyEntity" x="736" y="81856" width="96" height="64"/>
   <object name="EnemyEntity" x="480" y="80704" width="96" height="64"/>
   <object name="EnemyEntity" x="704" y="79136" width="96" height="64"/>
