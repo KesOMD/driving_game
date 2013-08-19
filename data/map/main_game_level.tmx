@@ -134,28 +134,28 @@
     <property name="spritewidth" value="96"/>
    </properties>
   </object>
-  <object name="TokenEntity" x="480" y="26592" width="96" height="96">
+  <object name="TokenEntity" x="480" y="26528" width="96" height="96">
    <properties>
     <property name="id" value="10"/>
     <property name="image" value="orb_sprite"/>
     <property name="spritewidth" value="96"/>
    </properties>
   </object>
-  <object name="TokenEntity" x="704" y="20000" width="96" height="96">
+  <object name="TokenEntity" x="704" y="19904" width="96" height="96">
    <properties>
     <property name="id" value="11"/>
     <property name="image" value="orb_sprite"/>
     <property name="spritewidth" value="96"/>
    </properties>
   </object>
-  <object name="TokenEntity" x="608" y="12416" width="96" height="96">
+  <object name="TokenEntity" x="608" y="12320" width="96" height="96">
    <properties>
     <property name="id" value="12"/>
     <property name="image" value="orb_sprite"/>
     <property name="spritewidth" value="96"/>
    </properties>
   </object>
-  <object name="TokenEntity" x="608" y="6272" width="96" height="96">
+  <object name="TokenEntity" x="608" y="6208" width="96" height="96">
    <properties>
     <property name="id" value="13"/>
     <property name="image" value="orb_sprite"/>
@@ -167,19 +167,16 @@
   <object name="EnemyEntity" x="576" y="88864" width="96" height="64"/>
   <object name="EnemyEntity" x="480" y="87648" width="96" height="64"/>
   <object name="EnemyEntity" x="544" y="86112" width="96" height="64"/>
-  <object name="EnemyEntity" x="544" y="83104" width="96" height="64"/>
-  <object name="EnemyEntity" x="704" y="82208" width="96" height="64"/>
-  <object name="EnemyEntity" x="480" y="81088" width="96" height="64"/>
-  <object name="EnemyEntity" x="704" y="79360" width="96" height="64"/>
-  <object name="EnemyEntity" x="544" y="78400" width="96" height="64"/>
+  <object name="EnemyEntity" x="608" y="83168" width="96" height="64"/>
+  <object name="EnemyEntity" x="736" y="81856" width="96" height="64"/>
+  <object name="EnemyEntity" x="480" y="80704" width="96" height="64"/>
+  <object name="EnemyEntity" x="704" y="79136" width="96" height="64"/>
   <object name="EnemyEntity" x="704" y="84384" width="96" height="64"/>
   <object name="CowEntity" x="480" y="76832" width="192" height="96"/>
   <object name="CowEntity" x="640" y="75584" width="192" height="96"/>
   <object name="CowEntity" x="480" y="74208" width="192" height="96"/>
-  <object name="CowEntity" x="480" y="72736" width="192" height="96"/>
-  <object name="CowEntity" x="640" y="71360" width="192" height="96"/>
-  <object name="CowEntity" x="640" y="69056" width="192" height="96"/>
-  <object name="CowEntity" x="480" y="68000" width="192" height="96"/>
+  <object name="CowEntity" x="640" y="72096" width="192" height="96"/>
+  <object name="CowEntity" x="480" y="67808" width="192" height="96"/>
   <object name="CowEntity" x="640" y="66144" width="192" height="96"/>
   <object name="CowEntity" x="480" y="64768" width="192" height="96"/>
   <object name="EnemyEntity" x="32" y="87232" width="96" height="64"/>
@@ -191,52 +188,46 @@
   <object name="EnemyEntity" x="288" y="77728" width="96" height="64"/>
   <object name="EnemyEntity" x="192" y="77728" width="96" height="64"/>
   <object name="CowEntity" x="0" y="65088" width="192" height="96"/>
-  <object name="OilEntity" x="512" y="63264" width="96" height="96"/>
   <object name="CarspunrightEntity" x="1024" y="61952" width="96" height="128"/>
   <object name="CarspunrightEntity" x="160" y="61120" width="96" height="128"/>
   <object name="CarspunrightEntity" x="1120" y="59104" width="96" height="128"/>
   <object name="CarspunrightEntity" x="96" y="57920" width="96" height="128"/>
   <object name="WaterEntity" x="640" y="56480" width="96" height="96"/>
-  <object name="WaterEntity" x="704" y="55232" width="96" height="96"/>
-  <object name="WaterEntity" x="576" y="53376" width="96" height="96"/>
-  <object name="WaterEntity" x="512" y="52288" width="96" height="96"/>
+  <object name="WaterEntity" x="704" y="54976" width="96" height="96"/>
+  <object name="WaterEntity" x="576" y="52832" width="96" height="96"/>
   <object name="WaterEntity" x="608" y="50848" width="96" height="96"/>
   <object name="WaterEntity" x="512" y="49152" width="96" height="96"/>
-  <object name="WaterEntity" x="576" y="47136" width="96" height="96"/>
-  <object name="WaterEntity" x="672" y="45920" width="96" height="96"/>
-  <object name="WaterEntity" x="512" y="44416" width="96" height="96"/>
-  <object name="BananaEntity" x="672" y="42048" width="96" height="96"/>
-  <object name="BananaEntity" x="480" y="41120" width="96" height="96"/>
-  <object name="BananaEntity" x="640" y="40224" width="96" height="96"/>
-  <object name="BananaEntity" x="544" y="39104" width="96" height="96"/>
-  <object name="BananaEntity" x="704" y="37696" width="96" height="96"/>
+  <object name="WaterEntity" x="576" y="46944" width="96" height="96"/>
+  <object name="WaterEntity" x="640" y="44640" width="96" height="96"/>
+  <object name="BananaEntity" x="672" y="42144" width="96" height="96"/>
+  <object name="BananaEntity" x="704" y="40320" width="96" height="96"/>
+  <object name="BananaEntity" x="544" y="39008" width="96" height="96"/>
+  <object name="BananaEntity" x="704" y="37632" width="96" height="96"/>
   <object name="BananaEntity" x="512" y="35936" width="96" height="96"/>
   <object name="BananaEntity" x="736" y="33856" width="96" height="96"/>
   <object name="BananaEntity" x="608" y="32704" width="96" height="96"/>
   <object name="BananaEntity" x="576" y="31072" width="96" height="96"/>
-  <object name="FerrariEntity" x="672" y="27552" width="224" height="160"/>
-  <object name="FerrariEntity" x="448" y="26752" width="224" height="160"/>
-  <object name="FerrariEntity" x="640" y="25344" width="224" height="160"/>
-  <object name="FerrariEntity" x="448" y="23872" width="224" height="160"/>
+  <object name="FerrariEntity" x="416" y="26880" width="224" height="160"/>
+  <object name="FerrariEntity" x="704" y="25376" width="224" height="160"/>
+  <object name="FerrariEntity" x="352" y="23680" width="224" height="160"/>
   <object name="FerrariEntity" x="736" y="22272" width="224" height="160"/>
   <object name="FerrariEntity" x="672" y="20384" width="224" height="160"/>
-  <object name="FerrariEntity" x="384" y="19232" width="224" height="160"/>
-  <object name="FerrariEntity" x="704" y="17984" width="224" height="160"/>
-  <object name="FerrariEntity" x="384" y="16704" width="224" height="160"/>
-  <object name="FerrariEntity" x="640" y="15392" width="224" height="160"/>
+  <object name="FerrariEntity" x="352" y="18880" width="224" height="160"/>
+  <object name="FerrariEntity" x="704" y="17344" width="224" height="160"/>
+  <object name="FerrariEntity" x="352" y="15392" width="224" height="160"/>
   <object name="NukeLeftEntity" x="576" y="13696" width="160" height="288"/>
   <object name="NukeRightEntity" x="480" y="3584" width="224" height="224"/>
   <object name="OilEntity" x="704" y="62688" width="96" height="96"/>
-  <object name="OilEntity" x="576" y="61664" width="96" height="96"/>
-  <object name="OilEntity" x="704" y="60288" width="96" height="96"/>
-  <object name="OilEntity" x="704" y="58912" width="96" height="96"/>
-  <object name="NukeRightEntity" x="672" y="2592" width="224" height="224"/>
-  <object name="NukeRightEntity" x="672" y="5408" width="224" height="224"/>
-  <object name="NukeRightEntity" x="544" y="8864" width="224" height="224"/>
+  <object name="OilEntity" x="576" y="61376" width="96" height="96"/>
+  <object name="OilEntity" x="704" y="60128" width="96" height="96"/>
+  <object name="OilEntity" x="640" y="58560" width="96" height="96"/>
+  <object name="NukeRightEntity" x="704" y="2592" width="224" height="224"/>
+  <object name="NukeRightEntity" x="672" y="5280" width="224" height="224"/>
+  <object name="NukeRightEntity" x="544" y="8672" width="224" height="224"/>
   <object name="NukeRightEntity" x="480" y="12768" width="224" height="224"/>
-  <object name="NukeLeftEntity" x="704" y="11840" width="160" height="288"/>
+  <object name="NukeLeftEntity" x="704" y="11552" width="160" height="288"/>
   <object name="NukeLeftEntity" x="480" y="9952" width="160" height="288"/>
-  <object name="NukeLeftEntity" x="608" y="6592" width="160" height="288"/>
+  <object name="NukeLeftEntity" x="640" y="6592" width="160" height="288"/>
  </objectgroup>
  <objectgroup color="#0055ff" name="PlayerEntity" width="41" height="2816">
   <object name="mainPlayer" x="608" y="89888" width="96" height="192"/>

@@ -79,13 +79,8 @@ game.TitleScreen = me.ScreenObject.extend({
 	{
 		//console.log(keys.toString());
 		if ( keys.toString().indexOf( konami ) >= 0)
-		{
-			console.log("konami code entered");
-		}
-		else
-		{
-			//console.log("code not entered");
-		}
+			return true;
+		return false;
 	},
 
 	//draw function
@@ -95,7 +90,14 @@ game.TitleScreen = me.ScreenObject.extend({
 
 		context.drawImage(this.enterPrompt, 326, 475);
 		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 500);
-		this.checkKonami();
+		if (!window.bonusUnlocked)
+		{
+			if (this.checkKonami())
+			{
+				window.bonusUnlocked = true;
+				console.log("window.bonusUnlocked = " + window.bonusUnlocked);
+			}
+		}
 	},
 	
 	/**	

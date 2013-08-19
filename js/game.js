@@ -71,4 +71,7 @@ var game = {
     }
 };
 //store the amount of orbs collected
-window.orbs = 0;
+window.orbs = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+window.collectedOrbs = [];
+//Bonus unlocked flag
+window.bonusUnlocked = false;
