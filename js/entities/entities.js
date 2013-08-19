@@ -277,7 +277,7 @@ game.TokenEntity = me.CollectableEntity.extend({
 		//commands to execute when collected
 		//make sure it can't be collected again
 		this.collidable = false;
-
+		//add orb to collected array
 		window.collectedOrbs.push(this.tokenSettings.id);
 		
 		divTarget = document.getElementById("pop" + this.tokenSettings.id);

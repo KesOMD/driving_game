@@ -59,6 +59,8 @@ game.resources = [
 	//end screen image
 	{name: "end_bg", type: "image", src: "data/img/end_screen_bg.jpg"},
 	{name: "end_car", type: "image", src: "data/img/end_car.png"},
+	{name: "orb_blue", type: "image", src: "data/img/orb_blue.png"},
+	{name: "orb_grey", type: "image", src: "data/img/orb_grey.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
