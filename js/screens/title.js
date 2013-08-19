@@ -37,6 +37,8 @@ game.TitleScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.DOWN, "down", true);
         me.input.bindKey(me.input.KEY.B, "b", true);
         me.input.bindKey(me.input.KEY.A, "a", true);
+
+        document.getElementById("scont").style.top = '0px';
     },
 	
 	//update function
@@ -87,8 +89,8 @@ game.TitleScreen = me.ScreenObject.extend({
 	draw: function(context)
 	{
 		context.drawImage(this.title, 0, 0);
-
-		context.drawImage(this.enterPrompt, 326, 475);
+		264.5
+		context.drawImage(this.enterPrompt, 392, 500);
 		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 500);
 		if (!window.bonusUnlocked)
 		{
