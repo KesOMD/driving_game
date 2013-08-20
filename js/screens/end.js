@@ -195,9 +195,9 @@ game.EndScreen = me.ScreenObject.extend({
 				enterPos = {x:415, y:526};
 			}
 		}
-		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
-    },
 
+		document.getElementById("econt").style.top = '0px';
+    },
     inArray: function(array, value)
     {
     	return array.indexOf(value) > -1 ? true : false;

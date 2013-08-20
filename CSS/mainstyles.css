@@ -51,6 +51,30 @@ canvas
 	margin: 0 auto;
 }
 
+.end-container
+{
+	position: relative;
+	z-index: 4;
+	width: 100%;
+	height: 750px;
+	top: -1000px;
+}
+
+.click-item
+{
+	position: absolute;
+	float: left;
+	border: thin solid rgba(0, 255, 0, 1);
+	width: 60px;
+	height: 60px;
+}
+
+#orb13
+{
+	top: 430px;
+	left: 900px;
+}
+
 #popupContainer
 {
 	position: relative;
@@ -294,6 +318,12 @@ canvas
 	.game-info a:hover;
 	{
 		background-position: 0 -23px !important;
+	}
+
+	.click-item
+	{
+		width: 34px;
+		height: 34px;
 	}
 }
 

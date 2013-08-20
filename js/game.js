@@ -35,7 +35,7 @@ var game = {
         me.sys.fps = 60;
         me.sys.preRender = false;
 
-        //me.debug.renderHitBox = true;
+        me.debug.renderHitBox = true;
         //set the title Screen Object
         me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object

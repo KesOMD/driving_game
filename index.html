@@ -22,6 +22,11 @@
         </style>
 	</head>
 	<body>
+		<!--end button container -->
+		<div class="end-container" id="econt">
+			<div class="click-item" id="orb1"></div>
+			<div class="click-item" id="orb13"></div>
+		</div>
 		<!-- share container -->
 		<div class="share-container" id="scont">
 			<div class="share-inner">
@@ -334,6 +339,7 @@
 		        var position = $('#screen').children().offset();
 		        var pLeft = position.left;
 		        var cWidth = $('#screen').children().width();
+		        var cHeight = $('#screen').children().height();
 
 		        //console.log( $('.share-container').children().offset() )
 
@@ -386,6 +392,12 @@
 		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
 		        	left: Math.round(pLeft + cWidth) + "px"
 		        }).show();
+
+		        $('#orb1').css({
+		        	position: "absolute",
+		        	left: Math.round( (cWidth/3) + 15) + "px",
+		        	top: Math.round( (cHeight/2) ) + "px"
+		        })
 		    }
 		    $(window).resize(matchHeight);
 		    jQuery.event.add(window, "load", matchHeight);
