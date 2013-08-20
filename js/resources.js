@@ -61,6 +61,13 @@ game.resources = [
 	{name: "end_car", type: "image", src: "data/img/end_car.png"},
 	{name: "orb_blue", type: "image", src: "data/img/orb_blue.png"},
 	{name: "orb_grey", type: "image", src: "data/img/orb_grey.png"},
+	{name: "star_gold", type: "image", src: "data/img/star_gold.png"},
+	{name: "star_grey", type: "image", src: "data/img/star_grey.png"},
+	{name: "bonus_unlocked", type: "image", src: "data/img/bonus_unlocked.png"},
+	{name: "bonus_collect", type: "image", src: "data/img/bonus_collect.png"},
+	{name: "click_to_view", type: "image", src: "data/img/click_to_view.png"},
+	{name: "enter_bonus", type: "image", src: "data/img/enter_bonus.gif"},
+	{name: "enter_retry", type: "image", src: "data/img/enter_retry.gif"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},

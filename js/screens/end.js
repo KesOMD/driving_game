@@ -23,6 +23,18 @@ game.EndScreen = me.ScreenObject.extend({
 		this.orb11 = null;
 		this.orb12 = null;
 		this.orb13 = null;
+
+		this.bonusStar = null;
+
+		this.bonusMessage = null;
+
+		bonusPos = {};
+
+		this.clickMessage = null;
+
+		this.enterMessage = null;
+
+		enterPos = {};
 	},
 	//reset function
 	onResetEvent: function()
@@ -46,6 +58,9 @@ game.EndScreen = me.ScreenObject.extend({
 			//init not yet completed
 			this.bg = me.loader.getImage("end_bg");
 			this.car_image = me.loader.getImage("end_car");
+
+			this.clickMessage = me.loader.getImage("click_to_view");
+
 			if (result1)
 			{
 				this.orb1 = me.loader.getImage("orb_blue");
@@ -54,10 +69,133 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.orb1 = me.loader.getImage("orb_grey");
 			}
-		}
 
-		if (result13)
-			console.log("13 is present");
+			if (result2)
+			{
+				this.orb2 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb2 = me.loader.getImage("orb_grey");
+			}
+
+			if (result3)
+			{
+				this.orb3 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb3 = me.loader.getImage("orb_grey");
+			}
+
+			if (result4)
+			{
+				this.orb4 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb4 = me.loader.getImage("orb_grey");
+			}
+
+			if (result5)
+			{
+				this.orb5 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb5 = me.loader.getImage("orb_grey");
+			}
+
+			if (result6)
+			{
+				this.orb6 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb6 = me.loader.getImage("orb_grey");
+			}
+
+			if (result7)
+			{
+				this.orb7 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb7 = me.loader.getImage("orb_grey");
+			}
+
+			if (result8)
+			{
+				this.orb8 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb8 = me.loader.getImage("orb_grey");
+			}
+
+			if (result9)
+			{
+				this.orb9 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb9 = me.loader.getImage("orb_grey");
+			}
+
+			if (result10)
+			{
+				this.orb10 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb10 = me.loader.getImage("orb_grey");
+			}
+
+			if (result11)
+			{
+				this.orb11 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb11 = me.loader.getImage("orb_grey");
+			}
+
+			if (result12)
+			{
+				this.orb12 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb12 = me.loader.getImage("orb_grey");
+			}
+
+			if (result13)
+			{
+				this.orb13 = me.loader.getImage("orb_blue");
+			}
+			else
+			{
+				this.orb13 = me.loader.getImage("orb_grey");
+			}
+			//window.bonusUnlocked = true;
+			if (window.bonusUnlocked)
+			{
+				this.bonusStar = me.loader.getImage("star_gold");
+				this.bonusMessage = me.loader.getImage("bonus_unlocked");
+				bonusPos = {x:240, y:80};
+				this.enterMessage = me.loader.getImage("enter_bonus");
+				enterPos = {x:319, y:526};
+			}
+			else
+			{
+				this.bonusStar = me.loader.getImage("star_grey");
+				this.bonusMessage = me.loader.getImage("bonus_collect");
+				bonusPos = {x:190, y:80};
+				this.enterMessage = me.loader.getImage("enter_retry");
+				enterPos = {x:415, y:526};
+			}
+		}
+		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
     },
 
     inArray: function(array, value)
@@ -77,7 +215,28 @@ game.EndScreen = me.ScreenObject.extend({
 	{
 		context.drawImage(this.bg, 0, 0);
 		context.drawImage(this.car_image, 289, 200);
-		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 500);
+
+		context.drawImage(this.orb1, 390, 385);
+		context.drawImage(this.orb2, 475, 385);
+		context.drawImage(this.orb3, 563, 385);
+		context.drawImage(this.orb4, 651, 385);
+		context.drawImage(this.orb5, 738, 385);
+		context.drawImage(this.orb6, 827, 385);
+		context.drawImage(this.orb7, 915, 385);
+
+		context.drawImage(this.orb8, 362, 440);
+		context.drawImage(this.orb9, 460, 440);
+		context.drawImage(this.orb10, 553, 440);
+		context.drawImage(this.orb11, 651, 440);
+		context.drawImage(this.orb12, 743, 440);
+		context.drawImage(this.orb13, 840, 440);
+
+		context.drawImage(this.bonusStar, 929, 442);
+
+		context.drawImage(this.bonusMessage, bonusPos.x, bonusPos.y);
+
+		context.drawImage(this.clickMessage, 374, 136);
+		context.drawImage(this.enterMessage, enterPos.x, enterPos.y);
 	},
 	/**	
 	 *  action to perform when leaving this screen (state change)
