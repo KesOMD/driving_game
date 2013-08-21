@@ -198,9 +198,14 @@ game.EndScreen = me.ScreenObject.extend({
 				enterPos = {x:415, y:526};
 			}
 		}
-		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
+		/*
+		this.buttonTemp = new endButton(300, 300, "test");
+		me.game.add((this.buttonTemp), 1001);
 		//me.input.bindMouse(me.input.mouse.LEFT, me.input.KEY.ENTER);
+		me.input.registerPointerEvent('mouseup', this.orb13, this.orb13.onClick.bind(this.orb13));
+		*/
 		document.getElementById("popupContainer").style.top = '-1000px';
+		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
     },
     inArray: function(array, value)
     {
@@ -248,6 +253,8 @@ game.EndScreen = me.ScreenObject.extend({
 	onDestroyEvent: function()
 	{
 		//
+		console.log("end onDestroyEvent");
 		me.input.unbindKey(me.input.KEY.ENTER);
+		window.collectedOrbs = [];
 	}
 })

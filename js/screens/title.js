@@ -28,7 +28,6 @@ game.TitleScreen = me.ScreenObject.extend({
 			//font to display for menu items
 			//this.font = new me.BitmapFont("32x32_font", 32);
 		}
-
 		//enable some keyboard keys
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
         me.input.bindKey(me.input.KEY.LEFT, "left", true);
