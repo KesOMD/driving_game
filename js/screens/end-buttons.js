@@ -1,12 +1,13 @@
 var endButton = me.GUI_Object.extend(
 {	
-   init:function(x, y)
+   init:function(x, y, orbID)
    {
       settings = {}
       settings.image = "orb_blue";
       settings.spritewidth = 55;
       settings.spriteheight = 54;
       // parent constructor
+      this.orbID = orbID;
       this.parent(x, y, settings);
    },
 	
@@ -14,7 +15,7 @@ var endButton = me.GUI_Object.extend(
    // when the object is clicked
    onClick:function()
    {
-      console.log("clicked!");
+      console.log(this.orbID + " clicked!");
       // don't propagate the event
       return true;
    }

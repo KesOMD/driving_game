@@ -171,7 +171,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result13)
 			{
-				this.orb13 = new endButton(840, 440);
+				this.orb13 = new endButton(840, 440, "orb13");
 				me.game.add((this.orb13), 1000);
 			}
 			else
@@ -197,7 +197,7 @@ game.EndScreen = me.ScreenObject.extend({
 			}
 		}
 
-		//document.getElementById("econt").style.top = '0px';
+		document.getElementById("popupContainer").style.top = '-1000px';
     },
     inArray: function(array, value)
     {
