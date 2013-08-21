@@ -22,11 +22,9 @@
         </style>
 	</head>
 	<body>
-		<!--end button container 
+		<!--end license container -->
 		<div class="end-container" id="econt">
-			<div class="click-item" id="orb1"></div>
-			<div class="click-item" id="orb13"></div>
-		</div>-->
+		</div>
 		<!-- share container -->
 		<div class="share-container" id="scont">
 			<div class="share-inner">
@@ -343,22 +341,31 @@
 		        var pLeft = position.left;
 		        var cWidth = $('#screen').children().width();
 		        var cHeight = $('#screen').children().height();
-		        
+
 		        $('.share-container').css({
 		        	position: "absolute",
 		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px"
 		        }).show();
-
 		        $('.share-inner').css({
 		        	left: Math.round( (viewportWidth/2) - 89.5) + "px",
 		        })
-
 		        $('#popupContainer').css({
 		        	position: "absolute",
 		        	width: viewportWidth + "px",
 		        	height: Math.round(viewportWidth / 1.93) + "px",
 		        }).show();
 		        /*
+		        $('.left-border').css({
+		        	position: "absolute",
+		        	height: cHeight + "px",
+		        	left: Math.round(pLeft - 108) + "px"
+		        }).show();
+		        $('.right-border').css({
+		        	position: "absolute",
+		        	height: cHeight + "px",
+		        	left: cWidth + "px"
+		        }).show();
+		        
 		        $('.bottom-border').css({
 		        	position: "absolute",
 		        	width: Math.round(viewportWidth * scaleFactor),
@@ -375,18 +382,6 @@
 		        $('.bottom-border-right').css({
 		        	position: "absolute",
 		        	top: Math.round( (viewportWidth * scaleFactor) / 1.93),
-		        	left: Math.round(pLeft + cWidth) + "px"
-		        }).show();
-
-		        $('.left-border').css({
-		        	position: "absolute",
-		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
-		        	left: Math.round(pLeft - 108) + "px"
-		        }).show();
-
-		        $('.right-border').css({
-		        	position: "absolute",
-		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
 		        	left: Math.round(pLeft + cWidth) + "px"
 		        }).show();
 				*/

@@ -51,6 +51,15 @@ canvas
 	margin: 0 auto;
 }
 
+.end-container
+{
+	position: absolute;
+	width: 100%;
+	height: 274px;
+	top: 60px;
+	z-index: 4;
+}
+
 #popupContainer
 {
 	position: relative;
