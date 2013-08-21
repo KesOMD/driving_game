@@ -171,7 +171,9 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result13)
 			{
-				this.orb13 = me.loader.getImage("orb_blue");
+				this.orb13 = new endButton(60, 60);
+				me.game.add((this.orb13), 40);
+				console.log(this.orb13);
 			}
 			else
 			{
@@ -196,7 +198,7 @@ game.EndScreen = me.ScreenObject.extend({
 			}
 		}
 
-		document.getElementById("econt").style.top = '0px';
+		//document.getElementById("econt").style.top = '0px';
     },
     inArray: function(array, value)
     {
@@ -229,7 +231,7 @@ game.EndScreen = me.ScreenObject.extend({
 		context.drawImage(this.orb10, 553, 440);
 		context.drawImage(this.orb11, 651, 440);
 		context.drawImage(this.orb12, 743, 440);
-		context.drawImage(this.orb13, 840, 440);
+		//context.drawImage(this.orb13, 840, 440);
 
 		context.drawImage(this.bonusStar, 929, 442);
 

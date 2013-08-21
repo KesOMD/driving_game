@@ -22,11 +22,11 @@
         </style>
 	</head>
 	<body>
-		<!--end button container -->
+		<!--end button container 
 		<div class="end-container" id="econt">
 			<div class="click-item" id="orb1"></div>
 			<div class="click-item" id="orb13"></div>
-		</div>
+		</div>-->
 		<!-- share container -->
 		<div class="share-container" id="scont">
 			<div class="share-inner">
@@ -296,6 +296,7 @@
         <script type="text/javascript" src="js/screens/title.js"></script>
         <script type="text/javascript" src="js/screens/play.js"></script>
         <script type="text/javascript" src="js/screens/end.js"></script>
+        <script type="text/javascript" src="js/screens/end-buttons.js"></script>
         <!-- Bootstrap & Mobile optimization tricks -->
         
 		<script type="text/javascript">
@@ -392,12 +393,13 @@
 		        	height: Math.round( (viewportWidth * scaleFactor) / 1.93) + "px",
 		        	left: Math.round(pLeft + cWidth) + "px"
 		        }).show();
-
+		        /*
 		        $('#orb1').css({
 		        	position: "absolute",
 		        	left: Math.round( (cWidth/3) + 15) + "px",
 		        	top: Math.round( (cHeight/2) ) + "px"
 		        })
+				*/
 		    }
 		    $(window).resize(matchHeight);
 		    jQuery.event.add(window, "load", matchHeight);
