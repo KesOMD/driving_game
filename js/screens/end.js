@@ -214,7 +214,7 @@ game.EndScreen = me.ScreenObject.extend({
     //draw function
 	draw: function(context)
 	{
-		//context.drawImage(this.bg, 0, 0);
+		context.drawImage(this.bg, 0, 0);
 		context.drawImage(this.car_image, 289, 200);
 
 		context.drawImage(this.orb1, 390, 385);
