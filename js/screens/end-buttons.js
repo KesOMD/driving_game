@@ -17,6 +17,6 @@ var endButton = me.GUI_Object.extend(
    {
       console.log(this.orbID + " clicked!");
       // don't propagate the event
-      return true;
+      return false;
    }
 });

@@ -28,7 +28,7 @@ game.TitleScreen = me.ScreenObject.extend({
 			//font to display for menu items
 			//this.font = new me.BitmapFont("32x32_font", 32);
 		}
-		
+
 		//enable some keyboard keys
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
         me.input.bindKey(me.input.KEY.LEFT, "left", true);
@@ -89,7 +89,6 @@ game.TitleScreen = me.ScreenObject.extend({
 	draw: function(context)
 	{
 		context.drawImage(this.title, 0, 0);
-		264.5
 		context.drawImage(this.enterPrompt, 392, 500);
 		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 500);
 		if (!window.bonusUnlocked)

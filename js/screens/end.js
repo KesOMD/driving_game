@@ -173,6 +173,8 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.orb13 = new endButton(840, 440, "orb13");
 				me.game.add((this.orb13), 1000);
+				//this.orb13.onClick();
+				console.log(this.orb13);
 			}
 			else
 			{
@@ -196,7 +198,8 @@ game.EndScreen = me.ScreenObject.extend({
 				enterPos = {x:415, y:526};
 			}
 		}
-
+		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
+		//me.input.bindMouse(me.input.mouse.LEFT, me.input.KEY.ENTER);
 		document.getElementById("popupContainer").style.top = '-1000px';
     },
     inArray: function(array, value)
@@ -245,5 +248,6 @@ game.EndScreen = me.ScreenObject.extend({
 	onDestroyEvent: function()
 	{
 		//
+		me.input.unbindKey(me.input.KEY.ENTER);
 	}
 })

@@ -14,6 +14,7 @@ game.PlayScreen = me.ScreenObject.extend({
 	    me.levelDirector.loadLevel("main_game_level");
 	    //me.levelDirector.loadLevel("area01");
 	    document.getElementById("scont").style.top = '-1000px';
+	    document.getElementById("popupContainer").style.top = '0px';
 	},
 
 	"loadFinished": function()
