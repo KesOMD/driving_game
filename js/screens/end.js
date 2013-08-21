@@ -171,9 +171,8 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result13)
 			{
-				this.orb13 = new endButton(60, 60);
-				me.game.add((this.orb13), 40);
-				console.log(this.orb13);
+				this.orb13 = new endButton(840, 440);
+				me.game.add((this.orb13), 1000);
 			}
 			else
 			{
@@ -215,7 +214,7 @@ game.EndScreen = me.ScreenObject.extend({
     //draw function
 	draw: function(context)
 	{
-		context.drawImage(this.bg, 0, 0);
+		//context.drawImage(this.bg, 0, 0);
 		context.drawImage(this.car_image, 289, 200);
 
 		context.drawImage(this.orb1, 390, 385);

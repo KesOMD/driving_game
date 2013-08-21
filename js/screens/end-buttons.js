@@ -8,7 +8,6 @@ var endButton = me.GUI_Object.extend(
       settings.spriteheight = 54;
       // parent constructor
       this.parent(x, y, settings);
-      console.log("button added!");
    },
 	
    // output something in the console
