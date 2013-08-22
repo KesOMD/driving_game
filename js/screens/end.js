@@ -4,7 +4,9 @@ game.EndScreen = me.ScreenObject.extend({
 	{
 		licenseDisplayed = false;
 		currentLicense = null;
+		nextLicense = null;
 		inTransition = false;
+		divTarget = null;
 		//
 		this.parent(true);
 
@@ -68,7 +70,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result1)
 			{
-				this.orb1 = new endButton(390, 385, "orb1");
+				this.orb1 = new endButton(390, 385, "1", ref);
 				me.game.add((this.orb1), 1000);
 			}
 			else
@@ -78,7 +80,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result2)
 			{
-				this.orb2 = new endButton(475, 385, "orb2");
+				this.orb2 = new endButton(475, 385, "2", ref);
 				me.game.add((this.orb2), 1000);
 			}
 			else
@@ -88,7 +90,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result3)
 			{
-				this.orb3 = new endButton(563, 385, "orb3");
+				this.orb3 = new endButton(563, 385, "3", ref);
 				me.game.add((this.orb3), 1000);
 			}
 			else
@@ -98,7 +100,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result4)
 			{
-				this.orb4 = new endButton(651, 385, "orb4");
+				this.orb4 = new endButton(651, 385, "4", ref);
 				me.game.add((this.orb4), 1000);
 			}
 			else
@@ -108,7 +110,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result5)
 			{
-				this.orb5 = new endButton(738, 385, "orb5");
+				this.orb5 = new endButton(738, 385, "5", ref);
 				me.game.add((this.orb5), 1000);
 			}
 			else
@@ -118,7 +120,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result6)
 			{
-				this.orb6 = new endButton(827, 385, "orb6");
+				this.orb6 = new endButton(827, 385, "6", ref);
 				me.game.add((this.orb6), 1000);
 			}
 			else
@@ -128,7 +130,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result7)
 			{
-				this.orb7 = new endButton(915, 385, "orb7");
+				this.orb7 = new endButton(915, 385, "7", ref);
 				me.game.add((this.orb7), 1000);
 			}
 			else
@@ -138,7 +140,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result8)
 			{
-				this.orb8 = new endButton(362, 440, "orb8");
+				this.orb8 = new endButton(362, 440, "8", ref);
 				me.game.add((this.orb8), 1000);
 			}
 			else
@@ -148,7 +150,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result9)
 			{
-				this.orb9 = new endButton(460, 440, "orb9");
+				this.orb9 = new endButton(460, 440, "9", ref);
 				me.game.add((this.orb9), 1000);
 			}
 			else
@@ -158,7 +160,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result10)
 			{
-				this.orb10 = new endButton(553, 440, "orb10");
+				this.orb10 = new endButton(553, 440, "10", ref);
 				me.game.add((this.orb10), 1000);
 			}
 			else
@@ -168,7 +170,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result11)
 			{
-				this.orb11 = new endButton(651, 440, "orb11");
+				this.orb11 = new endButton(651, 440, "11", ref);
 				me.game.add((this.orb11), 1000);
 			}
 			else
@@ -178,7 +180,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result12)
 			{
-				this.orb12 = new endButton(743, 440, "orb12");
+				this.orb12 = new endButton(743, 440, "12", ref);
 				me.game.add((this.orb12), 1000);
 			}
 			else
@@ -188,7 +190,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result13)
 			{
-				this.orb13 = new endButton(840, 440, "orb13", ref);
+				this.orb13 = new endButton(840, 440, "13", ref);
 				me.game.add((this.orb13), 1000);
 			}
 			else
@@ -213,27 +215,92 @@ game.EndScreen = me.ScreenObject.extend({
 				enterPos = {x:415, y:526};
 			}
 		}
+		winHeight = $(window).height();
 		document.getElementById("popupContainer").style.top = '-1000px';
+		document.getElementById("econt").style.top = (winHeight/4) + 10 + 'px';
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
     },
-    moveLicense: function()
+    moveLicense: function(id)
     {
-    	//console.log("called move license");
-    	console.log(this.car_image);
-    	context = document.getElementById('canvas').getContext('2d');
-    	console.log(context);
     	/*
-    	if (!licenseDisplayed)
-    	{
-    		t = new me.Tween(this.car_image.style).to({opacity:0}, 1000)
-				.onComplete(function()
-					{
-						//console.log("tween complete");
-					});
-			t.easing(me.Tween.Easing.Back.EaseOut);
-			t.start();
-    	}
+    	console.log("called move license");
+    	targ = this.car_image;
+    	canvas = this.findFirstDescendant("screen", "canvas");
+    	context = canvas.getContext('2d');
+    	console.log(context);
     	*/
+    	divTarget = document.getElementById("e" + id);
+    	//console.log(divTarget.offsetWidth);
+    	winWidth = $(window).width();
+    	//console.log(winWidth);
+
+    	position = {x: 2000};
+    	centerPos = (winWidth/2) - (divTarget.offsetWidth/2);
+    	moveOff = {x:centerPos};
+    	offscreenPos = 2000;
+
+    	if (!inTransition)
+    	{
+    		if (licenseDisplayed)
+    		{
+    			//
+    			if (currentLicense == divTarget)
+    			{
+    				console.log("license already displayed");
+    			}
+    			else
+    			{
+    				inTransition = true;
+    				t = new me.Tween(moveOff).to( { x:2000 }, 250)
+    				.easing(me.Tween.Easing.Cubic.EaseIn)
+					.onUpdate( function() { updateMoveOff(currentLicense) })
+					
+    				t2 = new me.Tween(position).to( { x:centerPos }, 250 )
+					.delay(250)
+					.easing(me.Tween.Easing.Cubic.EaseIn)
+					.onUpdate( function() { updateAnim(divTarget) })
+					.onComplete( function() {
+						inTransition = false
+						currentLicense = divTarget;
+					} )
+					t.chain(t2);
+					
+					t.start();
+    			}
+    		}
+    		else
+    		{
+    			inTransition = true;
+    			t = new me.Tween(position).to( { x:centerPos }, 250 )
+				.easing(me.Tween.Easing.Cubic.EaseOut)
+				.onUpdate( function() { updateAnim(divTarget) })
+				.onComplete( function() {
+					inTransition = false
+					currentLicense = divTarget;
+					console.log(position.x);
+				} )
+				t.start();
+				licenseDisplayed = true;
+    		}
+    	}
+
+    	function updateAnim(target)
+		{
+			target.style.left = position.x + "px";
+		}
+		function updateMoveOff(target)
+		{
+			target.style.left = moveOff.x + "px";
+		}
+    },
+    
+    findFirstDescendant: function(parent, tagname)
+    {
+    	parent = document.getElementById(parent);
+    	var descendants = parent.getElementsByTagName(tagname);
+    	if ( descendants.length )
+    		return descendants[0];
+    	return null;
     },
     inArray: function(array, value)
     {
@@ -251,7 +318,7 @@ game.EndScreen = me.ScreenObject.extend({
 	draw: function(context)
 	{
 		context.drawImage(this.bg, 0, 0);
-		context.globalAlpha = 0.5;
+		context.globalAlpha = 0.2;
 		context.drawImage(this.car_image, 289, 200);
 		context.globalAlpha = 1;
 		if (!result1)

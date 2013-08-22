@@ -14,6 +14,7 @@ canvas
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	max-width: 1600px;
 }
 
 @font-face
@@ -55,9 +56,78 @@ canvas
 {
 	position: absolute;
 	width: 100%;
-	height: 274px;
-	top: 60px;
+	top: -600px;
+	left: 0px;
 	z-index: 4;
+	
+}
+
+.end-pop
+{
+	position: absolute;
+	width: 728px;
+	height: 273px;
+	top: 0px;
+	left: 2000px;
+}
+
+.end-pack
+{
+	width: 196px;
+	height: 273px;
+	margin-top: -14px;
+}
+
+.end-pack-holder
+{
+	width: 196px;
+	height: 273px;
+	float: left;
+}
+
+.end-pop-bg
+{
+	width: 532px;
+	height: 248px;
+	margin-top: 0px;
+	margin-left: 189px;
+	background: url(../data/img/license/license_side.png) no-repeat;
+	padding-top: 45px;
+	padding-left: 55px;
+}
+
+.end-pop-bg a
+{
+	display: block;
+	width: 424px;
+	height: 34px;
+	background: url(../data/img/license/tweet_btn.png) no-repeat;
+	margin-top: 0px;
+	margin-left: -3px;
+}
+
+.end-pop-bg h3
+{
+	color: #23132d;
+	font-size: 14px;
+	font-family: GothamBook, Helvetica, Arial, sans-serif;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	letter-spacing: 3px;
+}
+
+.end-pop-bg p
+{
+	width: 400px;
+	color: #23132d;
+	font-size: 13px;
+	font-family: GothamMedium, Helvetica, Arial, sans-serif;
+	margin-top: 0;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	line-height: 130%;
+	letter-spacing: -1px;
+	text-align: justify;
 }
 
 #popupContainer
@@ -237,6 +307,8 @@ canvas
 	height: 42px;
 	background: url(../data/img/social/google.png) no-repeat;
 }
+
+
 
 @media screen and (min-width:0px) and (max-width:1024px) {
   /* CSS code for small screens */

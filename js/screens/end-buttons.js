@@ -17,8 +17,8 @@ var endButton = me.GUI_Object.extend(
    // when the object is clicked
    onClick:function()
    {
-      console.log(this.orbID + " clicked!");
-      this.REF.moveLicense();
+      //console.log(this.orbID + " clicked!");
+      this.REF.moveLicense(this.orbID);
       // don't propagate the event
       return false;
    }
