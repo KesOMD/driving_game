@@ -96,7 +96,12 @@ canvas
 	padding-left: 55px;
 }
 
-.end-pop-bg a
+.end-info
+{
+
+}
+
+.end-info a
 {
 	display: block;
 	width: 424px;
@@ -106,7 +111,7 @@ canvas
 	margin-left: -3px;
 }
 
-.end-pop-bg h3
+.end-info h3
 {
 	color: #23132d;
 	font-size: 14px;
@@ -116,7 +121,7 @@ canvas
 	letter-spacing: 3px;
 }
 
-.end-pop-bg p
+.end-info p
 {
 	width: 400px;
 	color: #23132d;
@@ -308,10 +313,87 @@ canvas
 	background: url(../data/img/social/google.png) no-repeat;
 }
 
-
+@media screen and (min-width: 1360px) and (max-width: 1599px) {
+	/* CSS for larger screens
+	
+}
 
 @media screen and (min-width:0px) and (max-width:1024px) {
-  /* CSS code for small screens */
+	/* CSS code for small screens */
+	.end-pop
+	{
+		position: absolute;
+		width: 485px;
+		height: 182px;
+		top: 0px;
+		left: 2000px;
+	}
+
+	.end-pack
+	{
+		width: 131px;
+		height: 182px;
+	}
+
+	.end-pack-holder
+	{
+		width: 131px;
+		height: 182px;
+		float: left;
+	}
+
+	.end-info
+	{
+		margin-top: 0px;
+		padding-top: 30px;
+		padding-left: 31px;
+	}
+
+	.end-pop-bg
+	{
+		width: 355px;
+		height: 165px;
+		margin-top: -10px;
+		margin-left: 126px;
+		background-size: 100% 100%;
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+
+	.end-pop-bg a
+	{
+		display: block;
+		width: 283px;
+		height: 22px;
+		background-size: 100% 100%;
+		margin-top: -3px;
+		margin-left: -2px;
+	}
+
+	.end-pop-bg h3
+	{
+		color: #23132d;
+		font-size: 60%;
+		font-family: GothamBook, Helvetica, Arial, sans-serif;
+		margin-top: 2px;
+		margin-bottom: 0px;
+		letter-spacing: 3px;
+	}
+
+	.end-pop-bg p
+	{
+		width: 300px;
+		color: #23132d;
+		font-size: 60%;
+		font-family: GothamMedium, Helvetica, Arial, sans-serif;
+		margin-top: 0;
+		margin-right: 15px;
+		margin-bottom: 8px;
+		line-height: 110%;
+		letter-spacing: -1px;
+		text-align: justify;
+	}
+
 	.popup
   	{
   		left: 0px;

@@ -202,7 +202,7 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.bonusStar = me.loader.getImage("star_gold");
 				this.bonusMessage = me.loader.getImage("bonus_unlocked");
-				bonusPos = {x:240, y:80};
+				bonusPos = {x:240, y:65};
 				this.enterMessage = me.loader.getImage("enter_bonus");
 				enterPos = {x:319, y:526};
 			}
@@ -210,25 +210,25 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.bonusStar = me.loader.getImage("star_grey");
 				this.bonusMessage = me.loader.getImage("bonus_collect");
-				bonusPos = {x:190, y:80};
+				bonusPos = {x:190, y:65};
 				this.enterMessage = me.loader.getImage("enter_retry");
 				enterPos = {x:415, y:526};
 			}
 		}
 		winHeight = $(window).height();
 		document.getElementById("popupContainer").style.top = '-1000px';
-		document.getElementById("econt").style.top = (winHeight/4) + 10 + 'px';
+		if (winHeight < 769)
+		{
+			document.getElementById("econt").style.top = 141 + 'px';
+		}
+		else
+		{
+			document.getElementById("econt").style.top = (winHeight/4) + 10 + 'px';
+		}
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
     },
     moveLicense: function(id)
     {
-    	/*
-    	console.log("called move license");
-    	targ = this.car_image;
-    	canvas = this.findFirstDescendant("screen", "canvas");
-    	context = canvas.getContext('2d');
-    	console.log(context);
-    	*/
     	divTarget = document.getElementById("e" + id);
     	//console.log(divTarget.offsetWidth);
     	winWidth = $(window).width();
@@ -277,7 +277,6 @@ game.EndScreen = me.ScreenObject.extend({
 				.onComplete( function() {
 					inTransition = false
 					currentLicense = divTarget;
-					console.log(position.x);
 				} )
 				t.start();
 				licenseDisplayed = true;
@@ -379,7 +378,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 		context.drawImage(this.bonusMessage, bonusPos.x, bonusPos.y);
 
-		context.drawImage(this.clickMessage, 374, 136);
+		context.drawImage(this.clickMessage, 374, 121);
 		context.drawImage(this.enterMessage, enterPos.x, enterPos.y);
 	},
 	/**	
