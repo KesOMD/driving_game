@@ -20,6 +20,7 @@ game.resources = [
 	{name: "section7", type: "image", src: "data/img/leveltiles/section7.jpg"},
 	{name: "finish_line", type: "image", src: "data/img/leveltiles/finish_line.jpg"},
 	{name: "metatiles32x32", type:"image", src: "data/img/metatiles32x32.png"},
+	{name: "bonus", type: "image", src: "data/img/leveltiles/bonus.png"},
 	//Palm Trees
 	{name: "palm_trees", type: "image", src: "data/img/leveltiles/palm_trees.png"},
 	//main car sprites
@@ -44,6 +45,7 @@ game.resources = [
 	{name: "ferrari", type: "image", src: "data/img/sprite/ferrari.png"},
 	{name: "nukeLeft", type: "image", src: "data/img/sprite/nuclear_left.png"},
 	{name: "nukeRight", type: "image", src: "data/img/sprite/nuclear_right.png"},
+	{name: "blackHole", type: "image", src: "data/img/sprite/black_hole.png"},
 	//transition object
 	{name: "trans", type: "image", src: "data/img/sprite/trans.png"},
 	//the parallax elements
@@ -56,6 +58,7 @@ game.resources = [
 	//title screen image
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
 	{name: "press_enter", type: "image", src: "data/img/press_enter.gif"},
+	{name: "konami", type: "image", src: "data/img/konami.gif"},
 	//end screen image
 	{name: "end_bg", type: "image", src: "data/img/end_screen_bg.jpg"},
 	{name: "end_car", type: "image", src: "data/img/end_car.png"},

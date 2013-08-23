@@ -71,7 +71,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result1)
 			{
-				this.orb1 = new endButton(390, 385, "1", ref);
+				this.orb1 = new endButton(382, 385, "1", ref);
 				me.game.add((this.orb1), 1001);
 			}
 			else
@@ -81,7 +81,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result2)
 			{
-				this.orb2 = new endButton(475, 385, "2", ref);
+				this.orb2 = new endButton(467, 385, "2", ref);
 				me.game.add((this.orb2), 1002);
 			}
 			else
@@ -91,7 +91,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result3)
 			{
-				this.orb3 = new endButton(563, 385, "3", ref);
+				this.orb3 = new endButton(555, 385, "3", ref);
 				me.game.add((this.orb3), 1003);
 			}
 			else
@@ -101,7 +101,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result4)
 			{
-				this.orb4 = new endButton(651, 385, "4", ref);
+				this.orb4 = new endButton(643, 385, "4", ref);
 				me.game.add((this.orb4), 1004);
 			}
 			else
@@ -111,7 +111,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result5)
 			{
-				this.orb5 = new endButton(738, 385, "5", ref);
+				this.orb5 = new endButton(730, 385, "5", ref);
 				me.game.add((this.orb5), 1005);
 			}
 			else
@@ -121,7 +121,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result6)
 			{
-				this.orb6 = new endButton(827, 385, "6", ref);
+				this.orb6 = new endButton(819, 385, "6", ref);
 				me.game.add((this.orb6), 1006);
 			}
 			else
@@ -131,7 +131,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result7)
 			{
-				this.orb7 = new endButton(915, 385, "7", ref);
+				this.orb7 = new endButton(907, 385, "7", ref);
 				me.game.add((this.orb7), 1007);
 			}
 			else
@@ -141,7 +141,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result8)
 			{
-				this.orb8 = new endButton(362, 440, "8", ref);
+				this.orb8 = new endButton(354, 440, "8", ref);
 				me.game.add((this.orb8), 1008);
 			}
 			else
@@ -151,7 +151,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result9)
 			{
-				this.orb9 = new endButton(460, 440, "9", ref);
+				this.orb9 = new endButton(452, 440, "9", ref);
 				me.game.add((this.orb9), 1009);
 			}
 			else
@@ -161,7 +161,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result10)
 			{
-				this.orb10 = new endButton(553, 440, "10", ref);
+				this.orb10 = new endButton(545, 440, "10", ref);
 				me.game.add((this.orb10), 1010);
 			}
 			else
@@ -171,7 +171,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result11)
 			{
-				this.orb11 = new endButton(651, 440, "11", ref);
+				this.orb11 = new endButton(643, 440, "11", ref);
 				me.game.add((this.orb11), 1011);
 			}
 			else
@@ -181,7 +181,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result12)
 			{
-				this.orb12 = new endButton(743, 440, "12", ref);
+				this.orb12 = new endButton(735, 440, "12", ref);
 				me.game.add((this.orb12), 1012);
 			}
 			else
@@ -191,7 +191,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 			if (result13)
 			{
-				this.orb13 = new endButton(840, 440, "13", ref);
+				this.orb13 = new endButton(832, 440, "13", ref);
 				me.game.add((this.orb13), 1013);
 			}
 			else
@@ -311,7 +311,14 @@ game.EndScreen = me.ScreenObject.extend({
     	//
     	if (me.input.isKeyPressed('enter'))
 		{
-			me.state.change(me.state.PLAY);
+			if (window.bonusUnlocked)
+			{
+				me.state.change(me.state.STATE_BONUS);
+			}
+			else
+			{
+				me.state.change(me.state.PLAY);
+			}
 			document.getElementById("econt").style.top = -600 + 'px';
 
 			for (var i = 0; i < 13; i++) {
@@ -329,59 +336,59 @@ game.EndScreen = me.ScreenObject.extend({
 		context.globalAlpha = 1;
 		if (!result1)
 		{
-			context.drawImage(this.orb1, 390, 385);
+			context.drawImage(this.orb1, 382, 385);
 		}
 		if (!result2)
 		{
-			context.drawImage(this.orb2, 475, 385);
+			context.drawImage(this.orb2, 467, 385);
 		}
 		if (!result3)
 		{
-			context.drawImage(this.orb3, 563, 385);
+			context.drawImage(this.orb3, 555, 385);
 		}
 		if (!result4)
 		{
-			context.drawImage(this.orb4, 651, 385);
+			context.drawImage(this.orb4, 643, 385);
 		}
 		if (!result5)
 		{
-			context.drawImage(this.orb5, 738, 385);
+			context.drawImage(this.orb5, 730, 385);
 		}
 		if (!result6)
 		{
-			context.drawImage(this.orb6, 827, 385);
+			context.drawImage(this.orb6, 819, 385);
 		}
 		if (!result7)
 		{
-			context.drawImage(this.orb7, 915, 385);
+			context.drawImage(this.orb7, 907, 385);
 		}
 
 		if (!result8)
 		{
-			context.drawImage(this.orb8, 362, 440);
+			context.drawImage(this.orb8, 354, 440);
 		}		
 		if (!result9)
 		{
-			context.drawImage(this.orb9, 460, 440);
+			context.drawImage(this.orb9, 451, 440);
 		}
 		if (!result10)
 		{
-			context.drawImage(this.orb10, 553, 440);
+			context.drawImage(this.orb10, 545, 440);
 		}
 		if (!result11)
 		{
-			context.drawImage(this.orb11, 651, 440);
+			context.drawImage(this.orb11, 643, 440);
 		}
 		if (!result12)
 		{
-			context.drawImage(this.orb12, 743, 440);
+			context.drawImage(this.orb12, 735, 440);
 		}
 		if (!result13)
 		{
-			context.drawImage(this.orb13, 840, 440);
+			context.drawImage(this.orb13, 832, 440);
 		}
 
-		context.drawImage(this.bonusStar, 929, 442);
+		context.drawImage(this.bonusStar, 919, 442);
 
 		context.drawImage(this.bonusMessage, bonusPos.x, bonusPos.y);
 

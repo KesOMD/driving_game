@@ -10,6 +10,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		//title screen image
 		this.title = null;
 
+		this.konami = null;
 		//this.font = null;
 
 		this.enterPrompt = null;
@@ -25,6 +26,7 @@ game.TitleScreen = me.ScreenObject.extend({
 			//init not yet completed
 			this.title = me.loader.getImage("title_screen");
 			this.enterPrompt = me.loader.getImage("press_enter");
+			this.konami = me.loader.getImage("konami");
 			//font to display for menu items
 			//this.font = new me.BitmapFont("32x32_font", 32);
 		}
@@ -90,14 +92,17 @@ game.TitleScreen = me.ScreenObject.extend({
 		context.drawImage(this.title, 0, 0);
 		context.drawImage(this.enterPrompt, 392, 500);
 		//this.font.draw(context, "PRESS ENTER TO PLAY", 356, 500);
+		/*
 		if (!window.bonusUnlocked)
-		{
+		{*/
 			if (this.checkKonami())
 			{
 				window.bonusUnlocked = true;
-				console.log("window.bonusUnlocked = " + window.bonusUnlocked);
+				//console.log("window.bonusUnlocked = " + window.bonusUnlocked);
+				//656 278
+				context.drawImage(this.konami, 381, 630);
 			}
-		}
+		/*}*/
 	},
 	
 	/**	

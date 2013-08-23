@@ -34,7 +34,7 @@ var game = {
         me.sys.gravity = 0;
         me.sys.fps = 60;
         me.sys.preRender = false;
-
+        var STATE_BONUS = me.state.USER + 0;
         me.debug.renderHitBox = true;
         //set the title Screen Object
         me.state.set(me.state.MENU, new game.TitleScreen());
@@ -43,7 +43,7 @@ var game = {
         //set the Game Over screen
         me.state.set(me.state.GAMEOVER, new game.EndScreen());
         //set the Bonus stage
-        
+        me.state.set(me.state.STATE_BONUS, new game.BonusScreen());
         //set the End Credits screen
 
         //set a global fading transition for the screen
@@ -63,9 +63,11 @@ var game = {
         me.entityPool.add("OilEntity", game.OilEntity);
         me.entityPool.add("NukeLeftEntity", game.NukeLeftEntity);
         me.entityPool.add("NukeRightEntity", game.NukeRightEntity);
+        me.entityPool.add("BlackHoleEntity", game.BlackHoleEntity);
         //transition
         me.entityPool.add("TransitionEntity", game.TransitionEntity);
-        
+        //kart entity
+        me.entityPool.add("KartPlayer", game.KartEntity);
         // Start the game.
         me.state.change(me.state.MENU);
     }
