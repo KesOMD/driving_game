@@ -36,6 +36,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL);
 		me.game.viewport.setDeadzone(0, 0);
 		console.log("PlayerEntity initialised");
+
 	},
 
 	//fix the viewport to the player entity

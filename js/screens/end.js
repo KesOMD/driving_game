@@ -312,6 +312,12 @@ game.EndScreen = me.ScreenObject.extend({
     	if (me.input.isKeyPressed('enter'))
 		{
 			me.state.change(me.state.PLAY);
+			document.getElementById("econt").style.top = -600 + 'px';
+
+			for (var i = 0; i < 13; i++) {
+				Things = document.getElementById("e" + (i+1));
+				Things.style.left = 2000 + "px";
+			};
 		}
     },
     //draw function
@@ -399,11 +405,6 @@ game.EndScreen = me.ScreenObject.extend({
 		this.bg = null;
 		me.input.unbindKey(me.input.KEY.ENTER);
 		window.collectedOrbs = [];
-		document.getElementById("econt").style.top = -600 + 'px';
-
-		for (var i = 0; i < 13; i++) {
-			Things = document.getElementById("e" + (i+1));
-			Things.style.left = 2000 + "px";
-		};
+		
 	}
 })
