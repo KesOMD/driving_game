@@ -224,7 +224,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				else if(res.obj.TransitionSettings.id == 6)
 				{
 					this.renderable.image = me.loader.getImage("car7");
-					console.log(this.renderable);
+					//console.log(this.renderable);
 				}
 				else if (res.obj.TransitionSettings.id == 7)
 				{
