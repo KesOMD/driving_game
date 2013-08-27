@@ -479,12 +479,11 @@
 			</div>
 
 			<!-- Canvas placeholder -->
-			<!--<div class='screen-container'>
-				<div class='left-border'></div>-->
-				<div id="screen"></div>
-				<!--<div class='right-border'></div>
-			</div>-->
-			<!---->
+			<div class='top-border'></div>
+			<div class='left-border'></div>
+			<div id="screen"></div>
+			<div class='right-border'></div>
+
 			<div class='bottom-border-left'></div>
 			<div class='bottom-border'></div>
 			<div class='bottom-border-right'></div>
@@ -508,6 +507,8 @@
         <script type="text/javascript" src="js/screens/end.js"></script>
         <script type="text/javascript" src="js/screens/end-buttons.js"></script>
         <script type="text/javascript" src="js/screens/bonus.js"></script>
+        <script type="text/javascript" src="js/screens/credits.js"></script>
+        <script type="text/javascript" src="js/screens/well-done.js"></script>
         <!-- Bootstrap & Mobile optimization tricks -->
         
 		<script type="text/javascript">
@@ -565,8 +566,20 @@
 		        	width: viewportWidth + "px",
 		        	height: Math.round(viewportWidth / 1.93) + "px",
 		        }).show();
-		        $('end-container')
-		        /*
+				/*
+		        $('.right-border').css({
+		        	position: "absolute",
+		        	height: cHeight + "px",
+		        	left: 1580 + "px"
+		        }).show();
+		        
+		        $('.left-border').css({
+		        	position: "absolute",
+		        	height: cHeight + "px",
+		        	left: Math.round(pLeft - 108) + "px"
+		        }).show();
+		        
+		        
 		        $('.end-pop').css({
 		        	position: "absolute",
 		        	left: viewportWidth + 100 + "px"

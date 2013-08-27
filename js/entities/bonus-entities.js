@@ -177,7 +177,7 @@ game.KartEntity = me.ObjectEntity.extend({
 					t3 = new me.Tween(this.pos).to({y:this.pos.y - 600}, 1000)
 					.onComplete(function()
 					{
-						me.state.change(me.state.GAMEOVER);
+						me.state.change(me.state.CREDITS);
 					});
 					t3.easing(me.Tween.Easing.Linear.EaseNone);
 					t3.start();

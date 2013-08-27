@@ -71,6 +71,10 @@ game.resources = [
 	{name: "click_to_view", type: "image", src: "data/img/click_to_view.png"},
 	{name: "enter_bonus", type: "image", src: "data/img/enter_bonus.gif"},
 	{name: "enter_retry", type: "image", src: "data/img/enter_retry.gif"},
+	//credits screen image
+	{name: "credits", type: "image", src: "data/img/credits.png"},
+	//well done screen image
+	{name: "well_done", type: "image", src: "data/img/well_done.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},

@@ -45,7 +45,9 @@ var game = {
         //set the Bonus stage
         me.state.set(me.state.STATE_BONUS, new game.BonusScreen());
         //set the End Credits screen
-
+        me.state.set(me.state.CREDITS, new game.CreditScreen());
+        //set the Game End screen
+        me.state.set(me.state.GAME_END, new game.WellDoneScreen());
         //set a global fading transition for the screen
         me.state.transition("fade", "#000000", 250);
 

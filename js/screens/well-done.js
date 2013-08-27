@@ -1,9 +1,9 @@
-game.CreditScreen = me.ScreenObject.extend({
+game.WellDoneScreen = me.ScreenObject.extend({
 
 	init: function()
 	{
 		this.parent(true);
-		//background image
+
 		this.bg = null;
 	},
 
@@ -11,9 +11,9 @@ game.CreditScreen = me.ScreenObject.extend({
 	{
 		if (this.bg == null)
 		{
-			this.bg = me.loader.getImage("credits");
-			setTimeout(function() { me.state.change(me.state.GAME_END); }, 4000);
+			this.bg = me.loader.getImage("well_done");
 		}
+		document.getElementById("scont").style.top = '0px';
 	},
 
 	update: function()
