@@ -100,6 +100,7 @@ game.KartEntity = me.ObjectEntity.extend({
 		else if (me.input.isKeyPressed('reverse'))
 		{
 			//for debug purposes remove later
+			/*
 			if (!hitObstacle)
 			{
 				isMoving = true;
@@ -107,6 +108,7 @@ game.KartEntity = me.ObjectEntity.extend({
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
 			}
+			*/
 			//console.log('pressed down');
 		}
 		else
@@ -166,7 +168,7 @@ game.KartEntity = me.ObjectEntity.extend({
 				//hit the finish line
 				if (res.obj.TransitionSettings.id == 7)
 				{
-					me.game.viewport.reset(0, /*this.pos.y*/1240);
+					me.game.viewport.reset(0, 300);
 					hitObstacle = true;
 					isMoving = false;
 					isForward = false;

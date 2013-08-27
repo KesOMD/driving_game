@@ -158,18 +158,18 @@ canvas
 	z-index: 1;
 }
 
-.bottom-border
-{
-	height: 86px;
-	background: url(../data/img/border/bottom.png) repeat-x;
-	background-size: contain;
-}
-
 .bottom-border-left
 {
 	width: 108px;
 	height: 86px;
 	background: url(../data/img/border/bottom-left.png) no-repeat;
+}
+
+.bottom-border
+{
+	height: 86px;
+	background: url(../data/img/border/bottom.png) repeat-x;
+	background-size: contain;
 }
 
 .bottom-border-right
