@@ -29,6 +29,8 @@ canvas
 	src: url(../data/font/Gotham-Book.otf);
 }
 
+
+
 .share-container
 {
 	position: relative;
@@ -238,6 +240,15 @@ canvas
 	width: 222px;
 	height: 358px;
 	background: url(../data/img/license/leftback.jpg);
+}
+
+.pack-shot
+{
+	float: left;
+	width: 196px;
+	height: 273px;
+	margin-top: 28px;
+	display: inline-block;
 }
 
 .right-side
@@ -545,7 +556,7 @@ canvas
 		width: 355px;
 		height: 165px;
 		margin-top: -10px;
-		margin-left: 126px;
+		margin-left: 122px;
 		background-size: 100% 100%;
 		padding-top: 0px;
 		padding-left: 0px;
@@ -594,6 +605,13 @@ canvas
 		left: 0px;
 		width: 328px;
   		height: 238px;
+	}
+	.pack-shot
+	{
+		float: left;
+		width: 131px;
+		height: 182px;
+		display: inline-block;
 	}
 	.left-side
 	{
@@ -669,13 +687,4 @@ canvas
 	{
 		display: none;
 	}
-}
-
-.pack-shot
-{
-	float: left;
-	width: 181px;
-	height: 256px;
-	margin-top: 28px;
-	display: inline-block;
 }

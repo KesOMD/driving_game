@@ -45,7 +45,6 @@ game.EndScreen = me.ScreenObject.extend({
 		if ( collOrbs.toString().indexOf( allOrbs.toString() ) )
 		{
 			window.bonusUnlocked = true;
-			console.log(window.bonusUnlocked);
 		}
 	},
 	//reset function
@@ -408,7 +407,6 @@ game.EndScreen = me.ScreenObject.extend({
 	onDestroyEvent: function()
 	{
 		//
-		console.log("end onDestroyEvent");
 
 		licenseDisplayed = false;
 		currentLicense = null;

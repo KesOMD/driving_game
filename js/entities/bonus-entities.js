@@ -26,7 +26,6 @@ game.KartEntity = me.ObjectEntity.extend({
 		//set the display to follow our position on the vertical axis
 		me.game.viewport.follow(this.pos, me.game.viewport.AXIS.VERTICAL);
 		me.game.viewport.setDeadzone(0, 0);
-		console.log("KartEntity initialised");
 
 	},
 
@@ -145,7 +144,7 @@ game.KartEntity = me.ObjectEntity.extend({
 				this.vel.x = 0;
 				
 				scaleTarget = this.renderable;
-				t = new me.Tween(this.renderable).to({ angle:Number.prototype.degToRad(1080) }, 1000)
+				t = new me.Tween(this.renderable).to({ angle:Number.prototype.degToRad(1260) }, 1000)
 				.onComplete(function()
 					{
 						me.state.change(me.state.GAMEOVER);
