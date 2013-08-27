@@ -40,6 +40,13 @@ game.EndScreen = me.ScreenObject.extend({
 		this.enterMessage = null;
 
 		enterPos = {};
+		collOrbs = window.collectedOrbs;
+		allOrbs = window.orbs;
+		if ( collOrbs.toString().indexOf( allOrbs.toString() ) )
+		{
+			window.bonusUnlocked = true;
+			console.log(window.bonusUnlocked);
+		}
 	},
 	//reset function
 	onResetEvent: function()
@@ -411,7 +418,5 @@ game.EndScreen = me.ScreenObject.extend({
 
 		this.bg = null;
 		me.input.unbindKey(me.input.KEY.ENTER);
-		window.collectedOrbs = [];
-		
 	}
 })

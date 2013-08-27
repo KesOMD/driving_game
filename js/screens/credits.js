@@ -12,7 +12,7 @@ game.CreditScreen = me.ScreenObject.extend({
 		if (this.bg == null)
 		{
 			this.bg = me.loader.getImage("credits");
-			setTimeout(function() { me.state.change(me.state.GAME_END); }, 4000);
+			setTimeout(function() { me.state.change(me.state.GAME_END); }, 3000);
 		}
 	},
 

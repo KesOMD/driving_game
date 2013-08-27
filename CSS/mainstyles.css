@@ -481,6 +481,10 @@ canvas
 
 @media screen and (min-width:0px) and (max-width:1024px) {
 	/* CSS code for small screens */
+	.end-container
+	{
+		margin-top: 86px;
+	}
 	.share-container
 	{
 		margin: auto;
