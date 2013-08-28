@@ -22,6 +22,9 @@
         </style>
 	</head>
 	<body>
+		<div class="load-container" id="lcont">
+			<img src="data/img/loading.gif"></img>
+		</div>
 		<!--end license container -->
 		<div class="end-container" id="econt">
 			<div class="end-pop" id="e1">
@@ -222,9 +225,9 @@
 		<!-- share container -->
 		<div class="share-container" id="scont">
 			<div class="share-inner">
-				<a class="fb-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank"></a>
-				<a class="tw-link" href="https://twitter.com/intent/tweet?&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIn_Watermelon_Sugar"></a>
-				<a class="g-link" href="https://plus.google.com/share?url=http%3A%2F%2Fexample.com" target="_blank"></a>
+				<a class="fb-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.adrivethroughtime.com" target="_blank"></a>
+				<a class="tw-link" href="https://twitter.com/intent/tweet?&url=http%3A%2F%2Fwww.adrivethroughtime.com"></a>
+				<a class="g-link" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.adrivethroughtime.com" target="_blank"></a>
 			</div>
 		</div>
 			<div id='popupContainer'>
@@ -466,7 +469,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!-- Canvas placeholder -->
 			<div class='top-border'></div>
 			<div class='left-border'></div>
@@ -553,7 +555,11 @@
 		        $('#popupContainer').css({
 		        	position: "absolute",
 		        	width: viewportWidth + "px",
-		        	height: Math.round(viewportWidth / 1.93) + "px",
+		        	height: Math.round(viewportWidth / 1.93) + "px"
+		        }).show();
+		        $('.load-container').css({
+		        	position: "absolute",
+		        	height: Math.round(viewportWidth / 1.93) + "px"
 		        }).show();
 		    }
 		    $(window).resize(matchHeight);

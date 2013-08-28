@@ -32,8 +32,9 @@ var game = {
     "loaded" : function () {
         //global gravity setting
         me.sys.gravity = 0;
-        me.sys.fps = 60;
+        me.sys.fps = 50;
         me.sys.preRender = false;
+        me.sys.interpolation = true;
         var STATE_BONUS = me.state.USER + 0;
         me.debug.renderHitBox = true;
         //set the title Screen Object

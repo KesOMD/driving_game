@@ -45,6 +45,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		//enter pressed ?
 		if (me.input.isKeyPressed('enter'))
 		{
+			document.getElementById("lcont").style.top = '0px';
 			me.state.change(me.state.PLAY);
 		}
 		else if (me.input.isKeyPressed('up'))
