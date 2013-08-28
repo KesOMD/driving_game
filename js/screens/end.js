@@ -40,17 +40,20 @@ game.EndScreen = me.ScreenObject.extend({
 		this.enterMessage = null;
 
 		enterPos = {};
-		collOrbs = window.collectedOrbs;
-		allOrbs = window.orbs;
-		if ( collOrbs.toString().indexOf( allOrbs.toString() ) )
-		{
-			window.bonusUnlocked = true;
-		}
+	
 	},
 	//reset function
 	onResetEvent: function()
 	{
 		ref = this;
+
+		collOrbs = window.collectedOrbs;
+
+		if (collOrbs.length == 13)
+		{
+			window.bonusUnlocked = true;
+			console.log(window.bonusUnlocked);
+		}
 
 		result1 = this.inArray(window.collectedOrbs, 1);
 		result2 = this.inArray(window.collectedOrbs, 2);
@@ -209,7 +212,7 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.bonusStar = me.loader.getImage("star_gold");
 				this.bonusMessage = me.loader.getImage("bonus_unlocked");
-				bonusPos = {x:240, y:65};
+				bonusPos = {x:240, y:45};
 				this.enterMessage = me.loader.getImage("enter_bonus");
 				enterPos = {x:319, y:526};
 			}
@@ -217,7 +220,7 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.bonusStar = me.loader.getImage("star_grey");
 				this.bonusMessage = me.loader.getImage("bonus_collect");
-				bonusPos = {x:190, y:65};
+				bonusPos = {x:190, y:45};
 				this.enterMessage = me.loader.getImage("enter_retry");
 				enterPos = {x:415, y:526};
 			}
@@ -226,11 +229,11 @@ game.EndScreen = me.ScreenObject.extend({
 		document.getElementById("popupContainer").style.top = '-1000px';
 		if (winHeight < 769)
 		{
-			document.getElementById("econt").style.top = 141 + 'px';
+			document.getElementById("econt").style.top = 121 + 'px';
 		}
 		else
 		{
-			document.getElementById("econt").style.top = (winHeight/4) + 10 + 'px';
+			document.getElementById("econt").style.top = (winHeight/4) -10 + 'px';
 		}
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
     },
@@ -398,7 +401,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 		context.drawImage(this.bonusMessage, bonusPos.x, bonusPos.y);
 
-		context.drawImage(this.clickMessage, 374, 121);
+		context.drawImage(this.clickMessage, 374, 91);
 		context.drawImage(this.enterMessage, enterPos.x, enterPos.y);
 	},
 	/**	
