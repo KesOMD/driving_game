@@ -36,7 +36,7 @@ var game = {
         me.sys.preRender = false;
         me.sys.interpolation = true;
         var STATE_BONUS = me.state.USER + 0;
-        me.debug.renderHitBox = true;
+        me.debug.renderHitBox = false;
         //set the title Screen Object
         me.state.set(me.state.MENU, new game.TitleScreen());
         //set the "Play/Ingame" Screen Object

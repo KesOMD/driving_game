@@ -326,6 +326,7 @@ game.EndScreen = me.ScreenObject.extend({
 			}
 			else
 			{
+				document.getElementById("lcont").style.top = '0px';
 				me.state.change(me.state.PLAY);
 			}
 			document.getElementById("econt").style.top = -600 + 'px';
