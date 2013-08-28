@@ -161,7 +161,7 @@ canvas
 .load-container
 {
 	position: absolute;
-	top: -600px;
+	top: -1200px;
 	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
@@ -447,8 +447,8 @@ canvas
 		font-family: GothamMedium, Helvetica, Arial, sans-serif;
 		margin-top: 0;
 		margin-right: 15px;
-		margin-bottom: 8px;
-		line-height: 110%;
+		margin-bottom: 6px;
+		line-height: 100%;
 		letter-spacing: 0px;
 		text-align: justify;
 	}

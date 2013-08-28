@@ -17,7 +17,7 @@ game.PlayScreen = me.ScreenObject.extend({
 	    document.getElementById("scont").style.top = '-1000px';
 
 	    document.getElementById("popupContainer").style.top = '0px';
-	    document.getElementById("lcont").style.top = '-600px';
+	    document.getElementById("lcont").style.top = '-1200px';
 	},
 
 	"loadFinished": function()
