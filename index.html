@@ -9,6 +9,28 @@
         <link rel="stylesheet" type="text/css" href="CSS/mainstyles.css" media="all"></link>
         <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
         <script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript">
+			<!--
+			if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)))
+			{
+				location.replace("http://10.81.23.199/driving_game/v1/mobile/");
+			}
+			else if (screen.width <= 699)
+			{
+				document.location = "http://10.81.23.199/driving_game/v1/mobile/";
+			}
+			else if ( (navigator.userAgent.indexOf('Android') != -1) )
+			{
+				document.location = "http://10.81.23.199/driving_game/v1/mobile/";
+			}
+			var userAgent = navigator.userAgent.toLowerCase();
+			// Test if the browser is IE and check the version number is lower than 9
+			if (/msie/.test(userAgent) && parseFloat((userAgent.match(/.*(?:rv|ie)[\/: ](.+?)([ \);]|$)/) || [])[1]) < 9)
+			{
+			  document.location = "http://10.81.23.199/driving_game/v1/mobile/";
+			}
+			-->
+		</script>
         <style type="text/css">
 			.game-info a:hover {
 				background-position: 0 -34px;
