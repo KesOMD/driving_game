@@ -12,6 +12,7 @@ game.WellDoneScreen = me.ScreenObject.extend({
 		if (this.bg == null)
 		{
 			this.bg = me.loader.getImage("well_done");
+			setTimeout(function() { me.state.change(me.state.MENU); }, 3000);
 		}
 		document.getElementById("scont").style.top = '0px';
 	},
