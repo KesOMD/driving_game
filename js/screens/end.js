@@ -212,7 +212,7 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.bonusStar = me.loader.getImage("star_gold");
 				this.bonusMessage = me.loader.getImage("bonus_unlocked");
-				bonusPos = {x:240, y:45};
+				bonusPos = {x:240, y:65};
 				this.enterMessage = me.loader.getImage("enter_bonus");
 				enterPos = {x:319, y:526};
 			}
@@ -220,21 +220,14 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.bonusStar = me.loader.getImage("star_grey");
 				this.bonusMessage = me.loader.getImage("bonus_collect");
-				bonusPos = {x:190, y:45};
+				bonusPos = {x:190, y:65};
 				this.enterMessage = me.loader.getImage("enter_retry");
 				enterPos = {x:415, y:526};
 			}
 		}
 		winHeight = $(window).height();
 		document.getElementById("popupContainer").style.top = '-1000px';
-		if (winHeight < 769)
-		{
-			document.getElementById("econt").style.top = 121 + 'px';
-		}
-		else
-		{
-			document.getElementById("econt").style.top = (winHeight/4) -10 + 'px';
-		}
+		document.getElementById("econt").style.top = 0 + 'px';
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
     },
     moveLicense: function(id)
@@ -341,9 +334,11 @@ game.EndScreen = me.ScreenObject.extend({
 	draw: function(context)
 	{
 		context.drawImage(this.bg, 0, 0);
+		/*
 		context.globalAlpha = 0.2;
 		context.drawImage(this.car_image, 289, 200);
 		context.globalAlpha = 1;
+		*/
 		if (!result1)
 		{
 			context.drawImage(this.orb1, 382, 385);
@@ -402,7 +397,7 @@ game.EndScreen = me.ScreenObject.extend({
 
 		context.drawImage(this.bonusMessage, bonusPos.x, bonusPos.y);
 
-		context.drawImage(this.clickMessage, 374, 91);
+		context.drawImage(this.clickMessage, 352, 233);
 		context.drawImage(this.enterMessage, enterPos.x, enterPos.y);
 	},
 	/**	

@@ -59,14 +59,14 @@ canvas
 	top: -600px;
 	left: 0px;
 	z-index: 4;
-	
+	margin-top: 160px;
 }
 
 .end-pop
 {
 	position: absolute;
 	width: 728px;
-	height: 273px;
+	height: 250px;
 	top: 0px;
 	left: 2000px;
 }
@@ -88,9 +88,9 @@ canvas
 .end-pop-bg
 {
 	width: 532px;
-	height: 248px;
+	height: 201px;
 	margin-top: 0px;
-	margin-left: 189px;
+	margin-left: 181px;
 	background: url(../data/img/license/license_side.png) no-repeat;
 	padding-top: 45px;
 	padding-left: 55px;
@@ -264,9 +264,10 @@ canvas
 .pack-shot
 {
 	float: left;
-	width: 196px;
-	height: 273px;
-	margin-top: 28px;
+	width: 167px;
+	height: 231px;
+	margin-top: 68px;
+	margin-left: 16px;
 	display: inline-block;
 }
 
@@ -289,19 +290,19 @@ canvas
 
 .game-info
 {
-	width: 270px;
+	width: 244px;
 	margin-left: 9px;
-	margin-top: 19px;
+	margin-top: 24px;
 }
 
 .game-info h3
 {
 	color: #3e3e3e;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: GothamBook, Helvetica, Arial, sans-serif;
 	margin-top: 6px;
 	margin-bottom: 0px;
-	letter-spacing: 3px;
+	letter-spacing: 0px;
 }
 
 .game-info p
@@ -311,6 +312,7 @@ canvas
 	font-family: GothamMedium, Helvetica, Arial, sans-serif;
 	margin-top: 0;
 	margin-right: 15px;
+	margin-bottom: 18px;
 	line-height: 130%;
 	letter-spacing: 0px;
 	text-align: justify;
@@ -378,6 +380,7 @@ canvas
 		position: absolute;
 		left: 0px;
 	}
+	/*
 	.end-pop
 	{
 		position: absolute;
@@ -452,6 +455,7 @@ canvas
 		letter-spacing: 0px;
 		text-align: justify;
 	}
+	*/
 	.bottom-border-left
 	{
 		display: none;
@@ -517,7 +521,7 @@ canvas
 	}
 	.end-container
 	{
-		margin-top: 86px;
+		margin-top: 218px;
 	}
 	.share-container
 	{
@@ -549,7 +553,7 @@ canvas
 	{
 		position: absolute;
 		width: 485px;
-		height: 182px;
+		height: 160px;
 		top: 0px;
 		left: 2000px;
 	}
@@ -635,6 +639,8 @@ canvas
 		width: 131px;
 		height: 182px;
 		display: inline-block;
+		margin-top: 27px;
+		margin-left: 3px;
 	}
 	.left-side
 	{

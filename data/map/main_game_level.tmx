@@ -30,35 +30,35 @@
   <image source="../img/leveltiles/section4.png" width="192" height="64"/>
  </tileset>
  <tileset firstgid="87" name="bridge4" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/bridge4.png" trans="ff00ff" width="1312" height="680"/>
+  <image source="../img/leveltiles/bridge4.png" width="1312" height="680"/>
   <terraintypes>
    <terrain name="transition4" tile="-1"/>
   </terraintypes>
   <tile id="84" terrain="0,,,"/>
  </tileset>
  <tileset firstgid="948" name="section5" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/section5.png" trans="ff00ff" width="192" height="64"/>
+  <image source="../img/leveltiles/section5.png" width="192" height="64"/>
  </tileset>
  <tileset firstgid="960" name="palm_trees" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/palm_trees.png" trans="ff00ff" width="1536" height="352"/>
+  <image source="../img/leveltiles/palm_trees.png" width="1536" height="352"/>
  </tileset>
  <tileset firstgid="1488" name="bridge5" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/bridge5.png" trans="ff00ff" width="1312" height="1792"/>
+  <image source="../img/leveltiles/bridge5.png" width="1312" height="1792"/>
  </tileset>
  <tileset firstgid="3784" name="section6" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/section6.jpg" trans="ff00ff" width="480" height="320"/>
+  <image source="../img/leveltiles/section6.jpg" width="480" height="320"/>
  </tileset>
  <tileset firstgid="3934" name="bridge6" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/bridge6.png" trans="ff00ff" width="1312" height="320"/>
+  <image source="../img/leveltiles/bridge6.png" width="1312" height="320"/>
  </tileset>
  <tileset firstgid="4344" name="section7" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/section7.jpg" trans="ff00ff" width="640" height="224"/>
+  <image source="../img/leveltiles/section7.jpg" width="640" height="224"/>
  </tileset>
  <tileset firstgid="4484" name="finish_line" tilewidth="32" tileheight="32">
-  <image source="../img/leveltiles/finish_line.jpg" trans="ff00ff" width="160" height="128"/>
+  <image source="../img/leveltiles/finish_line.jpg" width="160" height="128"/>
  </tileset>
  <tileset firstgid="4504" name="instructions" tilewidth="32" tileheight="32">
-  <image source="../img/instructions.jpg" trans="ff00ff" width="320" height="640"/>
+  <image source="../img/instructions.jpg" width="320" height="640"/>
  </tileset>
  <layer name="background" width="41" height="2088">
   <data encoding="base64">
