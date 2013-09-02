@@ -11,6 +11,19 @@ body
 	background-color: #000;
 	overflow-x: hidden;
 }
+
+@font-face
+{
+	font-family: GothamMedium;
+	src: url(../font/Gotham-Medium.otf);
+}
+
+@font-face
+{
+	font-family: GothamBook;
+	src: url(../font/Gotham-Book.otf);
+}
+
 .top-border
 {
 	top: 0px;
@@ -45,13 +58,46 @@ body
 	background: url(../img/border/top-right.png) no-repeat;
 }
 
+.bottom-border
+{
+	width: 1154px;
+}
+
+.bottom-border-left
+{
+	float: left;
+	width: 108px;
+	height: 86px;
+	margin-left: -64px;
+	margin-left: -75px\9;
+	background: url(../img/border/bottom-left.png) no-repeat;
+}
+
+.bottom-border-middle
+{
+	float: left;
+	width: 935px;
+	height: 86px;
+	background: url(../img/border/bottom.png) repeat-x;
+}
+
+.bottom-border-right
+{
+	float: right;
+	width: 108px;
+	height: 86px;
+	margin-right: 67px;
+	margin-right: 78px\9;
+	background: url(../img/border/bottom-right.png) no-repeat;
+}
+
 .left-border
 {
 	float: left;
 	width: 108px;
 	height: 100%;
 	background: url(../img/border/left.png) repeat-y;
-	padding-top: 100%;
+	padding-top: 9520px;
 	margin-left: -64px;
 	margin-left: -75px\9;
 }
@@ -61,7 +107,7 @@ body
 	float: right;
 	width: 108px;
 	height: 100%;
-	padding-top: 100%;
+	padding-top: 9520px;
 	margin-right: -80px;
 	background: url(../img/border/right.png) repeat-y;
 }
@@ -136,6 +182,7 @@ body
 	height: 600px;
 	background: url(../img/title.jpg) no-repeat;
 	background-color: #070029;
+	z-index: 5;
 }
 
 .s1-container
@@ -146,5 +193,361 @@ body
 	display: block;
 	position: relative;
 	width: 935px;
+	height: 1384px;
+	z-index: 1;
+	/*border: thin solid rgba(0, 255, 0, 1);*/
+}
+
+.s1-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level1/road-side.png) repeat-y;
+	width: 30px;
+	height: 1384px;
+	margin-left: 274px;
+}
+
+.s1-road-lines-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level1/road-lines-left.png) repeat-y;
+	width: 6px;
+	height: 1384px;
+	margin-left: 14px;
+}
+
+.s1-road-lines-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level1/road-lines-right.png) repeat-y;
+	width: 6px;
+	height: 1384px;
+	margin-left: 279px;
+}
+
+.s1-road-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level1/road-side.png) repeat-y;
+	width: 30px;
+	height: 1384px;
+	margin-right: 279px;
+}
+
+.divider1
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	top: 0px;
+	background: url(../img/divide/first-bridge.png) no-repeat;
+	width: 935px;
+	height: 245px;
+	z-index: 3;
+}
+
+.s2-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -245px;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 1384px;
+	z-index: 1;
+}
+
+.s2-trees-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level2/tree-left.png);
+	width: 119px;
+	height: 1384px;
+}
+
+.s2-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level2/road-side.png) repeat-y;
+	width: 33px;
+	height: 1384px;
+	margin-left: 152px;
+}
+
+.s2-road-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level2/road-side.png) repeat-y;
+	width: 33px;
+	height: 1384px;
+	margin-left: 323px;
+}
+
+.s2-trees-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level2/tree-right.png);
+	width: 119px;
+	height: 1384px;
+}
+
+.divider2
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -100px;
+	display: block;
+	position: relative;
+	top: 0px;
+	background: url(../img/divide/second-bridge.png) no-repeat;
+	width: 935px;
+	height: 329px;
+	z-index: 3;
+}
+
+.s3-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -229px;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 1384px;
+	background-color: #636363;
+	z-index: 1;
+}
+
+.s3-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level3/road-side.png) repeat-y;
+	width: 33px;
+	height: 1384px;
+	margin-left: 273px;
+}
+
+.s3-road-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level3/road-side.png) repeat-y;
+	width: 33px;
+	height: 1384px;
+	margin-left: 324px;
+}
+
+.divider3
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -100px;
+	display: block;
+	position: relative;
+	top: 0px;
+	background: url(../img/divide/third-bridge.png) no-repeat;
+	width: 935px;
+	height: 329px;
+	z-index: 3;
+}
+
+.s4-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -229px;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 1384px;
+	background-color: #636363;
+	z-index: 1;
+}
+
+.s4-side-left
+{
+	position: relative;
+	float: left;
+	background-color: #00de01;
+	width: 273px;
+	height: 1384px;
+}
+
+.s4-side-right
+{
+	position: relative;
+	float: right;
+	background-color: #00de01;
+	width: 275px;
+	height: 1384px;
+}
+
+.s4-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level4/road-side-left.png) repeat-y;
+	width: 46px;
+	height: 1384px;
+	margin-left: 0px;
+}
+
+.s4-road-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level4/road-side-right.png) repeat-y;
+	width: 46px;
+	height: 1384px;
+	margin-left: 295px;
+}
+
+.divider4
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -200px;
+	display: block;
+	position: relative;
+	top: 0px;
+	background: url(../img/divide/fourth-bridge.png) no-repeat;
+	width: 935px;
+	height: 404px;
+	z-index: 3;
+}
+
+.s5-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -204px;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 1384px;
+	z-index: 1;
+}
+
+.s5-side-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level5/side.png) repeat;
+	width: 273px;
+	height: 1384px;
+}
+
+.s5-side-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level5/side.png) repeat;
+	width: 275px;
+	height: 1384px;
+}
+
+.s5-road
+{
+	position: relative;
+	float: left;
+	background: url(../img/level5/road.png) repeat;
+	width: 387px;
+	height: 1384px;
+}
+
+.s6-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 1384px;
+	z-index: 1;
+}
+
+.s6-side-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level6/side-left.jpg) repeat;
+	width: 322px;
+	height: 1384px;
+}
+
+.s6-side-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level6/side-right.jpg) repeat;
+	width: 304px;
+	height: 1384px;
+}
+
+.s6-road
+{
+	position: relative;
+	float: left;
+	background: url(../img/level6/road.jpg) repeat;
+	width: 309px;
+	height: 1384px;
+}
+
+.s7-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 1384px;
+	z-index: 1;
+}
+
+.s7-side-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level7/side-left.jpg) repeat;
+	width: 280px;
+	height: 1384px;
+}
+
+.s7-side-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level7/side-right.jpg) repeat;
+	width: 252px;
+	height: 1384px;
+}
+
+.s7-road
+{
+	position: relative;
+	float: left;
+	background: url(../img/level7/road.jpg) repeat;
+	width: 403px;
 	height: 1384px;
 }
