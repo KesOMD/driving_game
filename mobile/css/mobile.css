@@ -97,7 +97,7 @@ body
 	width: 108px;
 	height: 100%;
 	background: url(../img/border/left.png) repeat-y;
-	padding-top: 9520px;
+	padding-top: 10182px;
 	margin-left: -64px;
 	margin-left: -75px\9;
 }
@@ -107,7 +107,7 @@ body
 	float: right;
 	width: 108px;
 	height: 100%;
-	padding-top: 9520px;
+	padding-top: 10182px;
 	margin-right: -80px;
 	background: url(../img/border/right.png) repeat-y;
 }
@@ -160,6 +160,28 @@ body
 	background: url(../img/social/google.png) no-repeat;
 }
 
+.car-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+.car
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background: url(../img/mobile_deloreon_sprite.png);
+	width: 96px;
+	height: 192px;
+	left: 14px;
+}
+
 .content-container
 {
 	margin-left: auto;
@@ -190,12 +212,12 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -238px;
 	display: block;
 	position: relative;
 	width: 935px;
 	height: 1384px;
 	z-index: 1;
-	/*border: thin solid rgba(0, 255, 0, 1);*/
 }
 
 .s1-road-left
@@ -443,7 +465,7 @@ body
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 1384px;
+	height: 1683px;
 	z-index: 1;
 }
 
@@ -452,8 +474,8 @@ body
 	position: relative;
 	float: left;
 	background: url(../img/level5/side.png) repeat;
-	width: 273px;
-	height: 1384px;
+	width: 318px;
+	height: inherit;
 }
 
 .s5-side-right
@@ -461,8 +483,8 @@ body
 	position: relative;
 	float: right;
 	background: url(../img/level5/side.png) repeat;
-	width: 275px;
-	height: 1384px;
+	width: 319px;
+	height: inherit;
 }
 
 .s5-road
@@ -470,8 +492,23 @@ body
 	position: relative;
 	float: left;
 	background: url(../img/level5/road.png) repeat;
-	width: 387px;
-	height: 1384px;
+	width: 298px;
+	height: inherit;
+}
+
+.divider5
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -634px;
+	display: block;
+	position: relative;
+	top: 0px;
+	background: url(../img/divide/bowser-bridge.png) no-repeat;
+	width: 935px;
+	height: 1277px;
+	z-index: 3;
 }
 
 .s6-container
@@ -479,6 +516,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -280px;
 	display: block;
 	position: relative;
 	width: 935px;
@@ -513,11 +551,27 @@ body
 	height: 1384px;
 }
 
+.divider6
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -157px;
+	display: block;
+	position: relative;
+	top: 0px;
+	background: url(../img/divide/sixth-bridge.png) no-repeat;
+	width: 935px;
+	height: 315px;
+	z-index: 3;
+}
+
 .s7-container
 {
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -158px;
 	display: block;
 	position: relative;
 	width: 935px;
@@ -550,4 +604,127 @@ body
 	background: url(../img/level7/road.jpg) repeat;
 	width: 403px;
 	height: 1384px;
+}
+
+.finish-line
+{
+	position: relative;
+	background: url(../img/level7/finish-line.png) repeat-x;
+	width: 277px;
+	height: 184px;
+	top: 880px;
+	left: 64px;
+}
+
+.popup
+{
+	left: 0px;
+	width: 329px;
+	height: 238px;
+	padding: 0px;
+	background-color: #9bffe6;
+	cursor: default;
+}
+
+.pack-shot
+{
+	float: left;
+	width: 131px;
+	height: 182px;
+	display: inline-block;
+	margin-top: 27px;
+	margin-left: 3px;
+}
+
+.left-side
+{
+	float: left;
+	margin-left: 1px;
+	width: 148px;
+	height: 238px;
+	background: url(../img/license/leftback.jpg);
+	background-size: 100% 100%;
+}
+
+.right-side
+{
+	float: right;
+	width: 180px;
+	height: 238px;
+	padding: 0px;
+}
+
+.title-image
+{
+	width: 155px;
+	height: 13px;
+	margin-top: 16px;
+	margin-left: 6px;
+	background: url(../img/license/title.png);
+	background-size: 100% 100%;
+}
+
+.game-info
+{
+	width: 180px;
+	margin-left: 6px;
+	margin-top: 8px;
+}
+
+.game-info h3
+{
+	color: #3e3e3e;
+	font-size: 8px;
+	font-family: GothamBook, Helvetica, Arial, sans-serif;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
+}
+
+.game-info p
+{
+	color: #23132d;
+	font-family: GothamMedium, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	margin-top: 0;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	line-height: 110%;
+	letter-spacing: 0px;
+	text-align: justify;
+}
+
+.game-info a
+{
+	display: block;
+	background: url(../img/license/tweet-fact.png) no-repeat;
+	height: 23px;
+	width: 163px;
+	background-size: 100% 200%;
+}
+
+.game-info a:hover;
+{
+	background-position: 0 -23px !important;
+}
+
+.popup-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -158px;
+	display: block;
+	position: relative;
+	width: 935px;
+	z-index: 4;
+}
+
+#pop1
+{
+	float: left;
+}
+
+#pop2
+{
+	float: right;
 }
