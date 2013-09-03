@@ -205,6 +205,8 @@ body
 	background: url(../img/title.jpg) no-repeat;
 	background-color: #070029;
 	z-index: 5;
+
+	opacity: 0.5;
 }
 
 .s1-container
@@ -212,11 +214,11 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -238px;
+	margin-top: -2504px;
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 1384px;
+	height: 900px;
 	z-index: 1;
 }
 
@@ -226,7 +228,7 @@ body
 	float: left;
 	background: url(../img/level1/road-side.png) repeat-y;
 	width: 30px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 274px;
 }
 
@@ -236,7 +238,7 @@ body
 	float: left;
 	background: url(../img/level1/road-lines-left.png) repeat-y;
 	width: 6px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 14px;
 }
 
@@ -246,7 +248,7 @@ body
 	float: left;
 	background: url(../img/level1/road-lines-right.png) repeat-y;
 	width: 6px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 279px;
 }
 
@@ -256,7 +258,7 @@ body
 	float: right;
 	background: url(../img/level1/road-side.png) repeat-y;
 	width: 30px;
-	height: 1384px;
+	height: inherit;
 	margin-right: 279px;
 }
 
@@ -265,6 +267,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -2154px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -721,10 +724,68 @@ body
 
 #pop1
 {
+	margin-top: 200px;
 	float: left;
 }
 
 #pop2
 {
+	margin-top: 600px;
 	float: right;
+}
+
+#pop3
+{
+	margin-top: 950px;
+	float: left;
+}
+
+#pop4
+{
+	float: right;
+}
+
+#pop5
+{
+	float: left;
+}
+
+#pop6
+{
+	float: right;
+}
+
+#pop7
+{
+	float: left;
+}
+
+#pop8
+{
+	float: right;
+}
+
+#pop9
+{
+	float: left;
+}
+
+#pop10
+{
+	float: right;
+}
+
+#pop11
+{
+	float: left;
+}
+
+#pop12
+{
+	float: right;
+}
+
+#pop13
+{
+	float: left;
 }
