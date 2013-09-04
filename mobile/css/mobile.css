@@ -95,7 +95,7 @@ body
 	width: 108px;
 	height: 100%;
 	background: url(../img/border/left.png) repeat-y;
-	padding-top: 9979px;
+	padding-top: 10502px;
 	margin-left: -64px;
 }
 
@@ -104,7 +104,7 @@ body
 	float: right;
 	width: 108px;
 	height: 100%;
-	padding-top: 9979px;
+	padding-top: 10502px;
 	margin-right: -80px;
 	background: url(../img/border/right.png) repeat-y;
 }
@@ -805,12 +805,25 @@ body
 {
 	top: -125px;
 	z-index: 6;
-	left: 31px;
+	left: 13px;
 }
 
 #bottom-share .share-inner
 {
 	width: 164px;
+}
+
+.well-done
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	width: 935px;
+	height: 523px;
+	background: url(../img/welldone.png) no-repeat;
+	z-index: 4;
 }
 
 @media screen and (min-width: 1025px) {
@@ -927,5 +940,77 @@ body
 	.finish-line
 	{
 		top: 1085px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.top-border
+	{
+		display: none;
+	}
+
+	.bottom-border
+	{
+		display: none;
+	}
+
+	.left-border
+	{
+		display: none;
+	}
+
+	.right-border
+	{
+		display: none;
+	}
+
+	.content-container
+	{
+		width: 480px;
+		height: 11267px;
+		padding-top: 1px;
+	}
+
+	.title-container
+	{
+		float: left;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		position: relative;
+		width: 480px;
+		height: 350px;
+		background: url(../img/title480.jpg) no-repeat;
+		background-color: #070029;
+		z-index: 5;
+	}
+
+	#top-share
+	{
+		top: 284px;
+	}
+	
+	.fb-link
+	{
+		width: 22px;
+		height: 21px;
+		padding-right: 25px;
+		margin-left: -15px;
+		background-size: contain;
+	}
+
+	.tw-link
+	{
+		width: 22px;
+		height: 21px;
+		padding-right: 25px;
+		background-size: contain;
+	}
+
+	.g-link
+	{
+		width: 22px;
+		height: 21px;
+		background-size: contain;
 	}
 }

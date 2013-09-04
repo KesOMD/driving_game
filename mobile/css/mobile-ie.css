@@ -37,29 +37,11 @@ body
 .left-border
 {
 	display: none;
-	/*
-	float: left;
-	margin-left: 0px;
-	width: 108px;
-	height: 100%;
-	background: url(../img/border/left.png) repeat-y;
-	padding-top: 9979px;
-	padding-top: 9999px\9;
-	*/
 }
 
 .right-border
 {
 	display: none;
-	/*
-	float: right;
-	margin-right: 0px;
-	width: 108px;
-	height: 100%;
-	padding-top: 9979px;
-	padding-top: 9999px\9;
-	background: url(../img/border/right.png) repeat-y;
-	*/
 }
 
 .share-container
@@ -140,7 +122,7 @@ body
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 10747px;
+	height: 11267px;
 	padding-top: 1px;
 	border: thin solid #9bffe6;
 }
