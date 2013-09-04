@@ -97,7 +97,8 @@ body
 	width: 108px;
 	height: 100%;
 	background: url(../img/border/left.png) repeat-y;
-	padding-top: 10182px;
+	padding-top: 9983px;
+	padding-top: 10002px\9;
 	margin-left: -64px;
 	margin-left: -75px\9;
 }
@@ -107,8 +108,10 @@ body
 	float: right;
 	width: 108px;
 	height: 100%;
-	padding-top: 10182px;
+	padding-top: 9983px;
+	padding-top: 10002px\9;
 	margin-right: -80px;
+	margin-right: -77px\9;
 	background: url(../img/border/right.png) repeat-y;
 }
 
@@ -205,8 +208,6 @@ body
 	background: url(../img/title.jpg) no-repeat;
 	background-color: #070029;
 	z-index: 5;
-
-	opacity: 0.5;
 }
 
 .s1-container
@@ -214,7 +215,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -2504px;
+	margin-top: -9366px;
 	display: block;
 	position: relative;
 	width: 935px;
@@ -267,7 +268,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -2154px;
+	margin-top: -8466px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -282,11 +283,11 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -245px;
+	margin-top: -8320px;
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 1384px;
+	height: 1200px;
 	z-index: 1;
 }
 
@@ -296,7 +297,7 @@ body
 	float: left;
 	background: url(../img/level2/tree-left.png);
 	width: 119px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s2-road-left
@@ -305,7 +306,7 @@ body
 	float: left;
 	background: url(../img/level2/road-side.png) repeat-y;
 	width: 33px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 152px;
 }
 
@@ -315,7 +316,7 @@ body
 	float: left;
 	background: url(../img/level2/road-side.png) repeat-y;
 	width: 33px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 323px;
 }
 
@@ -325,7 +326,7 @@ body
 	float: right;
 	background: url(../img/level2/tree-right.png);
 	width: 119px;
-	height: 1384px;
+	height: inherit;
 }
 
 .divider2
@@ -333,7 +334,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -100px;
+	margin-top: -7180px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -348,11 +349,11 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -229px;
+	margin-top: -6955px;
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 1384px;
+	height: 770px;
 	background-color: #636363;
 	z-index: 1;
 }
@@ -363,7 +364,7 @@ body
 	float: left;
 	background: url(../img/level3/road-side.png) repeat-y;
 	width: 33px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 273px;
 }
 
@@ -373,7 +374,7 @@ body
 	float: left;
 	background: url(../img/level3/road-side.png) repeat-y;
 	width: 33px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 324px;
 }
 
@@ -382,7 +383,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -100px;
+	margin-top: -6282px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -397,7 +398,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -229px;
+	margin-top: -6050px;
 	display: block;
 	position: relative;
 	width: 935px;
@@ -412,7 +413,7 @@ body
 	float: left;
 	background-color: #00de01;
 	width: 273px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s4-side-right
@@ -421,7 +422,7 @@ body
 	float: right;
 	background-color: #00de01;
 	width: 275px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s4-road-left
@@ -430,7 +431,7 @@ body
 	float: left;
 	background: url(../img/level4/road-side-left.png) repeat-y;
 	width: 46px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 0px;
 }
 
@@ -440,7 +441,7 @@ body
 	float: left;
 	background: url(../img/level4/road-side-right.png) repeat-y;
 	width: 46px;
-	height: 1384px;
+	height: inherit;
 	margin-left: 295px;
 }
 
@@ -449,7 +450,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -200px;
+	margin-top: -4860px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -464,11 +465,11 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -204px;
+	margin-top: -4555px;
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 1683px;
+	height: 1800px;
 	z-index: 1;
 }
 
@@ -504,7 +505,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -634px;
+	margin-top: -3440px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -519,7 +520,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -280px;
+	margin-top: -2440px;
 	display: block;
 	position: relative;
 	width: 935px;
@@ -533,7 +534,7 @@ body
 	float: left;
 	background: url(../img/level6/side-left.jpg) repeat;
 	width: 322px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s6-side-right
@@ -542,7 +543,7 @@ body
 	float: right;
 	background: url(../img/level6/side-right.jpg) repeat;
 	width: 304px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s6-road
@@ -551,7 +552,7 @@ body
 	float: left;
 	background: url(../img/level6/road.jpg) repeat;
 	width: 309px;
-	height: 1384px;
+	height: inherit;
 }
 
 .divider6
@@ -559,7 +560,7 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -157px;
+	margin-top: -1115px;
 	display: block;
 	position: relative;
 	top: 0px;
@@ -574,11 +575,11 @@ body
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -158px;
+	margin-top: -865px;
 	display: block;
 	position: relative;
 	width: 935px;
-	height: 1384px;
+	height: 1650px;
 	z-index: 1;
 }
 
@@ -588,7 +589,7 @@ body
 	float: left;
 	background: url(../img/level7/side-left.jpg) repeat;
 	width: 280px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s7-side-right
@@ -597,7 +598,7 @@ body
 	float: right;
 	background: url(../img/level7/side-right.jpg) repeat;
 	width: 252px;
-	height: 1384px;
+	height: inherit;
 }
 
 .s7-road
@@ -606,7 +607,7 @@ body
 	float: left;
 	background: url(../img/level7/road.jpg) repeat;
 	width: 403px;
-	height: 1384px;
+	height: inherit;
 }
 
 .finish-line
@@ -615,7 +616,7 @@ body
 	background: url(../img/level7/finish-line.png) repeat-x;
 	width: 277px;
 	height: 184px;
-	top: 880px;
+	top: 1160px;
 	left: 64px;
 }
 
@@ -663,14 +664,16 @@ body
 	height: 13px;
 	margin-top: 16px;
 	margin-left: 6px;
-	background: url(../img/license/title.png);
-	background-size: 100% 100%;
+	margin-left: 9px\9;
+	background: url(../img/license/title.png) no-repeat;
+	background-size: contain;
 }
 
 .game-info
 {
 	width: 180px;
 	margin-left: 6px;
+	margin-left: 9px\9;
 	margin-top: 8px;
 }
 
@@ -732,60 +735,146 @@ body
 {
 	margin-top: 600px;
 	float: right;
+	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop3
 {
-	margin-top: 950px;
+	margin-top: 1000px;
 	float: left;
 }
 
 #pop4
 {
+	margin-top: 1000px;
 	float: right;
+	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop5
 {
+	margin-top: 1000px;
 	float: left;
 }
 
 #pop6
 {
+	margin-top: 1600px;
 	float: right;
+	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop7
 {
+	margin-top: 1200px;
 	float: left;
 }
 
 #pop8
 {
+	margin-top: 1200px;
 	float: right;
+	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop9
 {
+	margin-top: 1200px;
 	float: left;
 }
 
 #pop10
 {
+	margin-top: 1900px;
 	float: right;
+	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop11
 {
+	margin-top: 1900px;
 	float: left;
 }
 
 #pop12
 {
+	margin-top: 1200px;
 	float: right;
+	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop13
 {
+	margin-top: 1200px;
 	float: left;
+}
+
+@media screen and (min-width: 1025px) {
+	.top-border
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.top-border-left
+	{
+		margin-left: 0px;
+		margin-left: 0px\9;
+	}
+
+	.top-border-middle
+	{
+
+	}
+
+	.top-border-right
+	{
+		margin-right: 0px;
+		margin-right: 0px\9;
+	}
+
+	.bottom-border
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bottom-border-left
+	{
+		margin-left: 0px;
+		margin-left: 0px\9;
+	}
+
+	.bottom-border-middle
+	{
+
+	}
+
+	.bottom-border-right
+	{
+		margin-right: 0px;
+		margin-right: 0px\9;
+	}
+
+	.left-border
+	{
+		padding-top: 9983px;
+		padding-top: 10002px\9;
+		margin-left: 0px;
+		margin-left: 0px\9;
+	}
+
+	.right-border
+	{
+		padding-top: 9983px;
+		padding-top: 10002px\9;
+		margin-right: 0px;
+		margin-right: 0px\9;
+	}
 }
