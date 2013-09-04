@@ -26,87 +26,40 @@ body
 
 .top-border
 {
-	top: 0px;
-	width: 1154px;
-}
-
-.top-border-left
-{
-	float: left;
-	width: 108px;
-	height: 86px;
-	margin-left: -64px;
-	background: url(../img/border/top-left.png) no-repeat;
-}
-
-.top-border-middle
-{
-	float: left;
-	width: 935px;
-	height: 86px;
-	background: url(../img/border/top.png) repeat-x;
-}
-
-.top-border-right
-{
-	float: right;
-	width: 108px;
-	height: 86px;
-	margin-right: 67px;
-	background: url(../img/border/top-right.png) no-repeat;
+	display: none;
 }
 
 .bottom-border
 {
-	width: 1154px;
-}
-
-.bottom-border-left
-{
-	float: left;
-	width: 108px;
-	height: 86px;
-	margin-left: -650px;
-	background: url(../img/border/bottom-left.png) no-repeat;
-}
-
-.bottom-border-middle
-{
-	float: left;
-	width: 935px;
-	height: 86px;
-	background: url(../img/border/bottom.png) repeat-x;
-	margin-top: -42px;
-}
-
-.bottom-border-right
-{
-	float: right;
-	width: 108px;
-	height: 86px;
-	margin-right: 67px;
-	margin-top: -42px;
-	background: url(../img/border/bottom-right.png) no-repeat;
+	display: none;
 }
 
 .left-border
 {
+	display: none;
+	/*
 	float: left;
+	margin-left: 0px;
 	width: 108px;
 	height: 100%;
 	background: url(../img/border/left.png) repeat-y;
 	padding-top: 9979px;
-	margin-left: -64px;
+	padding-top: 9999px\9;
+	*/
 }
 
 .right-border
 {
+	display: none;
+	/*
 	float: right;
+	margin-right: 0px;
 	width: 108px;
 	height: 100%;
 	padding-top: 9979px;
-	margin-right: -80px;
+	padding-top: 9999px\9;
 	background: url(../img/border/right.png) repeat-y;
+	*/
 }
 
 .share-container
@@ -161,9 +114,10 @@ body
 {
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 150px;
 	display: block;
 	position: fixed;
-	width: 100%;
+	width: 935px;
 	z-index: 2;
 }
 
@@ -185,9 +139,10 @@ body
 	margin-right: auto;
 	display: block;
 	position: relative;
-	width: 100%;
-	height: 100%;
-	padding-top: 86px;
+	width: 935px;
+	height: 10747px;
+	padding-top: 1px;
+	border: thin solid #9bffe6;
 }
 
 .title-container
@@ -658,6 +613,7 @@ body
 	height: 13px;
 	margin-top: 16px;
 	margin-left: 6px;
+	margin-left: 9px\9;
 	background: url(../img/license/title.png) no-repeat;
 	background-size: contain;
 }
@@ -666,6 +622,7 @@ body
 {
 	width: 180px;
 	margin-left: 6px;
+	margin-left: 9px\9;
 	margin-top: 8px;
 }
 
@@ -728,6 +685,7 @@ body
 	margin-top: 600px;
 	float: right;
 	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop3
@@ -741,6 +699,7 @@ body
 	margin-top: 1000px;
 	float: right;
 	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop5
@@ -754,6 +713,7 @@ body
 	margin-top: 1600px;
 	float: right;
 	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop7
@@ -767,6 +727,7 @@ body
 	margin-top: 1200px;
 	float: right;
 	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop9
@@ -780,6 +741,7 @@ body
 	margin-top: 1900px;
 	float: right;
 	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop11
@@ -793,6 +755,7 @@ body
 	margin-top: 1200px;
 	float: right;
 	margin-right: -8px;
+	margin-right: -1px\9;
 }
 
 #pop13
@@ -811,121 +774,4 @@ body
 #bottom-share .share-inner
 {
 	width: 164px;
-}
-
-@media screen and (min-width: 1025px) {
-	.top-border
-	{
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.top-border-left
-	{
-		margin-left: 0px;
-	}
-
-	.top-border-middle
-	{
-
-	}
-
-	.top-border-right
-	{
-		margin-right: 3px;
-	}
-
-	.bottom-border
-	{
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.bottom-border-left
-	{
-		margin-left: -659px;
-	}
-
-	.bottom-border-middle
-	{
-
-	}
-
-	.bottom-border-right
-	{
-		margin-right: 3px;
-	}
-
-	.left-border
-	{
-		padding-top: 9912px;
-		margin-left: 0px;
-	}
-
-	.right-border
-	{
-		padding-top: 9912px;
-		margin-right: 3px;
-	}
-	.content-container
-	{
-		width: 1154px;
-		height: 100%;
-	}
-	.car-container
-	{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		position: fixed;
-		width: 935px;
-		padding-left: 100px;
-		z-index: 2;
-	}
-
-	#pop2
-	{
-		margin-top: 600px;
-		float: right;
-		margin-right: 0px;
-	}
-
-	#pop4
-	{
-		margin-top: 1000px;
-		float: right;
-		margin-right: 0px;
-	}
-
-	#pop6
-	{
-		margin-top: 1600px;
-		float: right;
-		margin-right: 0px;
-	}
-
-	#pop8
-	{
-		margin-top: 1200px;
-		float: right;
-		margin-right: 0px;
-	}
-
-	#pop10
-	{
-		margin-top: 1900px;
-		float: right;
-		margin-right: 0px;
-	}
-
-	#pop12
-	{
-		margin-top: 1200px;
-		float: right;
-		margin-right: 0px;
-	}
-	.finish-line
-	{
-		top: 1085px;
-	}
 }
