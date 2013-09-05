@@ -871,13 +871,13 @@ body
 
 	.left-border
 	{
-		padding-top: 9912px;
+		padding-top: 10431px;
 		margin-left: 0px;
 	}
 
 	.right-border
 	{
-		padding-top: 9912px;
+		padding-top: 10431px;
 		margin-right: 3px;
 	}
 	.content-container
@@ -894,6 +894,11 @@ body
 		width: 935px;
 		padding-left: 100px;
 		z-index: 2;
+	}
+
+	.car
+	{
+		margin-top: 150px;
 	}
 
 	#pop2
@@ -944,6 +949,7 @@ body
 }
 
 @media screen and (max-width: 480px) {
+	/* ***** 480smartphone ***** */
 	.top-border
 	{
 		display: none;
@@ -973,21 +979,16 @@ body
 
 	.title-container
 	{
-		float: left;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		position: relative;
 		width: 480px;
-		height: 350px;
+		height: 360px;
 		background: url(../img/title480.jpg) no-repeat;
 		background-color: #070029;
-		z-index: 5;
 	}
 
 	#top-share
 	{
-		top: 284px;
+		top: 285px;
+		margin-left: 47px;
 	}
 	
 	.fb-link
@@ -1012,5 +1013,763 @@ body
 		width: 22px;
 		height: 21px;
 		background-size: contain;
+	}
+
+	.s1-container
+	{
+		margin-top: -11814px;
+		width: 480px;
+		height: 1300px;
+		z-index: 1;
+	}
+
+	.s1-road-left
+	{
+		width: 30px;
+		height: inherit;
+		margin-left: 55px;
+	}
+
+	.s1-road-lines-left
+	{
+		width: 6px;
+		height: inherit;
+		margin-left: 14px;
+	}
+
+	.s1-road-lines-right
+	{
+		width: 6px;
+		height: inherit;
+		margin-left: 279px;
+	}
+
+	.s1-road-right
+	{
+		width: 30px;
+		height: inherit;
+		margin-right: 48px;
+	}
+
+	.divider1
+	{
+		margin-top: -10515px;
+		background: url(../img/divide/first-bridge480.png) no-repeat;
+		width: 480px;
+	}
+
+	.s2-container
+	{
+		margin-top: -10320px;
+		width: 480px;
+		height: 1200px;
+	}
+
+	.s2-trees-left
+	{
+		display: none;
+	}
+
+	.s2-road-left
+	{
+		margin-left: 50px;
+	}
+
+	.s2-road-right
+	{
+		margin-left: 323px;
+	}
+
+	.s2-trees-right
+	{
+		display: none;
+	}
+
+	.divider2
+	{
+		margin-top: -9155px;
+		background: url(../img/divide/second-bridge480.png) no-repeat;
+		width: 480px;
+	}
+
+	.s3-container
+	{
+		margin-top: -8910px;
+		width: 480px;
+		height: 920px;
+		background-color: #636363;
+	}
+
+	.s3-road-left
+	{
+		margin-left: 52px;
+	}
+
+	.s3-road-right
+	{
+		margin-left: 324px;
+	}
+
+	.divider3
+	{
+		margin-top: -8090px;
+		background: url(../img/divide/third-bridge480.png) no-repeat;
+		width: 480px;
+		height: 329px;
+	}
+
+	.s4-container
+	{
+		margin-top: -7840px;
+		width: 480px;
+		height: 1730px;
+		background-color: #636363;
+	}
+
+	.s4-side-left
+	{
+		background-color: #00de01;
+		width: 47px;
+	}
+
+	.s4-side-right
+	{
+		background-color: #00de01;
+		width: 46px;
+	}
+
+	.s4-road-left
+	{
+		width: 46px;
+		height: inherit;
+		margin-left: 0px;
+	}
+
+	.s4-road-right
+	{
+		width: 46px;
+		height: inherit;
+		margin-left: 295px;
+	}
+
+	.divider4
+	{
+		margin-top: -6280px;
+		background: url(../img/divide/fourth-bridge480.png) no-repeat;
+		width: 480px;
+		height: 404px;
+	}
+
+	.s5-container
+	{
+		margin-top: -5935px;
+		width: 480px;
+		height: 2205px;
+	}
+
+	.s5-side-left
+	{
+		width: 90px;
+	}
+
+	.s5-side-right
+	{
+		width: 91px;
+	}
+
+	.s5-road
+	{
+		width: 299px;
+	}
+
+	.divider5
+	{
+		margin-top: -4370px;
+		background: url(../img/divide/bowser-bridge480.png) no-repeat;
+		width: 480px;
+		height: 1286px;
+	}
+
+	.s6-container
+	{
+		margin-top: -3230px;
+		width: 480px;
+		height: 1720px;
+	}
+
+	.s6-side-left
+	{
+		background: url(../img/level6/side-left480.jpg) repeat;
+		width: 86px;
+		height: inherit;
+	}
+
+	.s6-side-right
+	{
+		background: url(../img/level6/side-right480.jpg) repeat;
+		width: 85px;
+		height: inherit;
+	}
+
+	.s6-road
+	{
+		background: url(../img/level6/road.jpg) repeat;
+		width: 309px;
+		height: inherit;
+	}
+
+	.divider6
+	{
+		margin-top: -1565px;
+		top: 0px;
+		background: url(../img/divide/sixth-bridge480.png) no-repeat;
+		width: 480px;
+		height: 315px;
+	}
+
+	.s7-container
+	{
+		margin-top: -1305px;
+		width: 480px;
+		height: 1860px;
+	}
+
+	.s7-side-left
+	{
+		background: url(../img/level7/side-left.jpg) repeat;
+		width: 38px;
+	}
+
+	.s7-side-right
+	{
+		background: url(../img/level7/side-right.jpg) repeat;
+		width: 39px;
+	}
+
+	.s7-road
+	{
+		background: url(../img/level7/road.jpg) repeat;
+		width: 403px;
+	}
+
+	.finish-line
+	{
+		background: url(../img/level7/finish-line.png) repeat-x;
+		width: 277px;
+		height: 184px;
+		top: 1676px;
+		left: 64px;
+	}
+
+	.well-done
+	{
+		width: 480px;
+		height: 317px;
+		background: url(../img/welldone480.png) no-repeat;
+		background-color: #070029;
+		margin-bottom: -18px;
+	}
+
+	#bottom-share
+	{
+		top: -40px;
+		left: 50px;
+	}
+
+	#bottom-share .share-inner
+	{
+		width: 164px;
+	}
+
+	.popup-container
+	{
+		margin-top: -158px;
+		width: 480px;
+	}
+
+	.popup
+	{
+		margin-left: 80px;
+	}
+
+	#pop1
+	{
+		margin-top: 200px;
+		float: left;
+	}
+
+	#pop2
+	{
+		margin-top: 300px;
+		float: left;
+	}
+
+	#pop3
+	{
+		margin-top: 800px;
+		float: left;
+	}
+
+	#pop4
+	{
+		margin-top: 320px;
+		float: left;
+	}
+
+	#pop5
+	{
+		margin-top: 710px;
+		float: left;
+	}
+
+	#pop6
+	{
+		margin-top: 875px;
+		float: left;
+	}
+
+	#pop7
+	{
+		margin-top: 320px;
+		float: left;
+	}
+
+	#pop8
+	{
+		margin-top: 1200px;
+		float: left;
+	}
+
+	#pop9
+	{
+		margin-top: 365px;
+		float: left;
+	}
+
+	#pop10
+	{
+		margin-top: 1900px;
+		float: left;
+	}
+
+	#pop11
+	{
+		margin-top: 320px;
+		float: left;
+	}
+
+	#pop12
+	{
+		margin-top: 990px;
+		float: left;
+	}
+
+	#pop13
+	{
+		margin-top: 420px;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+	/* ***** 640smartphone ***** */
+	.top-border
+	{
+		display: none;
+	}
+
+	.bottom-border
+	{
+		display: none;
+	}
+
+	.left-border
+	{
+		display: none;
+	}
+
+	.right-border
+	{
+		display: none;
+	}
+
+	.content-container
+	{
+		width: 640px;
+		height: 11267px;
+		padding-top: 1px;
+	}
+
+	.title-container
+	{
+		width: 640px;
+		height: 480px;
+		background: url(../img/title640.jpg) no-repeat;
+		background-color: #070029;
+	}
+
+	#top-share
+	{
+		top: 390px;
+		margin-left: 17px;
+	}
+
+	.s1-container
+	{
+		margin-top: -11814px;
+		width: 640px;
+		height: 1300px;
+		z-index: 1;
+	}
+
+	.s1-road-left
+	{
+		width: 30px;
+		height: inherit;
+		margin-left: 135px;
+	}
+
+	.s1-road-lines-left
+	{
+		width: 6px;
+		height: inherit;
+		margin-left: 14px;
+	}
+
+	.s1-road-lines-right
+	{
+		width: 6px;
+		height: inherit;
+		margin-left: 279px;
+	}
+
+	.s1-road-right
+	{
+		width: 30px;
+		height: inherit;
+		margin-right: 127px;
+	}
+
+	.divider1
+	{
+		margin-top: -10515px;
+		background: url(../img/divide/first-bridge640.png) no-repeat;
+		width: 640px;
+	}
+
+	.s2-container
+	{
+		margin-top: -10320px;
+		width: 640px;
+		height: 1200px;
+	}
+
+	.s2-trees-left
+	{
+		margin-right: 0px;
+	}
+
+	.s2-road-left
+	{
+		margin-left: 11px;
+	}
+
+	.s2-road-right
+	{
+		margin-left: 320px;
+	}
+
+	.s2-trees-right
+	{
+		
+	}
+
+	.divider2
+	{
+		margin-top: -9137px;
+		background: url(../img/divide/second-bridge640.png) no-repeat;
+		width: 640px;
+	}
+
+	.s3-container
+	{
+		margin-top: -8910px;
+		width: 640px;
+		height: 920px;
+		background-color: #636363;
+	}
+
+	.s3-road-left
+	{
+		margin-left: 131px;
+	}
+
+	.s3-road-right
+	{
+		margin-left: 324px;
+	}
+
+	.divider3
+	{
+		margin-top: -8090px;
+		background: url(../img/divide/third-bridge640.png) no-repeat;
+		width: 640px;
+		height: 329px;
+	}
+
+	.s4-container
+	{
+		margin-top: -7858px;
+		width: 640px;
+		height: 1765px;
+		background-color: #636363;
+	}
+
+	.s4-side-left
+	{
+		background-color: #00de01;
+		width: 132px;
+	}
+
+	.s4-side-right
+	{
+		background-color: #00de01;
+		width: 121px;
+	}
+
+	.s4-road-left
+	{
+		width: 46px;
+		height: inherit;
+		margin-left: 0px;
+	}
+
+	.s4-road-right
+	{
+		width: 46px;
+		height: inherit;
+		margin-left: 295px;
+	}
+
+	.divider4
+	{
+		margin-top: -6291px;
+		background: url(../img/divide/fourth-bridge640.png) no-repeat;
+		width: 640px;
+		height: 404px;
+	}
+
+	.s5-container
+	{
+		margin-top: -5935px;
+		width: 640px;
+		height: 2265px;
+	}
+
+	.s5-side-left
+	{
+		width: 170px;
+	}
+
+	.s5-side-right
+	{
+		width: 171px;
+	}
+
+	.s5-road
+	{
+		width: 299px;
+	}
+
+	.divider5
+	{
+		margin-top: -4325px;
+		background: url(../img/divide/bowser-bridge640.png) no-repeat;
+		width: 640px;
+		height: 1284px;
+	}
+
+	.s6-container
+	{
+		margin-top: -3230px;
+		width: 640px;
+		height: 1720px;
+	}
+
+	.s6-side-left
+	{
+		background: url(../img/level6/side-left640.jpg) repeat;
+		width: 166px;
+		height: inherit;
+	}
+
+	.s6-side-right
+	{
+		background: url(../img/level6/side-right640.jpg) repeat;
+		width: 165px;
+		height: inherit;
+	}
+
+	.s6-road
+	{
+		background: url(../img/level6/road.jpg) repeat;
+		width: 309px;
+		height: inherit;
+	}
+
+	.divider6
+	{
+		margin-top: -1565px;
+		top: 0px;
+		background: url(../img/divide/sixth-bridge640.png) no-repeat;
+		width: 640px;
+		height: 315px;
+	}
+
+	.s7-container
+	{
+		margin-top: -1305px;
+		width: 640px;
+		height: 1860px;
+	}
+
+	.s7-side-left
+	{
+		width: 118px;
+	}
+
+	.s7-side-right
+	{
+		width: 119px;
+	}
+
+	.s7-road
+	{
+		background: url(../img/level7/road.jpg) repeat;
+		width: 403px;
+	}
+
+	.finish-line
+	{
+		background: url(../img/level7/finish-line.png) repeat-x;
+		width: 277px;
+		height: 184px;
+		top: 1676px;
+		left: 64px;
+	}
+
+	.well-done
+	{
+		width: 640px;
+		height: 409px;
+		background: url(../img/welldone640.png) no-repeat;
+		background-color: #070029;
+		margin-bottom: -41px;
+	}
+
+	#bottom-share
+	{
+		top: -40px;
+		left: 21px;
+	}
+
+	#bottom-share .share-inner
+	{
+		width: 164px;
+	}
+
+	.popup-container
+	{
+		margin-top: -158px;
+		width: 480px;
+	}
+
+	.popup
+	{
+		margin-left: 80px;
+	}
+
+	#pop1
+	{
+		margin-top: 200px;
+		float: left;
+	}
+
+	#pop2
+	{
+		margin-top: 300px;
+		float: left;
+	}
+
+	#pop3
+	{
+		margin-top: 800px;
+		float: left;
+	}
+
+	#pop4
+	{
+		margin-top: 320px;
+		float: left;
+	}
+
+	#pop5
+	{
+		margin-top: 710px;
+		float: left;
+	}
+
+	#pop6
+	{
+		margin-top: 875px;
+		float: left;
+	}
+
+	#pop7
+	{
+		margin-top: 320px;
+		float: left;
+	}
+
+	#pop8
+	{
+		margin-top: 1200px;
+		float: left;
+		margin-left: 74px;
+	}
+
+	#pop9
+	{
+		margin-top: 365px;
+		float: left;
+		margin-left: 74px;
+	}
+
+	#pop10
+	{
+		margin-top: 1900px;
+		float: left;
+		margin-left: 74px;
+	}
+
+	#pop11
+	{
+		margin-top: 320px;
+		float: left;
+		margin-left: 74px;
+	}
+
+	#pop12
+	{
+		margin-top: 990px;
+		float: left;
+		margin-left: 74px;
+	}
+
+	#pop13
+	{
+		margin-top: 420px;
+		float: left;
+		margin-left: 74px;
 	}
 }
