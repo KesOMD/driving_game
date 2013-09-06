@@ -217,7 +217,7 @@
   <object name="NukeLeftEntity" x="640" y="2048" width="160" height="288"/>
  </objectgroup>
  <objectgroup color="#0055ff" name="PlayerEntity" width="41" height="1450">
-  <object name="mainPlayer" x="608" y="7808" width="96" height="192"/>
+  <object name="mainPlayer" x="608" y="46176" width="96" height="192"/>
  </objectgroup>
  <objectgroup color="#ff00ff" name="TransitionEnities" width="41" height="1450">
   <object name="TransitionEntity" x="480" y="39904" width="352" height="32">
