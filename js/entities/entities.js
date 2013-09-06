@@ -116,7 +116,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		else if (me.input.isKeyPressed('reverse'))
 		{
 			//for debug purposes remove later
-			/*
+			
 			if (!hitObstacle)
 			{
 				isMoving = true;
@@ -124,7 +124,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 				isReverse = true;
 				this.vel.y = this.maxVel.y * me.timer.tick;
 			}
-			*/
+			
 			//console.log('pressed down');
 		}
 		else
@@ -286,12 +286,12 @@ game.TokenEntity = me.CollectableEntity.extend({
 		var t3;
 		var t4;
 
-		t3 = new me.Tween(position).to({y:120}, 1000)
+		t3 = new me.Tween(position).to({y:120}, 500)
 		.easing(me.Tween.Easing.Cubic.EaseOut)
 		.onUpdate( function() { updateAnim(divTarget) });
 
-		t4 = new me.Tween(position).to({y:850}, 1000)
-		.delay(2000)
+		t4 = new me.Tween(position).to({y:850}, 500)
+		.delay(1000)
 		.easing(me.Tween.Easing.Cubic.EaseIn)
 		.onUpdate( function() { updateAnim(divTarget) });
 
