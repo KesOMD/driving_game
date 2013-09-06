@@ -36,7 +36,7 @@ game.TitleScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.DOWN, "down", true);
         me.input.bindKey(me.input.KEY.B, "b", true);
         me.input.bindKey(me.input.KEY.A, "a", true);
-	    document.getElementById("scont").style.top = '0px';
+	    document.getElementById("scont").style.top = '550px';
     },
 	
 	//update function

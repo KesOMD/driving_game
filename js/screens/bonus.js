@@ -10,6 +10,7 @@ game.BonusScreen = me.ScreenObject.extend({
 		//me.game.onLevelLoaded = this.loadFinished.bind(this);
 	    me.levelDirector.loadLevel("bonus_level");
 	    //me.levelDirector.loadLevel("area01");
+	    document.getElementById("scont").style.top = '-1000px';
 	},
 
 	onDestroyEvent: function() {

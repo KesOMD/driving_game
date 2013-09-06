@@ -55,6 +55,7 @@ game.resources = [
 	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
 	//instructions image
 	{name: "instructions", type:"image", src: "data/img/instructions.png"},
+	{name: "instructions_bonus", type:"image", src: "data/img/instructions_bonus.png"},
 	//title screen image
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
 	{name: "press_enter", type: "image", src: "data/img/press_enter.gif"},
@@ -71,6 +72,7 @@ game.resources = [
 	{name: "click_to_view", type: "image", src: "data/img/click_to_view.png"},
 	{name: "enter_bonus", type: "image", src: "data/img/enter_bonus.gif"},
 	{name: "enter_retry", type: "image", src: "data/img/enter_retry.gif"},
+	{name: "share_score", type: "image", src: "data/img/share_score.png"},
 	//credits screen image
 	{name: "credits", type: "image", src: "data/img/credits.png"},
 	//well done screen image

@@ -40,6 +40,8 @@ game.EndScreen = me.ScreenObject.extend({
 		this.enterMessage = null;
 
 		enterPos = {};
+
+		this.share = null;
 	
 	},
 	//reset function
@@ -207,6 +209,8 @@ game.EndScreen = me.ScreenObject.extend({
 			{
 				this.orb13 = me.loader.getImage("orb_grey");
 			}
+
+			this.share = me.loader.getImage("share_score");
 			//window.bonusUnlocked = true;
 			if (window.bonusUnlocked)
 			{
@@ -214,7 +218,7 @@ game.EndScreen = me.ScreenObject.extend({
 				this.bonusMessage = me.loader.getImage("bonus_unlocked");
 				bonusPos = {x:240, y:65};
 				this.enterMessage = me.loader.getImage("enter_bonus");
-				enterPos = {x:319, y:526};
+				enterPos = {x:319, y:610};
 			}
 			else
 			{
@@ -222,13 +226,14 @@ game.EndScreen = me.ScreenObject.extend({
 				this.bonusMessage = me.loader.getImage("bonus_collect");
 				bonusPos = {x:190, y:65};
 				this.enterMessage = me.loader.getImage("enter_retry");
-				enterPos = {x:415, y:526};
+				enterPos = {x:415, y:610};
 			}
 		}
 		winHeight = $(window).height();
 		document.getElementById("popupContainer").style.top = '-1000px';
 		document.getElementById("econt").style.top = 0 + 'px';
 		me.input.bindKey(me.input.KEY.ENTER, "enter", true);
+		document.getElementById("scont").style.top = '526px';
     },
     moveLicense: function(id)
     {
@@ -399,6 +404,8 @@ game.EndScreen = me.ScreenObject.extend({
 
 		context.drawImage(this.clickMessage, 352, 233);
 		context.drawImage(this.enterMessage, enterPos.x, enterPos.y);
+
+		context.drawImage(this.share, 455, 499);
 	},
 	/**	
 	 *  action to perform when leaving this screen (state change)
