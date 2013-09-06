@@ -276,7 +276,7 @@ canvas
 {
 	float: right;
 	width: 270px;
-	height: 358px;
+	height: 283px;
 	padding: 0px;
 }
 
@@ -294,6 +294,7 @@ canvas
 	width: 244px;
 	margin-left: 9px;
 	margin-top: 13px;
+	z-index: 7;
 }
 
 .game-info h3
@@ -330,6 +331,18 @@ canvas
 .game-info a:hover;
 {
 	background-position: 0 -34px !important;
+}
+
+.stamp
+{
+	display: block;
+	position: absolute;
+	width: 218px;
+	height: 164px;
+	background: url(../data/img/license/stamp.png) no-repeat;
+	z-index: 8;
+	margin-top: -135px;
+	margin-left: 14px;
 }
 
 .fb-link
@@ -596,6 +609,15 @@ canvas
 		margin-left: 6px;
 		margin-top: 8px;
 		
+	}
+
+	.stamp
+	{
+		width: 176px;
+		height: 135px;
+		margin-top: -135px;
+		margin-left: -3px;
+		background-size: 100%;
 	}
 
 	.game-info h3
