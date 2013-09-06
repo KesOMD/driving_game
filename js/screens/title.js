@@ -13,7 +13,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		this.konami = null;
 		//this.font = null;
 
-		this.enterPrompt = null;
+		/*this.enterPrompt = null;*/
 		
 		keys = [];
 		konami = 'UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A';
@@ -25,7 +25,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		{
 			//init not yet completed
 			this.title = me.loader.getImage("title_screen");
-			this.enterPrompt = me.loader.getImage("press_enter");
+			/*this.enterPrompt = me.loader.getImage("press_enter");*/
 			this.konami = me.loader.getImage("konami");
 		}
 		//enable some keyboard keys
@@ -88,7 +88,7 @@ game.TitleScreen = me.ScreenObject.extend({
 	draw: function(context)
 	{
 		context.drawImage(this.title, 0, 0);
-		context.drawImage(this.enterPrompt, 392, 500);
+		/*context.drawImage(this.enterPrompt, 392, 500);*/
 		if (this.checkKonami())
 		{
 			if (!window.bonusUnlocked)

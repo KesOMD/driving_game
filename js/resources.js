@@ -54,7 +54,7 @@ game.resources = [
 	//game font
 	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
 	//instructions image
-	{name: "instructions", type:"image", src: "data/img/instructions.jpg"},
+	{name: "instructions", type:"image", src: "data/img/instructions.png"},
 	//title screen image
 	{name: "title_screen", type: "image", src: "data/img/title_screen.jpg"},
 	{name: "press_enter", type: "image", src: "data/img/press_enter.gif"},
