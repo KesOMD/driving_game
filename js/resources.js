@@ -51,8 +51,6 @@ game.resources = [
 	//the parallax elements
 	{name: "stars_back", type: "image", src: "data/img/stars_back.jpg"},
 	{name: "stars_overlay", type:"image", src: "data/img/stars_overlay.png"},
-	//game font
-	{name: "32x32_font", type:"image", src: "data/img/font/32x32_font.png"},
 	//instructions image
 	{name: "instructions", type:"image", src: "data/img/instructions.png"},
 	{name: "instructions_bonus", type:"image", src: "data/img/instructions_bonus.png"},
