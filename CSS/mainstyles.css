@@ -374,6 +374,23 @@ canvas
 	background: url(../data/img/social/google.png) no-repeat;
 }
 
+@media screen and (min-width: 1681px) {
+	#screen
+	{
+		float: none;
+	}
+
+	.left-border
+	{
+		display: none;
+	}
+
+	.right-border
+	{
+		display: none;
+	}
+}
+
 @media screen and (min-width: 1360px) and (max-width: 1599px) {
 	/* CSS for larger screens */
 	#screen
