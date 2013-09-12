@@ -10,6 +10,8 @@ body
 	padding: 0;
 	background-color: #000;
 	overflow-x: hidden;
+	background: url(../img/bg.png);
+	background-repeat: repeat;
 }
 
 @font-face

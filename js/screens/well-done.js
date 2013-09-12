@@ -16,7 +16,7 @@ game.WellDoneScreen = me.ScreenObject.extend({
 			setTimeout(function()
 				{
 					me.state.change(me.state.MENU);
-				}, 3000);
+				}, 5000);
 		}
 		document.getElementById("scont").style.top = '550px';
 	},
