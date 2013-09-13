@@ -389,6 +389,21 @@ canvas
 	{
 		display: none;
 	}
+
+	.bottom-border-left
+	{
+		display: none;
+	}
+
+	.bottom-border-right
+	{
+		display: none;
+	}
+
+	.bottom-border
+	{
+		display: none;
+	}
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1599px) {
