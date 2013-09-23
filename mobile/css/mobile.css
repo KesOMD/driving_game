@@ -629,11 +629,11 @@ body
 .pack-shot
 {
 	float: left;
-	width: 131px;
-	height: 182px;
+	width: 167px;
+	height: 231px;
+	margin-top: 28px;
+	margin-left: 16px;
 	display: inline-block;
-	margin-top: 27px;
-	margin-left: 3px;
 }
 
 .left-side
