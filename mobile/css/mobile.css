@@ -619,8 +619,8 @@ body
 .popup
 {
 	left: 0px;
-	width: 492px;
-	height: 282px;
+	width: 329px;
+	height: 238px;
 	padding: 0px;
 	background-color: #9bffe6;
 	cursor: default;
@@ -629,19 +629,19 @@ body
 .pack-shot
 {
 	float: left;
-	width: 167px;
-	height: 231px;
-	margin-top: 28px;
-	margin-left: 16px;
+	width: 131px;
+	height: 182px;
 	display: inline-block;
+	margin-top: 27px;
+	margin-left: 3px;
 }
 
 .left-side
 {
 	float: left;
 	margin-left: 1px;
-	width: 222px;
-	height: 282px;
+	width: 148px;
+	height: 238px;
 	background: url(../img/license/leftback.jpg);
 	background-size: 100% 100%;
 }
@@ -1292,18 +1292,6 @@ body
 	.popup
 	{
 		margin-left: 80px;
-		width: 329px;
-		height: 238px;
-	}
-
-	.left-side
-	{
-		float: left;
-		margin-left: 1px;
-		width: 148px;
-		height: 238px;
-		background: url(../img/license/leftback.jpg);
-		background-size: 100% 100%;
 	}
 
 	#pop1
