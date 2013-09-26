@@ -1,0 +1,978 @@
+html
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*overflow-y: scroll;*/
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 21305px;
+	background-color: #000;
+	overflow-x: hidden;
+	background: url(../img/bg.png);
+	background-repeat: repeat;
+}
+
+@font-face
+{
+	font-family: GothamMedium;
+	src: url(../font/Gotham-Medium.otf);
+}
+
+@font-face
+{
+	font-family: GothamBook;
+	src: url(../font/Gotham-Book.otf);
+}
+
+.top-border
+{
+	top: 0px;
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-border-left
+{
+	float: left;
+	width: 108px;
+	height: 86px;
+	margin-left: 0px;
+	background: url(../img/border/top-left.png) no-repeat;
+}
+
+.top-border-middle
+{
+	float: left;
+	width: 808px;
+	height: 86px;
+	background: url(../img/border/top.png) repeat-x;
+}
+
+.top-border-right
+{
+	float: right;
+	width: 108px;
+	height: 86px;
+	margin-right: 0px;
+	background: url(../img/border/top-right.png) no-repeat;
+}
+
+.content-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	width: 1024px;
+	height: 100%;
+	padding-top: 0px;
+}
+
+
+.left-border
+{
+	float: left;
+	width: 108px;
+	height: 100%;
+	background: url(../img/border/left.png) repeat-y;
+	margin-left: 0px;
+}
+
+.right-border
+{
+	float: right;
+	width: 108px;
+	height: 100%;
+	margin-right: 0px;
+	background: url(../img/border/right.png) repeat-y;
+}
+
+.title-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	width: 808px;
+	height: 600px;
+	background: url(../img/title.jpg) no-repeat;
+	background-color: #070029;
+	z-index: 5;
+}
+
+.share-container
+{
+	position: relative;
+	width: 100%;
+	vertical-align: bottom;
+	margin: auto;
+	top: 500px;
+}
+
+.share-inner
+{
+	width:179px;
+	height: 42px;
+	bottom: 10px;
+	vertical-align: bottom;
+	margin: 0 auto;
+}
+
+.fb-link
+{
+	display: block;
+	float: left;
+	width: 43px;
+	height: 42px;
+	padding-right: 25px;
+	margin-left: -15px;
+	background: url(../img/social/facebook.png) no-repeat;
+}
+
+.tw-link
+{
+	display: block;
+	float: left;
+	width: 43px;
+	height: 42px;
+	padding-right: 25px;
+	background: url(../img/social/twitter.png) no-repeat;
+}
+
+.g-link
+{
+	display: block;
+	float: left;
+	width: 43px;
+	height: 42px;
+	background: url(../img/social/google.png) no-repeat;
+}
+
+.car-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: fixed;
+	width: 1024px;
+	z-index: 2;
+	top: 124px;
+}
+
+.car
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background: url(../img/mobile_deloreon_sprite.png);
+	width: 96px;
+	height: 192px;
+	left: 0px;
+}
+
+.popup
+{
+	width: 329px;
+	height: 238px;
+	padding: 0px;
+	background-color: #9bffe6;
+	cursor: default;
+	position: absolute;
+}
+
+.pack-shot
+{
+	float: left;
+	width: 131px;
+	height: 182px;
+	display: inline-block;
+	margin-top: 27px;
+	margin-left: 3px;
+}
+
+.left-side
+{
+	float: left;
+	margin-left: 1px;
+	width: 148px;
+	height: 238px;
+	background: url(../img/license/leftback.jpg);
+	background-size: 100% 100%;
+}
+
+.right-side
+{
+	float: right;
+	width: 180px;
+	height: 238px;
+	padding: 0px;
+}
+
+.title-image
+{
+	width: 155px;
+	height: 13px;
+	margin-top: 16px;
+	margin-left: 6px;
+	background: url(../img/license/title.png) no-repeat;
+	background-size: contain;
+}
+
+.game-info
+{
+	width: 180px;
+	margin-left: 6px;
+	margin-top: 8px;
+}
+
+.game-info h3
+{
+	color: #3e3e3e;
+	font-size: 8px;
+	font-family: GothamBook, Helvetica, Arial, sans-serif;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
+}
+
+.game-info p
+{
+	color: #23132d;
+	font-family: GothamMedium, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	margin-top: 0;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	line-height: 110%;
+	letter-spacing: 0px;
+	text-align: justify;
+}
+
+.game-info a
+{
+	display: block;
+	background: url(../img/license/tweet-fact.png) no-repeat;
+	height: 23px;
+	width: 163px;
+	background-size: 100% 200%;
+}
+
+.game-info a:hover;
+{
+	background-position: 0 -23px !important;
+}
+
+.popup-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: relative;
+	width: 808px;
+	z-index: 4;
+}
+
+#pop1
+{
+	top: 840px;
+	float: left;
+}
+
+#pop2
+{
+	top: 0px;
+	float: right;
+	margin-right: 0px;
+}
+
+#pop3
+{
+	top: 0px;
+	float: left;
+}
+
+#pop4
+{
+	top: 0px;
+	float: right;
+	margin-right: 0px;
+}
+
+#pop5
+{
+	top: 0px;
+	float: left;
+}
+
+#pop6
+{
+	top: 0px;
+	float: right;
+	margin-right: 0px;
+}
+
+#pop7
+{
+	top: 0px;
+	float: left;
+}
+
+#pop8
+{
+	top: 0px;
+	float: right;
+	margin-right: 0px;
+}
+
+#pop9
+{
+	top: 0px;
+	float: left;
+}
+
+#pop10
+{
+	top: 0px;
+	float: right;
+	margin-right: 0px;
+}
+
+#pop11
+{
+	top: 0px;
+	float: left;
+}
+
+#pop12
+{
+	top: 0px;
+	float: right;
+	margin-right: 0px;
+}
+
+#pop13
+{
+	top: 0px;
+	float: left;
+}
+
+.s1-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	width: 808px;
+	height: 1724px;
+	z-index: 1;
+	top: 686px;
+	left: 108px;
+	background-color: #000;
+}
+
+.s1-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level1/road-side.png) repeat-y;
+	width: 30px;
+	height: inherit;
+	margin-left: 210px;
+}
+
+.s1-road-lines-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level1/road-lines-left.png) repeat-y;
+	width: 6px;
+	height: inherit;
+	margin-left: 14px;
+}
+
+.s1-road-lines-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level1/road-lines-right.png) repeat-y;
+	width: 6px;
+	height: inherit;
+	margin-left: 260px;
+}
+
+.s1-road-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level1/road-side.png) repeat-y;
+	width: 30px;
+	height: inherit;
+	margin-right: 240px;
+}
+
+.divider1
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 2410px;
+	left: 108px;
+	background: url(../img/divide/first-bridge.png) no-repeat;
+	width: 808px;
+	height: 245px;
+	z-index: 3;
+}
+
+.s2-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: relative;
+	width: 808px;
+	height: 2400px;
+	top: 1969px;
+	z-index: 1;
+	background-color: #000;
+}
+
+.s2-trees-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level2/tree-left.png);
+	width: 119px;
+	height: inherit;
+	margin-left: 10px;
+}
+
+.s2-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level2/road-side.png) repeat-y;
+	width: 33px;
+	height: inherit;
+	margin-left: 89px;
+}
+
+.s2-road-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level2/road-side.png) repeat-y;
+	width: 33px;
+	height: inherit;
+	margin-left: 283px;
+}
+
+.s2-trees-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level2/tree-right.png);
+	width: 119px;
+	height: inherit;
+	margin-right: 10px;
+}
+
+.divider2
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 4960px;
+	left: 108px;
+	background: url(../img/divide/second-bridge.png) no-repeat;
+	width: 808px;
+	height: 329px;
+	z-index: 3;
+}
+
+.s3-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 5188px;
+	left: 108px;
+	width: 808px;
+	height: 2500px;
+	background-color: #636363;
+	z-index: 1;
+}
+
+.s3-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level3/road-side.png) repeat-y;
+	width: 33px;
+	height: inherit;
+	margin-left: 223px;
+}
+
+.s3-road-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level3/road-side.png) repeat-y;
+	width: 33px;
+	height: inherit;
+	margin-left: 279px;
+}
+
+.divider3
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 7591px;
+	left: 108px;
+	background: url(../img/divide/third-bridge.png) no-repeat;
+	width: 808px;
+	height: 329px;
+	z-index: 3;
+}
+
+.s4-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 7823px;
+	left: 108px;
+	width: 808px;
+	height: 2800px;
+	background-color: #636363;
+	z-index: 1;
+}
+
+.s4-side-left
+{
+	position: relative;
+	float: left;
+	background-color: #00de01;
+	width: 223px;
+	height: inherit;
+}
+
+.s4-side-right
+{
+	position: relative;
+	float: right;
+	background-color: #00de01;
+	width: 243px;
+	height: inherit;
+}
+
+.s4-road-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level4/road-side-left.png) repeat-y;
+	width: 46px;
+	height: inherit;
+	margin-left: 0px;
+}
+
+.s4-road-right
+{
+	position: relative;
+	float: left;
+	background: url(../img/level4/road-side-right.png) repeat-y;
+	width: 46px;
+	height: inherit;
+	margin-left: 250px;
+}
+
+.divider4
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 10429px;
+	left: 108px;
+	background: url(../img/divide/fourth-bridge.png) no-repeat;
+	width: 808px;
+	height: 404px;
+	z-index: 3;
+}
+
+.s5-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 10735px;
+	left: 108px;
+	width: 808px;
+	height: 3800px;
+	z-index: 1;
+}
+
+.s5-side-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level5/side.png) repeat;
+	width: 256px;
+	height: inherit;
+}
+
+.s5-side-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level5/side.png) repeat;
+	width: 255px;
+	height: inherit;
+}
+
+.s5-road
+{
+	position: relative;
+	float: left;
+	background: url(../img/level5/road.png) repeat;
+	width: 297px;
+	height: inherit;
+}
+
+.divider5
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: relative;
+	top: 10500px;
+	background: url(../img/divide/bowser-bridge.png) no-repeat;
+	width: 808px;
+	height: 1277px;
+	z-index: 3;
+}
+
+.s6-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 14630px;
+	left: 108px;
+	width: 808px;
+	height: 3100px;
+	z-index: 1;
+}
+
+.s6-side-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level6/side-left.jpg) repeat;
+	width: 240px;
+	height: inherit;
+}
+
+.s6-side-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level6/side-right.jpg) repeat;
+	width: 259px;
+	height: inherit;
+}
+
+.s6-road
+{
+	position: relative;
+	float: left;
+	background: url(../img/level6/road.jpg) repeat;
+	width: 309px;
+	height: inherit;
+}
+
+.divider6
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 17675px;
+	left: 108px;
+	background: url(../img/divide/sixth-bridge.png) no-repeat;
+	width: 808px;
+	height: 315px;
+	z-index: 3;
+}
+
+.s7-container
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	top: 17937px;
+	left: 108px;
+	width: 808px;
+	height: 3000px;
+	z-index: 1;
+}
+
+.s7-side-left
+{
+	position: relative;
+	float: left;
+	background: url(../img/level7/side-left.jpg) repeat;
+	width: 193px;
+	height: inherit;
+}
+
+.s7-side-right
+{
+	position: relative;
+	float: right;
+	background: url(../img/level7/side-right.jpg) repeat;
+	width: 212px;
+	height: inherit;
+}
+
+.s7-road
+{
+	position: relative;
+	float: left;
+	background: url(../img/level7/road.jpg) repeat;
+	width: 403px;
+	height: inherit;
+}
+
+.finish-line
+{
+	position: relative;
+	background: url(../img/level7/finish-line.png) repeat-x;
+	width: 277px;
+	height: 184px;
+	top: 2660px;
+	left: 64px;
+}
+
+#bottom-share
+{
+	top: 360px;
+	z-index: 6;
+	left: 7px;
+}
+
+#bottom-share .share-inner
+{
+	width: 164px;
+}
+
+.well-done
+{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: absolute;
+	top: 20938px;
+	left: 108px;
+	width: 808px;
+	height: 453px;
+	background: url(../img/welldone.jpg) no-repeat;
+	z-index: 4;
+}
+
+.bottom-border
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 1024px;
+	margin-top: 86px;
+}
+
+.bottom-border-left
+{
+	float: left;
+	width: 108px;
+	height: 86px;
+	margin-left: 0px;
+	background: url(../img/border/bottom-left.png) no-repeat;
+}
+
+.bottom-border-middle
+{
+	float: left;
+	width: 808px;
+	height: 86px;
+	background: url(../img/border/bottom.png) repeat-x;
+	margin-top: 0px;
+}
+
+.bottom-border-right
+{
+	float: right;
+	width: 108px;
+	height: 86px;
+	margin-right: 0px;
+	margin-top: 0px;
+	background: url(../img/border/bottom-right.png) no-repeat;
+}
+
+#invader-container1
+{
+	z-index: 8;
+	position: fixed;
+	left: 50%;
+	width: 808px;
+	margin-left: -395px;
+	top: 0px;
+}
+
+#in1-1
+{
+	position: absolute;
+	top: 790px;
+	left: 270px;
+}
+
+#in1-2
+{
+	position: absolute;
+	top: 1240px;
+	left: 660px;
+}
+
+#in1-3
+{
+	position: absolute;
+	top: 1350px;
+	left: 20px;
+}
+
+#in1-4
+{
+	position: absolute;
+	top: 1620px;
+	left: 575px;
+}
+
+#in1-5
+{
+	position: absolute;
+	top: 1115px;
+	left: 75px;
+}
+
+#in1-6
+{
+	position: absolute;
+	top: 1730px;
+	left: 105px;
+}
+
+#invader-container2
+{
+	z-index: 9;
+	position: fixed;
+	left: 50%;
+	width: 808px;
+	margin-left: -395px;
+	top: 0px;
+}
+
+#in2-1
+{
+	position: absolute;
+	top: 790px;
+	left: 670px;
+	width: 48px;
+	height: 32px;
+}
+
+#in2-2
+{
+	position: absolute;
+	top: 790px;
+	left: 270px;
+	width: 48px;
+	height: 32px;
+}
+
+#in2-3
+{
+	position: absolute;
+	top: 790px;
+	left: 270px;
+	width: 48px;
+	height: 32px;
+}
+
+#in2-4
+{
+	position: absolute;
+	top: 790px;
+	left: 270px;
+	width: 48px;
+	height: 32px;
+}
+
+#in2-5
+{
+	position: absolute;
+	top: 790px;
+	left: 270px;
+	width: 48px;
+	height: 32px;
+}
+
+#in2-6
+{
+	position: absolute;
+	top: 790px;
+	left: 270px;
+	width: 48px;
+	height: 32px;
+}

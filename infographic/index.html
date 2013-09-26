@@ -1,126 +1,378 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
-	
 	<head>
-		<title>The history of aeronautics</title>
+		<meta charset="utf-8">
+		<title>A Drive Through Time</title>
+		<meta name="description" content="Unlock driving game facts as you drive through an evolving landscape: A Gamefographic" />
+		<meta property="og:url" content="http://adrivethroughtime.com">
+		<meta property="og:description" content="Unlock driving game facts as you drive through an evolving landscape" />
+		<meta property="og:image" content="http://adrivethroughtime.com/data/img/fb-thumb.jpg"/>
+		<meta property="og:title" content="A Drive Through Time"/>
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="CSS/info-styles.css" media="all"></link>
+        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        <link rel="icon" type="image/gif" href="../data/img/favicon.gif">
 
-		<meta charset="utf-8" />
-		<meta name="description" content="A parallax scrolling experiment using jQuery" />
-
-		<link rel="stylesheet" media="all" href="css/main.css" />
-
-		<script src="js/modernizr.custom.37797.js"></script> 
+        <script src="js/modernizr.custom.37797.js"></script> 
 		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
 		<script src="js/parallax.js"></script>
+		<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-43923709-1', 'adrivethroughtime.com');
+		ga('send', 'pageview');
+		</script>
 	</head>
-
 	<body>
-
-		<div id="wrapper">
-			
-			<header id="branding">
-				<h1>The history of aeronautics</h1>
-			</header>
-			
-			<nav id="primary">
-				<ul>
-					<li>
-						<h1>First manned flights</h1>
-						<a class="manned-flight" href="#manned-flight">View</a>
-					</li>
-					<li>
-						<h1>The frameless parachute</h1>
-						<a class="frameless-parachute" href="#frameless-parachute">View</a>
-					</li>
-					<li>
-						<h1>Over the English Channel</h1>
-						<a class="english-channel" href="#english-channel">View</a>
-					</li>
-					<li>
-						<h1>About</h1>
-						<a class="about" href="#about">View</a>
-					</li>
-				</ul>
-			</nav>
-			
-			<div id="content">
-				<article id="manned-flight">
-					<header>
-						<h1>First manned flights</h1>
-					</header>
-					<p>The first clearly recorded instance of a balloon carrying passengers used hot air to generate buoyancy and was built by the brothers Joseph-Michel and Jacques-Etienne Montgolfier in Annonay, France. After experimenting with unmanned balloons and flights with animals, the first tethered balloon flight with humans on board took place on October 15, 1783.</p>
-					<nav class="next-prev">
-						<hr />
-						<a class="next frameless-parachute" href="#frameless-parachute">Next</a>
-					</nav>
-				</article>
-				
-				<article id="frameless-parachute">
-					<header>
-						<h1>The frameless parachute</h1>
-					</header>
-					<p>André-Jacques Garnerin carried out the first jump with a silk parachute on October 22, 1797 at Parc Monceau, Paris. Garnerin's first parachute resembled a closed umbrella before he ascended; at a height of approximately 3,000 feet he severed the rope that connected his parachute to the balloon, and the basket fell to earth. Garnerin emerged uninjured.</p>
-					<nav class="next-prev">
-						<a class="prev manned-flight" href="#manned-flight">Prev</a>
-						<hr />
-						<a class="next english-channel" href="#english-channel">Next</a>
-					</nav>
-				</article>
-				
-				<article id="english-channel">
-					<header>
-						<h1>Over the English Channel</h1>
-					</header>
-					<p>On January 7, 1785, Jean Pierre Blanchard and Dr. John Jeffries made the first flight over the English Channel, traveling from Dover to France. During the crossing the balloon lost altitude, so they began tossing everything in the gondola they possibly could, even their clothes. About two hours after take off, they crossed the French coast clad only in their underwear.</p>
-					<nav class="next-prev">
-						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
-						<hr />
-						<a class="next about" href="#about">Next</a>
-					</nav>
-				</article>
-				
-				<article id="about">
-					<header>
-						<h1>About</h1>
-					</header>
-					<p>This is a jQuery parallax scrolling experiment by Jonathan Nicol. <a href="http://f6design.com/journal/2011/08/06/build-a-parallel-scrolling-website-interface-with-jquery-and-css/">Read about it</a> on my blog.</p>
-					<nav class="next-prev">
-						<a class="prev english-channel" href="#english-channel">Prev</a>
-						<hr />
-					</nav>
-				</article>
-			</div>
-			
-			<!-- Parallax foreground -->
-			<div id="parallax-bg3">
-				<img id="bg3-1" src="img/balloon.png" width="529" height="757" alt="Montgolfier hot air balloon"/>
-				<img id="bg3-2" src="img/balloon2.png" width="603" height="583" alt="Frameless parachute"/>
-				<img id="bg3-3" src="img/balloon3.png" width="446" height="713" alt="Blanchard's air balloon"/>
-				<img id="bg3-4" src="img/ground.png" width="1104" height="684" alt="Landscape with trees and cows"/>
-			</div>
-			
-			<!-- Parallax  midground clouds -->
-			<div id="parallax-bg2">
-				<img id="bg2-1" src="img/cloud-lg1.png" alt="cloud"/>
-				<img id="bg2-2" src="img/cloud-lg1.png" alt="cloud"/>
-				<img id="bg2-3" src="img/cloud-lg1.png" alt="cloud"/>
-				<img id="bg2-4" src="img/cloud-lg1.png" alt="cloud"/>
-				<img id="bg2-5" src="img/cloud-lg1.png" alt="cloud"/>
-			</div>
-			
-			<!-- Parallax  background clouds -->
-			<div id="parallax-bg1">
-				<img id="bg1-1" src="img/cloud-lg2.png" alt="cloud"/>
-				<img id="bg1-2" src="img/cloud-lg2.png" alt="cloud"/>
-				<img id="bg1-3" src="img/cloud-lg2.png" alt="cloud"/>
-				<img id="bg1-4" src="img/cloud-lg2.png" alt="cloud"/>
-			</div>
-		
+		<div class="top-border">
+			<div class="top-border-left"></div>
+			<div class="top-border-middle"></div>
+			<div class="top-border-right"></div>
 		</div>
-	
+		<div class="content-container">
+			<div class="left-border"></div>
+			<div class="right-border"></div>
+
+			<div class="title-container">
+				
+				<div class="share-container" id="top-share">
+					<div class="share-inner">
+						<a class="fb-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadrivethroughtime.com" target="_blank"></a>
+						<a class="tw-link" href="https://twitter.com/intent/tweet?&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						<a class="g-link" href="https://plus.google.com/share?url=http%3A%2F%2Fadrivethroughtime.com" target="_blank"></a>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="car-container">
+				<div class="car"></div>
+			</div>
+
+			<!--<div class="popup-container">
+				<div class='popup' id='pop1'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/gran_trak_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>GRAN TRAK 10</h4>
+							<h3>D.O.B.</h3>
+							<p>1974</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Gran Trak 10 was the first arcade game to utilise a steering wheel, gear shift and accelerator and brake pedals.</p>
+							<a href="https://twitter.com/intent/tweet?text=Gran+Trak+10+was+the+first+arcade+game+to+utilise+a+steering+wheel,+gear+shift+and+accelerator+and+brake+pedals.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop2'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/speed_race_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>SPEED RACE</h4>
+							<h3>D.O.B.</h3>
+							<p>1974</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Developer Tomohiro Nishikado's top-down racing game pre-dated his meteoric rise to fame for developing Space Invaders</p>
+							<a href="https://twitter.com/intent/tweet?text=Developer+Tomohiro+Nishikado's+top-down+racing+game+pre-dated+his+meteoric+rise+to+fame+for+developing+Space+Invaders&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class='popup' id='pop3'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/nurburgring_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>NURBURGRING 1</h4>
+							<h3>D.O.B.</h3>
+							<p>1975</p>
+							<h3>INTERESTING FACT</h3>
+							<p>The first "3D" car racing game was created by Reiner Foerst though Night Driver is often credited for this.</p>
+							<a href="https://twitter.com/intent/tweet?text=The+first+'3D'+car+racing+game+was+created+by+Reiner+Foerst+though+Night+Driver+is+often+credited+for+this.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class='popup' id='pop4'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/speed_freak_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>SPEED FREAK</h4>
+							<h3>D.O.B.</h3>
+							<p>c. 1978</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Speed Freak is often credited as being the first racing game to include vector graphics.</p>
+							<a href="https://twitter.com/intent/tweet?text=Speed+Freak+is+often+credited+as+being+the+first+racing+game+to+include+vector+graphics.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop5'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/pole_position_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>POLE POSITION</h4>
+							<h3>D.O.B.</h3>
+							<p>1982</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Pole Position was the most successful racing game of the classic era and was based on a real F1 track. Enough said.</p>
+							<a href="https://twitter.com/intent/tweet?text=Pole+Position+was+the+most+successful+racing+game+of+the+classic+era+and+was+based+on+a+real+F1+track.+Enough+said.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop6'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/tx_1_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>TX-1</h4>
+							<h3>D.O.B.</h3>
+							<p>1983</p>
+							<h3>INTERESTING FACT</h3>
+							<p>TX-1 was the first arcade game ever to use three screens to provide realism which resulted in a massive arcade cabinet.</p>
+							<a href="https://twitter.com/intent/tweet?text=TX-1+was+the+first+arcade+game+ever+to+use+three+screens+to+provide+realism+which+required+a+massive+arcade+cabinet.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop7'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/rad_racer_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>RAD RACER</h4>
+							<h3>D.O.B.</h3>
+							<p>1987</p>
+							<h3>INTERESTING FACT</h3>
+							<p>You could play Rad Racer in 3D mode using red and blue 3D anaglyph glasses. Move over 3DS.</p>
+							<a href="https://twitter.com/intent/tweet?text=You+could+play+Rad+Racer+in+3D+mode+using+red+and+blue+3D+anaglyph+glasses.+Move+over+3DS.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop8'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/outrun_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>OUT RUN</h4>
+							<h3>D.O.B.</h3>
+							<p>1986</p>
+							<h3>INTERESTING FACT</h3>
+							<p>A true arcade pioneer: moving cabinets, soundtrack selection and living luxury, Out Run won 1987's Game of the Year.</p>
+							<a href="https://twitter.com/intent/tweet?text=A+true+arcade+pioneer:+moving+cabinets,+soundtrack+selection+and+living+luxury,+Out+Run+won+1987's+Game+of+the+Year.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop9'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/super_mario_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>SUPER MARIO KART</h4>
+							<h3>D.O.B.</h3>
+							<p>1992</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Mario Kart is the highest selling car racing franchise (84m copies). Most popular in the series? Mario Kart Wii (34m)</p>
+							<a href="https://twitter.com/intent/tweet?text=Mario+Kart+is+the+highest+selling+car+racing+franchise+(84m+copies).+Most+popular+in+the+series?+Mario+Kart+Wii+(34m)&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop10'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/gran_turismo_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>GRAN TURISMO</h4>
+							<h3>D.O.B.</h3>
+							<p>1997</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Gran Turismo is one of the highest grossing Playstation franchise of all time with over 70m copies sold.</p>
+							<a href="https://twitter.com/intent/tweet?text=Gran+Turismo+is+one+of+the+highest+grossing+Playstation+franchise+of+all+time+with+over+70m+copies+sold.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop11'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/project_gotham_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>PROJECT GOTHAM RACING</h4>
+							<h3>D.O.B.</h3>
+							<p>2001</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Bill Gates has declared<br>Project Gotham Racing his<br>favourite game.<br>What more do you need to know?</p>
+							<a href="https://twitter.com/intent/tweet?text=Bill+Gates'+has+declared+Project+Gotham+Racing+his+favourite+game.+What+more+do+you+need+to+know?&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop12'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/F1_2010_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>F1 2010</h4>
+							<h3>D.O.B.</h3>
+							<p>2010</p>
+							<h3>INTERESTING FACT</h3>
+							<p>This "blockbuster" won a BAFTA and boasts the most complicated weather system in any video game. Ever.</p>
+							<a href="https://twitter.com/intent/tweet?text=This+'blockbuster'+won+a+BAFTA+and+boasts+the+most+complicated+weather+system+in+any+video+game.+Ever.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class='popup' id='pop13'>
+					<div class='left-side'>
+						<img class="pack-shot" src="img/license/gta_pack.png"></img>
+					</div>
+					<div class='right-side'>
+						<div class='title-image'></div>
+						<div class='game-info'>
+							<h4>GRAND THEFT AUTO V</h4>
+							<h3>D.O.B.</h3>
+							<p>2013</p>
+							<h3>INTERESTING FACT</h3>
+							<p>Will the latest instalment have even less focus on driving? We'll wait with everyone else for the September release.</p>
+							<a href="https://twitter.com/intent/tweet?text=Will+the+latest+instalment+have+even+less+focus+on+driving?+We'll+wait+with+everyone+else+for+the+September+release.&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						</div>
+					</div>
+				</div>
+			</div>-->
+
+			<div class="s1-container">
+				
+				<div class="s1-road-left"></div>
+				<div class="s1-road-lines-left"></div>
+				<div class="s1-road-lines-right"></div>
+				<div class="s1-road-right"></div>
+			</div>
+
+			<div class="divider1"></div>
+
+			<div class="s2-container">
+				<div class="s2-trees-left"></div>
+				<div class="s2-road-left"></div>
+				<div class="s2-road-right"></div>
+				<div class="s2-trees-right"></div>
+			</div>
+
+			<div class="divider2"></div>
+
+			<div class="s3-container">
+				<div class="s3-road-left"></div>
+				<div class="s3-road-right"></div>
+			</div>
+
+			<div class="divider3"></div>
+
+			<div class="s4-container">
+				<div class="s4-side-left"></div>
+				<div class="s4-road-left"></div>
+				<div class="s4-road-right"></div>
+				<div class="s4-side-right"></div>
+			</div>
+
+			<div class="divider4"></div>
+
+			<div class="s5-container">
+				<div class="s5-side-left"></div>
+				<div class="s5-road"></div>
+				<div class="s5-side-right"></div>
+			</div>
+
+			<div class="divider5"></div>
+
+			<div class="s6-container">
+				<div class="s6-side-left"></div>
+				<div class="s6-road"></div>
+				<div class="s6-side-right"></div>
+			</div>
+
+			<div class="divider6"></div>
+
+			<div class="s7-container">
+				<div class="s7-side-left"></div>
+				<div class="s7-road">
+					<div class="finish-line"></div>
+				</div>
+				<div class="s7-side-right"></div>
+			</div>
+
+			<div class="well-done">
+				<div class="share-container" id="bottom-share">
+					<div class="share-inner">
+						<a class="fb-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadrivethroughtime.com" target="_blank"></a>
+						<a class="tw-link" href="https://twitter.com/intent/tweet?&url=http%3A%2F%2Fadrivethroughtime.com"></a>
+						<a class="g-link" href="https://plus.google.com/share?url=http%3A%2F%2Fadrivethroughtime.com" target="_blank"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div id="invader-container1">
+			<img id="in1-1" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in1-2" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in1-3" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in1-4" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in1-5" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in1-6" src="img/level1/invader-sprite.gif" alt="invader"/>
+		</div>
+
+		<div id="invader-container2">
+			<img id="in2-1" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<!-- <img id="in2-2" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in2-3" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in2-4" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in2-5" src="img/level1/invader-sprite.gif" alt="invader"/>
+			<img id="in2-6" src="img/level1/invader-sprite.gif" alt="invader"/> -->
+		</div>
+
+		<div class="bottom-border">
+			<div class="bottom-border-left"></div>
+			<div class="bottom-border-middle"></div>
+			<div class="bottom-border-right"></div>
+		</div>
+		
 	</body>
-  
 </html>

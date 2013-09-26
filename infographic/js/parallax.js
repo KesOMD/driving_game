@@ -1,14 +1,15 @@
 $(document).ready(function() {
 	
-	redrawDotNav();
+	//redrawDotNav();
 	
 	/* Scroll event handler */
     $(window).bind('scroll',function(e){
     	parallaxScroll();
-		redrawDotNav();
+		//redrawDotNav();
     });
     
 	/* Next/prev and primary nav btn click handlers */
+	/*
 	$('a.manned-flight').click(function(){
     	$('html, body').animate({
     		scrollTop:0
@@ -41,8 +42,9 @@ $(document).ready(function() {
 		});
     	return false;
     });
-    
+    */
     /* Show/hide dot lav labels on hover */
+    /*
     $('nav#primary a').hover(
     	function () {
 			$(this).prev('h1').show();
@@ -51,19 +53,23 @@ $(document).ready(function() {
 			$(this).prev('h1').hide();
 		}
     );
-    
+    */
 });
 
 /* Scroll the background layers */
-function parallaxScroll(){
+function parallaxScroll()
+{
 	var scrolled = $(window).scrollTop();
-	$('#parallax-bg1').css('top',(0-(scrolled*.25))+'px');
-	$('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
-	$('#parallax-bg3').css('top',(0-(scrolled*.75))+'px');
+	//$('#parallax-bg1').css('top',(0-(scrolled*.25))+'px');
+	//$('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
+	//$('#parallax-bg3').css('top',(0-(scrolled*.75))+'px');
+	$('#invader-container1').css( 'top', ( 0 - ( scrolled*.75 ) ) + 'px');
+	$('#invader-container2').css( 'top', ( 0 - ( scrolled*.5 ) ) + 'px');
 }
 
 /* Set navigation dots to an active state as the user scrolls */
-function redrawDotNav(){
+function redrawDotNav()
+{
 	var section1Top =  0;
 	// The top of each section is offset by half the distance to the previous section.
 	var section2Top =  $('#frameless-parachute').offset().top - (($('#english-channel').offset().top - $('#frameless-parachute').offset().top) / 2);
