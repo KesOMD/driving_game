@@ -29,6 +29,12 @@ body
 	src: url(../font/Gotham-Book.otf);
 }
 
+@font-face
+{
+	font-family: GothamBold;
+	src: url(../font/Gotham-Bold.otf);
+}
+
 .top-border
 {
 	top: 0px;
@@ -180,46 +186,48 @@ body
 
 .popup
 {
-	width: 329px;
-	height: 238px;
+	width: 492px;
+	height: 283px;
 	padding: 0px;
 	background-color: #9bffe6;
 	cursor: default;
 	position: absolute;
+	opacity: 0.9;
 }
 
 .pack-shot
 {
 	float: left;
-	width: 131px;
-	height: 182px;
+	width: 167px;
+	height: 231px;
+	margin-top: 28px;
+	margin-left: 16px;
 	display: inline-block;
-	margin-top: 27px;
-	margin-left: 3px;
 }
 
 .left-side
 {
 	float: left;
 	margin-left: 1px;
-	width: 148px;
-	height: 238px;
+	width: 222px;
+	height: 282px;
 	background: url(../img/license/leftback.jpg);
 	background-size: 100% 100%;
+	opacity: 0.9;
 }
 
 .right-side
 {
 	float: right;
-	width: 180px;
-	height: 238px;
+	width: 266px;
+	height: 282px;
 	padding: 0px;
 }
 
 .title-image
 {
-	width: 155px;
-	height: 13px;
+	width: 233px;
+	height: 20px;
 	margin-top: 16px;
 	margin-left: 6px;
 	background: url(../img/license/title.png) no-repeat;
@@ -228,27 +236,37 @@ body
 
 .game-info
 {
-	width: 180px;
+	width: 260px;
 	margin-left: 6px;
 	margin-top: 8px;
+}
+
+.game-info h4
+{
+	color: #23132d;
+	font-size: 16px;
+	font-family: GothamBold, Helvetica, Arial, sans-serif;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
 }
 
 .game-info h3
 {
 	color: #3e3e3e;
-	font-size: 8px;
+	font-size: 14px;
 	font-family: GothamBook, Helvetica, Arial, sans-serif;
 	margin-top: 2px;
 	margin-bottom: 0px;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 .game-info p
 {
 	color: #23132d;
 	font-family: GothamMedium, Helvetica, Arial, sans-serif;
-	font-size: 10px;
-	margin-top: 0;
+	font-size: 14px;
+	margin-top: 5px;
 	margin-right: 30px;
 	margin-bottom: 15px;
 	line-height: 110%;
@@ -260,9 +278,10 @@ body
 {
 	display: block;
 	background: url(../img/license/tweet-fact.png) no-repeat;
-	height: 23px;
-	width: 163px;
+	height: 34px;
+	width: 244px;
 	background-size: 100% 200%;
+	margin-top: 18px;
 }
 
 .game-info a:hover;
@@ -270,72 +289,77 @@ body
 	background-position: 0 -23px !important;
 }
 
-.popup-container
+#popup-container
 {
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 0px;
 	display: block;
-	position: relative;
+	position: fixed;
+	left: 50%;
 	width: 808px;
-	z-index: 4;
+	margin-left: -395px;
+	top: 0px;
+	z-index: 10;
 }
 
 #pop1
 {
-	top: 840px;
+	top: 800px;
 	float: left;
 }
 
 #pop2
 {
-	top: 0px;
+	top: 1300px;
 	float: right;
 	margin-right: 0px;
+	right: 1px;
 }
 
 #pop3
 {
-	top: 0px;
+	top: 2100px;
 	float: left;
 }
 
 #pop4
 {
-	top: 0px;
+	top: 2600px;
 	float: right;
 	margin-right: 0px;
+	right: 1px;
 }
 
 #pop5
 {
-	top: 0px;
+	top: 3100px;
 	float: left;
 }
 
 #pop6
 {
-	top: 0px;
+	top: 3900px;
 	float: right;
 	margin-right: 0px;
+	right: 1px;
 }
 
 #pop7
 {
-	top: 0px;
+	top: 4800px;
 	float: left;
 }
 
 #pop8
 {
-	top: 0px;
+	top: 5300px;
 	float: right;
 	margin-right: 0px;
+	right: 1px;
 }
 
 #pop9
 {
-	top: 0px;
+	top: 5800px;
 	float: left;
 }
 
@@ -374,7 +398,7 @@ body
 	display: block;
 	position: absolute;
 	width: 808px;
-	height: 1724px;
+	height: 2600px;
 	z-index: 1;
 	top: 686px;
 	left: 108px;
@@ -429,7 +453,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 2410px;
+	top: 2655px;
 	left: 108px;
 	background: url(../img/divide/first-bridge.png) no-repeat;
 	width: 808px;
@@ -446,7 +470,7 @@ body
 	display: block;
 	position: relative;
 	width: 808px;
-	height: 2400px;
+	height: 3100px;
 	top: 1969px;
 	z-index: 1;
 	background-color: #000;
@@ -500,7 +524,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 4960px;
+	top: 5660px;
 	left: 108px;
 	background: url(../img/divide/second-bridge.png) no-repeat;
 	width: 808px;
@@ -516,10 +540,10 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 5188px;
+	top: 5888px;
 	left: 108px;
 	width: 808px;
-	height: 2500px;
+	height: 1309px;
 	background-color: #636363;
 	z-index: 1;
 }
@@ -552,7 +576,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 7591px;
+	top: 7100px;
 	left: 108px;
 	background: url(../img/divide/third-bridge.png) no-repeat;
 	width: 808px;
@@ -568,7 +592,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 7823px;
+	top: 7332px;
 	left: 108px;
 	width: 808px;
 	height: 2800px;
@@ -882,7 +906,7 @@ body
 {
 	position: absolute;
 	top: 1240px;
-	left: 660px;
+	left: 625px;
 }
 
 #in1-3
@@ -903,7 +927,7 @@ body
 {
 	position: absolute;
 	top: 1115px;
-	left: 75px;
+	left: 35px;
 }
 
 #in1-6
@@ -926,8 +950,8 @@ body
 #in2-1
 {
 	position: absolute;
-	top: 790px;
-	left: 670px;
+	top: 870px;
+	left: 466px;
 	width: 48px;
 	height: 32px;
 }
@@ -936,7 +960,7 @@ body
 {
 	position: absolute;
 	top: 790px;
-	left: 270px;
+	left: 145px;
 	width: 48px;
 	height: 32px;
 }
@@ -944,7 +968,7 @@ body
 #in2-3
 {
 	position: absolute;
-	top: 790px;
+	top: 1090px;
 	left: 270px;
 	width: 48px;
 	height: 32px;
@@ -953,8 +977,8 @@ body
 #in2-4
 {
 	position: absolute;
-	top: 790px;
-	left: 270px;
+	top: 950px;
+	left: 750px;
 	width: 48px;
 	height: 32px;
 }

@@ -63,8 +63,9 @@ function parallaxScroll()
 	//$('#parallax-bg1').css('top',(0-(scrolled*.25))+'px');
 	//$('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
 	//$('#parallax-bg3').css('top',(0-(scrolled*.75))+'px');
-	$('#invader-container1').css( 'top', ( 0 - ( scrolled*.75 ) ) + 'px');
-	$('#invader-container2').css( 'top', ( 0 - ( scrolled*.5 ) ) + 'px');
+	$('#invader-container1').css( 'top', ( 0 - ( scrolled * .75 ) ) + 'px');
+	$('#invader-container2').css( 'top', ( 0 - ( scrolled * .5 ) ) + 'px');
+	$('#popup-container').css( 'top', ( 0 - ( scrolled * .6 ) ) + 'px');
 }
 
 /* Set navigation dots to an active state as the user scrolls */
