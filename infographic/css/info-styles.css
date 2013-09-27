@@ -10,7 +10,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	height: 21305px;
+	height: 28000px;
 	background-color: #000;
 	overflow-x: hidden;
 	background: url(../img/bg.png);
@@ -249,6 +249,7 @@ body
 	margin-top: 12px;
 	margin-bottom: 0px;
 	letter-spacing: 1px;
+	line-height: 90%;
 }
 
 .game-info h3
@@ -365,28 +366,122 @@ body
 
 #pop10
 {
-	top: 0px;
+	top: 6300px;
 	float: right;
 	margin-right: 0px;
+	right: 1px;
 }
 
 #pop11
 {
-	top: 0px;
+	top: 6800px;
 	float: left;
 }
 
 #pop12
 {
-	top: 0px;
+	top: 7700px;
 	float: right;
 	margin-right: 0px;
+	right: 1px;
 }
 
 #pop13
 {
-	top: 0px;
+	top: 8200px;
 	float: left;
+}
+
+#pop14
+{
+	top: 8700px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
+}
+
+#pop15
+{
+	top: 9200px;
+	float: left;
+}
+
+#pop16
+{
+	top: 9700px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
+}
+
+#pop17
+{
+	top: 11150px;
+	float: left;
+}
+
+#pop18
+{
+	top: 11650px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
+}
+
+#pop19
+{
+	top: 12150px;
+	float: left;
+}
+
+#pop20
+{
+	top: 12650px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
+}
+
+#pop21
+{
+	top: 13150px;
+	float: left;
+}
+
+#pop22
+{
+	top: 14000px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
+}
+
+#pop23
+{
+	top: 14500px;
+	float: left;
+}
+
+#pop24
+{
+	top: 15000px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
+}
+
+#pop25
+{
+	top: 15500px;
+	float: left;
+}
+
+#pop26
+{
+	top: 16000px;
+	float: right;
+	margin-right: 0px;
+	right: 1px;
 }
 
 .s1-container
@@ -595,7 +690,7 @@ body
 	top: 7332px;
 	left: 108px;
 	width: 808px;
-	height: 2800px;
+	height: 4691px;
 	background-color: #636363;
 	z-index: 1;
 }
@@ -646,7 +741,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 10429px;
+	top: 11829px;
 	left: 108px;
 	background: url(../img/divide/fourth-bridge.png) no-repeat;
 	width: 808px;
@@ -662,10 +757,10 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 10735px;
+	top: 12138px;
 	left: 108px;
 	width: 808px;
-	height: 3800px;
+	height: 5282px;
 	z-index: 1;
 }
 
@@ -704,7 +799,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: relative;
-	top: 10500px;
+	top: 13000px;
 	background: url(../img/divide/bowser-bridge.png) no-repeat;
 	width: 808px;
 	height: 1277px;
@@ -719,10 +814,10 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 14630px;
+	top: 17630px;
 	left: 108px;
 	width: 808px;
-	height: 3100px;
+	height: 4900px;
 	z-index: 1;
 }
 
@@ -761,7 +856,7 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 17675px;
+	top: 22477px;
 	left: 108px;
 	background: url(../img/divide/sixth-bridge.png) no-repeat;
 	width: 808px;
@@ -777,10 +872,10 @@ body
 	margin-top: 0px;
 	display: block;
 	position: absolute;
-	top: 17937px;
+	top: 22739px;
 	left: 108px;
 	width: 808px;
-	height: 3000px;
+	height: 5000px;
 	z-index: 1;
 }
 
@@ -817,7 +912,7 @@ body
 	background: url(../img/level7/finish-line.png) repeat-x;
 	width: 277px;
 	height: 184px;
-	top: 2660px;
+	top: 4360px;
 	left: 64px;
 }
 
@@ -840,7 +935,7 @@ body
 	margin-right: auto;
 	display: block;
 	position: absolute;
-	top: 20938px;
+	top: 27634px;
 	left: 108px;
 	width: 808px;
 	height: 453px;
