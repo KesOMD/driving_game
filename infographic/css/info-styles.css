@@ -1763,3 +1763,10 @@ body
 	top: 3710px;
 	left: -260px;
 }
+
+@media screen and (min-width: 1025px) {
+	#main-car
+	{
+		margin-top: 170px;
+	}
+}
