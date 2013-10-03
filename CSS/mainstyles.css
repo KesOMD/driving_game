@@ -53,6 +53,30 @@ canvas
 	margin: 0 auto;
 }
 
+.info-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	position: absolute;
+	display: block;
+	top: 0px;
+	right: 0px;
+	max-width: 1600px;
+	z-index: 4;
+}
+
+.info-container a
+{
+	position: relative;
+	float: right;
+	display: block;
+	top: 0px;
+	background: url(../data/img/read_facts.png) no-repeat;
+	width: 224px;
+	height: 224px;
+}
+
 .end-container
 {
 	position: absolute;
@@ -509,6 +533,10 @@ canvas
 	{
 		margin: auto;
 		margin-top: -12px;
+	}
+	.info-container a
+	{
+		top: 86px;
 	}
 	#screen
 	{

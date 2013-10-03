@@ -37,6 +37,7 @@ game.TitleScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.B, "b", true);
         me.input.bindKey(me.input.KEY.A, "a", true);
 	    document.getElementById("scont").style.top = '550px';
+	    document.getElementById("icont").style.top = '0px'
     },
 	
 	//update function
@@ -46,6 +47,7 @@ game.TitleScreen = me.ScreenObject.extend({
 		if (me.input.isKeyPressed('enter'))
 		{
 			document.getElementById("lcont").style.top = '0px';
+			document.getElementById("icont").style.top = '-500px'
 			me.state.change(me.state.PLAY);
 		}
 		else if (me.input.isKeyPressed('up'))

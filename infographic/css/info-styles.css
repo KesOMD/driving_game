@@ -113,6 +113,24 @@ body
 	z-index: 5;
 }
 
+.play-game
+{
+	float: right;
+	position: absolute;
+	display: block;
+	right: 0px;
+	width: 177px;
+	height: 176px;
+}
+
+.play-game a
+{
+	display: block;
+	background: url(../img/play_game.png) no-repeat;
+	width: 177px;
+	height: 176px;
+}
+
 .share-container
 {
 	position: relative;
@@ -330,8 +348,8 @@ body
 	display: block;
 	position: fixed;
 	left: 50%;
-	width: 808px;
-	margin-left: -395px;
+	width: 809px;
+	margin-left: -404px;
 	top: 0px;
 	z-index: 100;
 }
@@ -1769,4 +1787,11 @@ body
 	{
 		margin-top: 170px;
 	}
+}
+
+@media screen and (max-width: 1024px) {
+	#popup-container
+	{
+		margin-left: -396px;
+	}	
 }
