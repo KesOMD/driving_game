@@ -75,9 +75,12 @@ body
 	margin-right: auto;
 	display: block;
 	position: relative;
-	width: 1024px;
+	width: 808px;
 	height: 100%;
 	padding-top: 0px;
+	-moz-box-shadow: 0px 0px 30px 0px #00d2ff;
+	-webkit-box-shadow:  0px 0px 30px 0px #00d2ff;
+	box-shadow: 0px 0px 30px 0px #00d2ff;
 }
 
 
@@ -101,7 +104,6 @@ body
 
 .title-container
 {
-	float: left;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -185,7 +187,7 @@ body
 	margin-right: auto;
 	display: block;
 	position: fixed;
-	width: 1024px;
+	width: 808px;
 	z-index: 2;
 	top: 124px;
 }
@@ -195,7 +197,7 @@ body
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
+	margin-top: 200px;
 	width: 96px;
 	height: 192px;
 	left: 0px;
@@ -544,10 +546,10 @@ body
 	display: block;
 	position: absolute;
 	width: 808px;
-	height: 2600px;
+	height: 2060px;
 	z-index: 1;
-	top: 686px;
-	left: 108px;
+	top: 600px;
+	left: 0px;
 	background-color: #000;
 }
 
@@ -600,7 +602,7 @@ body
 	display: block;
 	position: absolute;
 	top: 2655px;
-	left: 108px;
+	left: 0px;
 	background: url(../img/divide/first-bridge.png) no-repeat;
 	width: 808px;
 	height: 245px;
@@ -617,7 +619,8 @@ body
 	position: relative;
 	width: 808px;
 	height: 3100px;
-	top: 1969px;
+	left: 0px;
+	top: 2300px;
 	z-index: 1;
 	background-color: #000;
 }
@@ -671,7 +674,7 @@ body
 	display: block;
 	position: absolute;
 	top: 5660px;
-	left: 108px;
+	left: 0px;
 	background: url(../img/divide/second-bridge.png) no-repeat;
 	width: 808px;
 	height: 329px;
@@ -687,7 +690,7 @@ body
 	display: block;
 	position: absolute;
 	top: 5888px;
-	left: 108px;
+	left: 0px;
 	width: 808px;
 	height: 1309px;
 	background-color: #636363;
@@ -723,7 +726,7 @@ body
 	display: block;
 	position: absolute;
 	top: 7100px;
-	left: 108px;
+	left: 0px;
 	background: url(../img/divide/third-bridge.png) no-repeat;
 	width: 808px;
 	height: 329px;
@@ -739,7 +742,7 @@ body
 	display: block;
 	position: absolute;
 	top: 7332px;
-	left: 108px;
+	left: 0px;
 	width: 808px;
 	height: 4691px;
 	background-color: #636363;
@@ -793,7 +796,7 @@ body
 	display: block;
 	position: absolute;
 	top: 11829px;
-	left: 108px;
+	left: 0px;
 	background: url(../img/divide/fourth-bridge.png) no-repeat;
 	width: 808px;
 	height: 404px;
@@ -809,7 +812,7 @@ body
 	display: block;
 	position: absolute;
 	top: 12138px;
-	left: 108px;
+	left: 0px;
 	width: 808px;
 	height: 5282px;
 	z-index: 1;
@@ -850,9 +853,10 @@ body
 	margin-top: 0px;
 	display: block;
 	position: relative;
-	top: 13000px;
+	top: 13050px;
 	background: url(../img/divide/bowser-bridge.png) no-repeat;
 	width: 808px;
+	left: 0px;
 	height: 1277px;
 	z-index: 3;
 }
@@ -866,7 +870,7 @@ body
 	display: block;
 	position: absolute;
 	top: 17630px;
-	left: 108px;
+	left: 0px;
 	width: 808px;
 	height: 4900px;
 	z-index: 1;
@@ -908,7 +912,7 @@ body
 	display: block;
 	position: absolute;
 	top: 22477px;
-	left: 108px;
+	left: 0px;
 	background: url(../img/divide/sixth-bridge.png) no-repeat;
 	width: 808px;
 	height: 315px;
@@ -924,7 +928,7 @@ body
 	display: block;
 	position: absolute;
 	top: 22739px;
-	left: 108px;
+	left: 0px;
 	width: 808px;
 	height: 5000px;
 	z-index: 1;
@@ -986,8 +990,8 @@ body
 	margin-right: auto;
 	display: block;
 	position: absolute;
-	top: 27634px;
-	left: 108px;
+	top: 27547px;
+	left: 0px;
 	width: 808px;
 	height: 453px;
 	background: url(../img/welldone.jpg) no-repeat;
@@ -1045,7 +1049,7 @@ body
 {
 	position: absolute;
 	top: 790px;
-	left: 270px;
+	left: 260px;
 }
 
 #in1-2
@@ -1255,7 +1259,7 @@ body
 {
 	position: absolute;
 	top: 3595px;
-	left: 44px;
+	left: 65px;
 }
 
 #s4-10
@@ -1568,7 +1572,7 @@ body
 	position: fixed;
 	top: 0px;
 	width: 808px;
-	margin-left: -395px;
+	margin-left: -404px;
 	left:  50%;
 }
 
@@ -1784,13 +1788,13 @@ body
 @media screen and (min-width: 1025px) {
 	#main-car
 	{
-		margin-top: 170px;
+		margin-top: 260px;
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	#popup-container
 	{
-		margin-left: -396px;
+		margin-left: -404px;
 	}	
 }
