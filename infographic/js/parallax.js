@@ -70,12 +70,12 @@ function parallaxScroll()
 function changeCar()
 {
 	var section1Top =  0;
-	var section2Top = $('#d1').offset().top - 200;
-	var section3Top = $('#d2').offset().top - 130;
-	var section4Top = $('#d3').offset().top - 130;
+	var section2Top = $('#d1').offset().top - 250;
+	var section3Top = $('#d2').offset().top - 200;
+	var section4Top = $('#d3').offset().top - 200;
 	var section5Top = $('#d4').offset().top - 130;
 	var section6Top = $('#d5').offset().top + 500;
-	var section7Top = $('#d6').offset().top - 130;
+	var section7Top = $('#d6').offset().top - 220;
 
 	$('#main-car').removeClass('car1');
 	if($(document).scrollTop() >= section1Top && $(document).scrollTop() < section2Top)
